@@ -12,7 +12,7 @@ import QueueNode from './QueueNode'
 
 const QUEUE_ABOVE_GAP = 20
 
-/** Основной поток — по центру MAIN_FLOW_Y; очередь «На вход» — над ним. */
+/** Остальные станции — по центру MAIN_FLOW_Y; «На вход» — выше, чтобы влезли все SKU. */
 function nodeY(station, index) {
   if (index === 0 && station.id === 'queue_kuter') {
     const h = nodeHeight(station)
@@ -38,7 +38,6 @@ function Arrow({ x1, x2 }) {
   )
 }
 
-/** От нижнего центра очереди «На вход» вниз к линии потока и к левому краю кутера. */
 function InletArrow({ queueStation }) {
   const x0 = nodeX(0)
   const wq = nodeWidth(queueStation)
@@ -64,7 +63,6 @@ export default function ScadaCanvas({ statuses = {}, stationItems = {} }) {
     <div className="overflow-x-auto">
       <svg width={SVG_W} height={SVG_H} style={{ minWidth: SVG_W }}>
 
-        {/* Стрелки: вход — с «На вход» на кутер; остальные — по линии MAIN_FLOW_Y */}
         <InletArrow queueStation={STATIONS[0]} />
         {STATIONS.slice(1, -1).map((station, i) => {
           const idx = i + 1
@@ -77,7 +75,6 @@ export default function ScadaCanvas({ statuses = {}, stationItems = {} }) {
           )
         })}
 
-        {/* Узлы */}
         {STATIONS.map((station, i) =>
           station.type === 'queue' ? (
             <QueueNode

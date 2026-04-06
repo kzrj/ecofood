@@ -33,6 +33,6 @@ export const nodeX = (index) => _xMap[STATIONS[index].id]
 
 export const SVG_W = _cx - GAP + PAD
 
-/** Центр основого потока; очередь «На вход» (высокая) — выше этой линии. */
+/** Центр основного потока; очередь «На вход» выше этой линии (высокий блок под SKU). */
 export const MAIN_FLOW_Y = 700
 export const SVG_H = 920
