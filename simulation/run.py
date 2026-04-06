@@ -1,0 +1,98 @@
+import math
+
+import simpy
+
+from .common import RECIPES, UPAKOVKA_CAPACITY, calculate_total_ramas
+from .io.export import print_log, save_log
+from .osadka import osadka_dispatcher
+from .ohlazdenie import ohlazdenie_dispatcher
+from .sku_line import sku_pipeline
+from .termokamera import termokamera_dispatcher
+from .sku_list import SKU_LIST
+from .upakovka_sklad import upakovka_dispatcher
+
+
+def run(sku_list=None):
+    env = simpy.Environment()
+    log = []
+
+    stations = {
+        "kuter": simpy.Resource(env, capacity=1),
+        "shpric": simpy.Resource(env, capacity=1),
+        "klipsator": simpy.Resource(env, capacity=1),
+    }
+
+    osadka = simpy.Resource(env, capacity=100)
+    termokamera = simpy.Resource(env, capacity=3)
+    ohlazdenie = simpy.Resource(env, capacity=4)
+    upakovka = simpy.Resource(env, capacity=1)
+    sklad = simpy.Container(env, capacity=1000)
+
+    collect_ramas_osadka = simpy.Store(env)
+    collect_ramas_termokamera = simpy.Store(env)
+    collect_ramas_ohlazdenie = simpy.Store(env)
+    collect_batches_upakovka = simpy.Store(env)
+
+    if sku_list is None:
+        sku_list = list(SKU_LIST)
+
+    counts = {}
+    weights = {}
+    for _, recipe_name, weight in sku_list:
+        counts[recipe_name] = counts.get(recipe_name, 0) + 1
+        weights[recipe_name] = weights.get(recipe_name, 0) + weight
+
+    rama_state = {recipe_name: {"current": None, "processed": 0, "total": count} for recipe_name, count in counts.items()}
+
+    total_ramas = calculate_total_ramas(sku_list)
+
+    total_weight = sum(w for _, _, w in sku_list)
+    total_batches = math.ceil(total_weight / UPAKOVKA_CAPACITY)
+
+    upakovka_state = {
+        "current_weight": 0,
+        "processed_ramas": 0,
+        "total_ramas": total_ramas,
+    }
+
+    print(f"\nЗапуск: {len(sku_list)} SKU | {total_weight} кг | {total_ramas} рамы | {total_batches} батч упаковки")
+    for rn, cnt in counts.items():
+        ramas_rn = calculate_total_ramas([(s, r, w) for s, r, w in sku_list if r == rn])
+        print(f"  {rn}: {cnt} SKU, {weights[rn]} кг -> {ramas_rn} рамы")
+    print(f"\n  {'id':<10} {'тип':<12} {'вес'}")
+    print(f"  {'-' * 30}")
+    for sku_id, recipe_name, weight in sku_list:
+        print(f"  {sku_id:<10} {recipe_name:<12} {weight} кг")
+    print()
+
+    env.process(
+        osadka_dispatcher(env, collect_ramas_osadka, collect_ramas_termokamera, osadka, log, total_ramas)
+    )
+    env.process(
+        termokamera_dispatcher(env, collect_ramas_termokamera, collect_ramas_ohlazdenie, termokamera, log, total_ramas)
+    )
+    env.process(
+        ohlazdenie_dispatcher(
+            env, collect_ramas_ohlazdenie, collect_batches_upakovka, ohlazdenie, log, total_ramas, upakovka_state
+        )
+    )
+    env.process(upakovka_dispatcher(env, collect_batches_upakovka, upakovka, sklad, log, total_batches))
+
+    for sku_id, recipe_name, weight in sku_list:
+        recipe = RECIPES[recipe_name]
+        env.process(
+            sku_pipeline(env, sku_id, recipe_name, weight, recipe, stations, rama_state, collect_ramas_osadka, log)
+        )
+
+    env.run()
+
+    print_log(log)
+    print(f"\nОбщее время: {env.now} мин")
+    print(f"На складе:   {sklad.level} кг")
+
+    save_log(log, env.now, sku_list)
+    return env, log, sku_list
+
+
+if __name__ == "__main__":
+    run()
