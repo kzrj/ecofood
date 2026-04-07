@@ -2,5 +2,4 @@ RAMA_CAPACITY = 150  # кг
 SKU_WEIGHT_MIN = 40  # кг
 SKU_WEIGHT_MAX = 100  # кг
 OHLAZDENIE_TIME = 30  # мин
-UPAKOVKA_CAPACITY = 500  # кг за один батч
-UPAKOVKA_KG_PER_HOUR = 500
+UPAKOVKA_TIME = 50    # мин на раму

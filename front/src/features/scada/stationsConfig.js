@@ -8,7 +8,7 @@ export const STATIONS = [
   { id: 'queue_termokamera', label: 'К термо',      type: 'queue' },
   { id: 'termokamera',       label: 'Термокамера',  capacity: 6, width: 200, height: 320 },
   { id: 'ohlazdenie',        label: 'Охлаждение',   capacity: 4   },
-  { id: 'upakovka',          label: 'Упаковка',     capacity: 1   },
+  { id: 'upakovka',          label: 'Упаковка',     capacity: 100 },
   { id: 'sklad',             label: 'Склад',        capacity: 10000, type: 'container' },
 ]
 

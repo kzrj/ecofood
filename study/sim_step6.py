@@ -5,7 +5,6 @@
 """
 
 import simpy
-import math
 import random
 import json
 
@@ -31,11 +30,11 @@ RECIPES = {
     },
 }
 
-RAMA_CAPACITY     = 150   # кг
-SKU_WEIGHT_MIN    = 40    # кг
-SKU_WEIGHT_MAX    = 100   # кг
-OHLAZDENIE_TIME   = 30    # мин
-UPAKOVKA_CAPACITY = 500   # кг за один батч
+RAMA_CAPACITY  = 150   # кг
+SKU_WEIGHT_MIN = 40    # кг
+SKU_WEIGHT_MAX = 100   # кг
+OHLAZDENIE_TIME = 30   # мин
+UPAKOVKA_TIME  = 50    # мин на раму
 
 
 class Rama:
@@ -179,8 +178,7 @@ def termokamera_dispatcher(env, collect_ramas_termokamera, collect_ramas_ohlazde
 # После охлаждения — SKU по весу идут на упаковку
 # ---------------------------------------------------------------
 
-def ohlazdenie_slot(env, rama, ohlazdenie, collect_batches_upakovka,
-                    log, upakovka_state):
+def ohlazdenie_slot(env, rama, ohlazdenie, collect_ramas_upakovka, log):
     """Один слот охлаждения для одной рамы."""
     with ohlazdenie.request() as req:
         yield req
@@ -188,45 +186,36 @@ def ohlazdenie_slot(env, rama, ohlazdenie, collect_batches_upakovka,
         yield env.timeout(OHLAZDENIE_TIME)
         log_event(log, env.now, str(rama), 'ohlazdenie', 'done')
 
-    # Разгружаем раму по весу в упаковку
-    upakovka_state['current_weight'] += rama.weight
-    upakovka_state['processed_ramas'] += 1
-
-    if (upakovka_state['current_weight'] >= UPAKOVKA_CAPACITY or
-            upakovka_state['processed_ramas'] == upakovka_state['total_ramas']):
-        batch_weight = upakovka_state['current_weight']
-        upakovka_state['current_weight'] = 0
-        yield collect_batches_upakovka.put(batch_weight)
+    yield collect_ramas_upakovka.put(rama)
 
 
-def ohlazdenie_dispatcher(env, collect_ramas_ohlazdenie, collect_batches_upakovka,
-                           ohlazdenie, log, total_ramas, upakovka_state):
+def ohlazdenie_dispatcher(env, collect_ramas_ohlazdenie, collect_ramas_upakovka,
+                           ohlazdenie, log, total_ramas):
     """Тянет рамы и запускает каждую в отдельный слот охлаждения."""
     for _ in range(total_ramas):
         rama = yield collect_ramas_ohlazdenie.get()
-        # Каждая рама обрабатывается параллельно — свой процесс
-        env.process(ohlazdenie_slot(env, rama, ohlazdenie, collect_batches_upakovka,
-                                    log, upakovka_state))
+        env.process(ohlazdenie_slot(env, rama, ohlazdenie, collect_ramas_upakovka, log))
 
 
 # ---------------------------------------------------------------
-# Батч: упаковка -> склад
+# Упаковка: каждая рама — отдельный слот, 50 мин
 # ---------------------------------------------------------------
 
-def upakovka_dispatcher(env, collect_batches_upakovka, upakovka, sklad, log, total_batches):
-    for batch_num in range(1, total_batches + 1):
-        batch_weight = yield collect_batches_upakovka.get()
+def upakovka_slot(env, rama, upakovka, sklad, log):
+    with upakovka.request() as req:
+        yield req
+        log_event(log, env.now, str(rama), 'upakovka', 'start', weight=rama.weight)
+        yield env.timeout(UPAKOVKA_TIME)
+        log_event(log, env.now, str(rama), 'upakovka', 'done')
 
-        with upakovka.request() as req:
-            yield req
-            upakovka_time = round(batch_weight / 500 * 60, 1)  # 500 кг/час
-            label = f"batch{batch_num}({batch_weight}kg)"
-            log_event(log, env.now, label, 'upakovka', 'start', weight=batch_weight)
-            yield env.timeout(upakovka_time)
-            log_event(log, env.now, label, 'upakovka', 'done')
+    yield sklad.put(rama.weight)
+    log_event(log, env.now, str(rama), 'sklad', 'stored', weight=rama.weight)
 
-        yield sklad.put(batch_weight)
-        log_event(log, env.now, label, 'sklad', 'stored', weight=batch_weight)
+
+def upakovka_dispatcher(env, collect_ramas_upakovka, upakovka, sklad, log, total_ramas):
+    for _ in range(total_ramas):
+        rama = yield collect_ramas_upakovka.get()
+        env.process(upakovka_slot(env, rama, upakovka, sklad, log))
 
 
 # ---------------------------------------------------------------
@@ -278,13 +267,13 @@ def run():
     osadka      = simpy.Resource(env, capacity=100)
     termokamera = simpy.Resource(env, capacity=3)
     ohlazdenie  = simpy.Resource(env, capacity=4)
-    upakovka    = simpy.Resource(env, capacity=1)
+    upakovka    = simpy.Resource(env, capacity=100)
     sklad       = simpy.Container(env, capacity=1000)
 
     collect_ramas_osadka      = simpy.Store(env)
     collect_ramas_termokamera = simpy.Store(env)
     collect_ramas_ohlazdenie  = simpy.Store(env)
-    collect_batches_upakovka  = simpy.Store(env)
+    collect_ramas_upakovka    = simpy.Store(env)
 
     sku_list = [
         ('var-1', 'varenka',  random.randint(SKU_WEIGHT_MIN, SKU_WEIGHT_MAX)),
@@ -309,16 +298,9 @@ def run():
 
     total_ramas = calculate_total_ramas(sku_list)
 
-    total_weight  = sum(w for _, _, w in sku_list)
-    total_batches = math.ceil(total_weight / UPAKOVKA_CAPACITY)
+    total_weight = sum(w for _, _, w in sku_list)
 
-    upakovka_state = {
-        'current_weight':  0,
-        'processed_ramas': 0,
-        'total_ramas':     total_ramas,
-    }
-
-    print(f"\nЗапуск: {len(sku_list)} SKU | {total_weight} кг | {total_ramas} рамы | {total_batches} батч упаковки")
+    print(f"\nЗапуск: {len(sku_list)} SKU | {total_weight} кг | {total_ramas} рамы")
     for rn, cnt in counts.items():
         ramas_rn = calculate_total_ramas([(s, r, w) for s, r, w in sku_list if r == rn])
         print(f"  {rn}: {cnt} SKU, {weights[rn]} кг -> {ramas_rn} рамы")
@@ -332,10 +314,9 @@ def run():
                                    osadka, log, total_ramas))
     env.process(termokamera_dispatcher(env, collect_ramas_termokamera, collect_ramas_ohlazdenie,
                                         termokamera, log, total_ramas))
-    env.process(ohlazdenie_dispatcher(env, collect_ramas_ohlazdenie, collect_batches_upakovka,
-                                       ohlazdenie, log, total_ramas, upakovka_state))
-    env.process(upakovka_dispatcher(env, collect_batches_upakovka, upakovka, sklad,
-                                     log, total_batches))
+    env.process(ohlazdenie_dispatcher(env, collect_ramas_ohlazdenie, collect_ramas_upakovka,
+                                       ohlazdenie, log, total_ramas))
+    env.process(upakovka_dispatcher(env, collect_ramas_upakovka, upakovka, sklad, log, total_ramas))
 
     for sku_id, recipe_name, weight in sku_list:
         recipe = RECIPES[recipe_name]

@@ -3,8 +3,7 @@ from .constants import (
     RAMA_CAPACITY,
     SKU_WEIGHT_MAX,
     SKU_WEIGHT_MIN,
-    UPAKOVKA_CAPACITY,
-    UPAKOVKA_KG_PER_HOUR,
+    UPAKOVKA_TIME,
 )
 from .logging import log_event
 from .models import Rama, calculate_total_ramas
@@ -18,8 +17,7 @@ __all__ = [
     "Rama",
     "SKU_WEIGHT_MAX",
     "SKU_WEIGHT_MIN",
-    "UPAKOVKA_CAPACITY",
-    "UPAKOVKA_KG_PER_HOUR",
+    "UPAKOVKA_TIME",
     "calculate_total_ramas",
     "get_prep_steps",
     "log_event",
