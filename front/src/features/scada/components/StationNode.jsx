@@ -13,30 +13,50 @@ const TERMO_FRAME_GAP = 8
 const TERMO_LABEL_H = 12
 const TERMO_PAD_Y = 4
 
+/** Цвет рамы по типу продукта (как в очереди «На вход») */
+const SLOT_BY_RECIPE = {
+  varenka:   { fill: '#dbeafe', stroke: '#60a5fa', label: '#1e40af', sub: '#3b82f6' },
+  polukopch: { fill: '#fce7f3', stroke: '#f472b6', label: '#9d174d', sub: '#db2777' },
+  default:   { fill: '#dcfce7', stroke: '#4ade80', label: '#166534', sub: '#15803d' },
+}
+
+function slotStyle(item) {
+  if (!item) return null
+  const r = item.recipe
+  return SLOT_BY_RECIPE[r] ?? SLOT_BY_RECIPE.default
+}
+
+const RECIPE_TAG = { varenka: 'вар', polukopch: 'п/к' }
+
 // -----------------------------------------------------------------------
-// Один слот — прямоугольник с подписью
-// filled=true → зелёный, false → серый пунктир (пустой)
+// Один слот — прямоугольник с подписью; цвет по рецепту рамы
 // -----------------------------------------------------------------------
 function Slot({ x, y, w, h, item }) {
   const filled = !!item
   const cx = x + w / 2
+  const st = filled ? slotStyle(item) : null
 
   return (
     <g>
       <rect
         x={x} y={y} width={w} height={h} rx={5}
-        fill={filled ? '#dcfce7' : '#f8fafc'}
-        stroke={filled ? '#4ade80' : '#e2e8f0'}
+        fill={filled ? st.fill : '#f8fafc'}
+        stroke={filled ? st.stroke : '#e2e8f0'}
         strokeWidth={filled ? 1.5 : 1}
         strokeDasharray={filled ? 'none' : '4 3'}
       />
       {filled && (
         <>
-          <text x={cx} y={y + h * 0.42} textAnchor="middle" fontSize={9} fontWeight="700" fill="#166534">
+          <text x={cx} y={y + h * 0.36} textAnchor="middle" fontSize={9} fontWeight="700" fill={st.label}>
             {item.sku.replace(/\(.*\)/, '')}
           </text>
+          {item.recipe && (
+            <text x={cx} y={y + h * 0.58} textAnchor="middle" fontSize={7} fontWeight="600" fill={st.sub}>
+              {RECIPE_TAG[item.recipe] ?? item.recipe}
+            </text>
+          )}
           {item.weight > 0 && (
-            <text x={cx} y={y + h * 0.72} textAnchor="middle" fontSize={8} fill="#15803d">
+            <text x={cx} y={y + h * 0.82} textAnchor="middle" fontSize={8} fill={st.sub}>
               {item.weight}кг
             </text>
           )}

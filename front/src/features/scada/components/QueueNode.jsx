@@ -19,15 +19,20 @@ const RECIPE_COLOR = {
 // -----------------------------------------------------------------------
 function FrameRect({ x, y, w, h, item }) {
   const cx = x + w / 2
-  const col = RECIPE_COLOR.default
+  const col = RECIPE_COLOR[item.recipe] ?? RECIPE_COLOR.default
   return (
     <g>
       <rect x={x} y={y} width={w} height={h} rx={4}
         fill={col.fill} stroke={col.stroke} strokeWidth={1.5} />
-      <text x={cx} y={y + h * 0.44} textAnchor="middle" fontSize={9} fontWeight="700" fill={col.text}>
+      <text x={cx} y={item.recipe ? y + h * 0.36 : y + h * 0.44} textAnchor="middle" fontSize={9} fontWeight="700" fill={col.text}>
         {item.sku}
       </text>
-      <text x={cx} y={y + h * 0.78} textAnchor="middle" fontSize={8} fill={col.text}>
+      {item.recipe && (
+        <text x={cx} y={y + h * 0.58} textAnchor="middle" fontSize={7} fontWeight="600" fill={col.text}>
+          {RECIPE_SHORT[item.recipe] ?? item.recipe}
+        </text>
+      )}
+      <text x={cx} y={item.recipe ? y + h * 0.82 : y + h * 0.78} textAnchor="middle" fontSize={8} fill={col.text}>
         {item.weight}кг
       </text>
     </g>

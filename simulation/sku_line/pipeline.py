@@ -21,9 +21,9 @@ def sku_pipeline(env, sku_id, recipe_name, weight, recipe, stations, rama_state,
     rama = state["current"]
     rama.add(sku_id, weight)
     state["processed"] += 1
-    log_event(log, env.now, sku_id, f"rama#{rama.id}", "on_rama", weight=rama.weight)
+    log_event(log, env.now, sku_id, f"rama#{rama.id}", "on_rama", weight=rama.weight, recipe=recipe_name)
 
     if rama.is_full or state["processed"] == state["total"]:
         state["current"] = None
-        log_event(log, env.now, str(rama), "queue_osadka", "entered", weight=rama.weight)
+        log_event(log, env.now, str(rama), "queue_osadka", "entered", weight=rama.weight, recipe=rama.recipe_name)
         yield collect_ramas_osadka.put(rama)

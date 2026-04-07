@@ -32,23 +32,30 @@ function computeState(events, currentTime, initialSkus = []) {
   for (const event of events) {
     if (event.t > currentTime) break   // события отсортированы по t
 
-    const { station, sku, status, weight } = event
+    const { station, sku, status, weight, recipe: evRecipe } = event
     if (!station) continue
+
+    const mergeRecipe = (prev, w) => ({
+      weight: w ?? prev?.weight ?? 0,
+      recipe: evRecipe ?? prev?.recipe,
+    })
 
     if (status === 'on_rama') {
       const frameId = station.replace('rama#', 'Rama#')
       if (!inProgress['queue_osadka']) inProgress['queue_osadka'] = new Map()
-      inProgress['queue_osadka'].set(frameId, { weight: weight ?? 0 })
+      inProgress['queue_osadka'].set(frameId, mergeRecipe(null, weight))
 
     } else if (status === 'entered') {
       if (station === 'queue_termokamera') {
         if (!inProgress[station]) inProgress[station] = new Map()
-        inProgress[station].set(sku, { weight: weight ?? 0 })
+        const prev = inProgress[station].get(sku)
+        inProgress[station].set(sku, mergeRecipe(prev, weight))
       }
 
     } else if (status === 'start') {
       if (!inProgress[station]) inProgress[station] = new Map()
-      inProgress[station].set(sku, { weight: weight ?? 0 })
+      const prev = inProgress[station].get(sku)
+      inProgress[station].set(sku, mergeRecipe(prev, weight))
 
       const q = UPSTREAM_QUEUE[station]
       if (q) inProgress[q]?.delete(sku)

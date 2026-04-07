@@ -5,9 +5,9 @@ from ..common.logging import log_event
 def ohlazdenie_slot(env, rama, ohlazdenie, collect_batches_upakovka, log, upakovka_state):
     with ohlazdenie.request() as req:
         yield req
-        log_event(log, env.now, str(rama), "ohlazdenie", "start", weight=rama.weight)
+        log_event(log, env.now, str(rama), "ohlazdenie", "start", weight=rama.weight, recipe=rama.recipe_name)
         yield env.timeout(OHLAZDENIE_TIME)
-        log_event(log, env.now, str(rama), "ohlazdenie", "done")
+        log_event(log, env.now, str(rama), "ohlazdenie", "done", recipe=rama.recipe_name)
 
     upakovka_state["current_weight"] += rama.weight
     upakovka_state["processed_ramas"] += 1
