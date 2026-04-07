@@ -1,250 +1,250 @@
 {
-  "total_time": 1040,
+  "total_time": 962,
   "sku_list": [
     {
       "id": "sku-001",
-      "recipe": "polukopch",
-      "weight": 48
+      "recipe": "varenka",
+      "weight": 58
     },
     {
       "id": "sku-002",
-      "recipe": "varenka",
-      "weight": 62
+      "recipe": "polukopch",
+      "weight": 49
     },
     {
       "id": "sku-003",
       "recipe": "polukopch",
-      "weight": 89
+      "weight": 52
     },
     {
       "id": "sku-004",
       "recipe": "polukopch",
-      "weight": 54
+      "weight": 76
     },
     {
       "id": "sku-005",
-      "recipe": "varenka",
-      "weight": 53
+      "recipe": "polukopch",
+      "weight": 62
     },
     {
       "id": "sku-006",
-      "recipe": "varenka",
-      "weight": 70
+      "recipe": "polukopch",
+      "weight": 66
     },
     {
       "id": "sku-007",
       "recipe": "polukopch",
-      "weight": 67
+      "weight": 43
     },
     {
       "id": "sku-008",
-      "recipe": "polukopch",
-      "weight": 88
+      "recipe": "varenka",
+      "weight": 49
     },
     {
       "id": "sku-009",
-      "recipe": "varenka",
-      "weight": 88
+      "recipe": "polukopch",
+      "weight": 52
     },
     {
       "id": "sku-010",
-      "recipe": "varenka",
-      "weight": 41
+      "recipe": "polukopch",
+      "weight": 65
     },
     {
       "id": "sku-011",
-      "recipe": "polukopch",
-      "weight": 46
+      "recipe": "varenka",
+      "weight": 100
     },
     {
       "id": "sku-012",
-      "recipe": "varenka",
-      "weight": 71
+      "recipe": "polukopch",
+      "weight": 47
     },
     {
       "id": "sku-013",
-      "recipe": "varenka",
-      "weight": 56
-    },
-    {
-      "id": "sku-014",
-      "recipe": "varenka",
-      "weight": 87
-    },
-    {
-      "id": "sku-015",
-      "recipe": "varenka",
-      "weight": 83
-    },
-    {
-      "id": "sku-016",
-      "recipe": "polukopch",
-      "weight": 46
-    },
-    {
-      "id": "sku-017",
-      "recipe": "varenka",
-      "weight": 42
-    },
-    {
-      "id": "sku-018",
       "recipe": "polukopch",
       "weight": 85
     },
     {
-      "id": "sku-019",
+      "id": "sku-014",
+      "recipe": "polukopch",
+      "weight": 81
+    },
+    {
+      "id": "sku-015",
       "recipe": "varenka",
-      "weight": 67
-    },
-    {
-      "id": "sku-020",
-      "recipe": "polukopch",
-      "weight": 94
-    },
-    {
-      "id": "sku-021",
-      "recipe": "polukopch",
-      "weight": 73
-    },
-    {
-      "id": "sku-022",
-      "recipe": "polukopch",
       "weight": 68
     },
     {
-      "id": "sku-023",
+      "id": "sku-016",
       "recipe": "varenka",
-      "weight": 61
+      "weight": 76
     },
     {
-      "id": "sku-024",
-      "recipe": "varenka",
-      "weight": 61
-    },
-    {
-      "id": "sku-025",
-      "recipe": "varenka",
-      "weight": 80
-    },
-    {
-      "id": "sku-026",
+      "id": "sku-017",
       "recipe": "polukopch",
-      "weight": 60
+      "weight": 45
     },
     {
-      "id": "sku-027",
-      "recipe": "varenka",
-      "weight": 65
-    },
-    {
-      "id": "sku-028",
+      "id": "sku-018",
       "recipe": "polukopch",
-      "weight": 72
+      "weight": 63
     },
     {
-      "id": "sku-029",
-      "recipe": "polukopch",
-      "weight": 92
-    },
-    {
-      "id": "sku-030",
-      "recipe": "varenka",
-      "weight": 41
-    },
-    {
-      "id": "sku-031",
-      "recipe": "polukopch",
-      "weight": 96
-    },
-    {
-      "id": "sku-032",
+      "id": "sku-019",
       "recipe": "varenka",
       "weight": 66
     },
     {
-      "id": "sku-033",
+      "id": "sku-020",
       "recipe": "polukopch",
-      "weight": 90
+      "weight": 77
     },
     {
-      "id": "sku-034",
+      "id": "sku-021",
+      "recipe": "polukopch",
+      "weight": 93
+    },
+    {
+      "id": "sku-022",
       "recipe": "varenka",
-      "weight": 50
+      "weight": 48
     },
     {
-      "id": "sku-035",
+      "id": "sku-023",
+      "recipe": "polukopch",
+      "weight": 58
+    },
+    {
+      "id": "sku-024",
+      "recipe": "varenka",
+      "weight": 94
+    },
+    {
+      "id": "sku-025",
+      "recipe": "polukopch",
+      "weight": 68
+    },
+    {
+      "id": "sku-026",
+      "recipe": "varenka",
+      "weight": 78
+    },
+    {
+      "id": "sku-027",
+      "recipe": "polukopch",
+      "weight": 74
+    },
+    {
+      "id": "sku-028",
+      "recipe": "varenka",
+      "weight": 92
+    },
+    {
+      "id": "sku-029",
       "recipe": "varenka",
       "weight": 54
     },
     {
-      "id": "sku-036",
+      "id": "sku-030",
       "recipe": "polukopch",
-      "weight": 49
+      "weight": 100
+    },
+    {
+      "id": "sku-031",
+      "recipe": "polukopch",
+      "weight": 74
+    },
+    {
+      "id": "sku-032",
+      "recipe": "polukopch",
+      "weight": 95
+    },
+    {
+      "id": "sku-033",
+      "recipe": "polukopch",
+      "weight": 60
+    },
+    {
+      "id": "sku-034",
+      "recipe": "polukopch",
+      "weight": 63
+    },
+    {
+      "id": "sku-035",
+      "recipe": "varenka",
+      "weight": 100
+    },
+    {
+      "id": "sku-036",
+      "recipe": "varenka",
+      "weight": 50
     },
     {
       "id": "sku-037",
-      "recipe": "polukopch",
-      "weight": 73
+      "recipe": "varenka",
+      "weight": 67
     },
     {
       "id": "sku-038",
       "recipe": "varenka",
-      "weight": 41
+      "weight": 83
     },
     {
       "id": "sku-039",
       "recipe": "varenka",
-      "weight": 63
+      "weight": 100
     },
     {
       "id": "sku-040",
       "recipe": "polukopch",
-      "weight": 80
+      "weight": 61
     },
     {
       "id": "sku-041",
-      "recipe": "polukopch",
-      "weight": 44
-    },
-    {
-      "id": "sku-042",
-      "recipe": "varenka",
-      "weight": 49
-    },
-    {
-      "id": "sku-043",
       "recipe": "varenka",
       "weight": 96
     },
     {
-      "id": "sku-044",
+      "id": "sku-042",
       "recipe": "polukopch",
+      "weight": 81
+    },
+    {
+      "id": "sku-043",
+      "recipe": "varenka",
       "weight": 44
     },
     {
-      "id": "sku-045",
+      "id": "sku-044",
       "recipe": "polukopch",
-      "weight": 98
+      "weight": 80
+    },
+    {
+      "id": "sku-045",
+      "recipe": "varenka",
+      "weight": 49
     },
     {
       "id": "sku-046",
       "recipe": "varenka",
-      "weight": 42
+      "weight": 55
     },
     {
       "id": "sku-047",
       "recipe": "varenka",
-      "weight": 56
+      "weight": 85
     },
     {
       "id": "sku-048",
-      "recipe": "polukopch",
-      "weight": 48
+      "recipe": "varenka",
+      "weight": 69
     },
     {
       "id": "sku-049",
-      "recipe": "polukopch",
-      "weight": 71
+      "recipe": "varenka",
+      "weight": 59
     },
     {
       "id": "sku-050",
@@ -259,45 +259,45 @@
       "station": "kuter",
       "status": "start",
       "waited": 0,
-      "weight": 48
+      "weight": 58
     },
     {
-      "t": 10,
+      "t": 14,
       "sku": "sku-001",
       "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 10,
+      "t": 14,
       "sku": "sku-001",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 48
+      "weight": 58
     },
     {
-      "t": 10,
+      "t": 14,
       "sku": "sku-002",
       "station": "kuter",
       "status": "start",
-      "waited": 10,
-      "weight": 62
+      "waited": 14,
+      "weight": 49
     },
     {
-      "t": 20,
+      "t": 22,
       "sku": "sku-001",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 20,
+      "t": 22,
       "sku": "sku-001",
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 48
+      "weight": 58
     },
     {
       "t": 24,
@@ -312,7 +312,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 62
+      "weight": 49
     },
     {
       "t": 24,
@@ -320,7 +320,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 24,
-      "weight": 89
+      "weight": 52
     },
     {
       "t": 30,
@@ -335,23 +335,15 @@
       "station": "rama#1",
       "status": "on_rama",
       "waited": 0,
-      "weight": 48,
-      "recipe": "polukopch"
+      "weight": 58,
+      "recipe": "varenka"
     },
     {
-      "t": 32,
+      "t": 34,
       "sku": "sku-002",
       "station": "shpric",
       "status": "done",
       "waited": 0
-    },
-    {
-      "t": 32,
-      "sku": "sku-002",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 62
     },
     {
       "t": 34,
@@ -362,11 +354,19 @@
     },
     {
       "t": 34,
+      "sku": "sku-002",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 49
+    },
+    {
+      "t": 34,
       "sku": "sku-003",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 89
+      "weight": 52
     },
     {
       "t": 34,
@@ -374,23 +374,23 @@
       "station": "kuter",
       "status": "start",
       "waited": 34,
-      "weight": 54
+      "weight": 76
     },
     {
-      "t": 40,
+      "t": 44,
       "sku": "sku-002",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 40,
+      "t": 44,
       "sku": "sku-002",
       "station": "rama#2",
       "status": "on_rama",
       "waited": 0,
-      "weight": 62,
-      "recipe": "varenka"
+      "weight": 49,
+      "recipe": "polukopch"
     },
     {
       "t": 44,
@@ -412,7 +412,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 89
+      "weight": 52
     },
     {
       "t": 44,
@@ -420,7 +420,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 54
+      "weight": 76
     },
     {
       "t": 44,
@@ -428,7 +428,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 44,
-      "weight": 53
+      "weight": 62
     },
     {
       "t": 54,
@@ -440,10 +440,10 @@
     {
       "t": 54,
       "sku": "sku-003",
-      "station": "rama#1",
+      "station": "rama#2",
       "status": "on_rama",
       "waited": 0,
-      "weight": 137,
+      "weight": 101,
       "recipe": "polukopch"
     },
     {
@@ -455,34 +455,34 @@
     },
     {
       "t": 54,
-      "sku": "sku-004",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 54
-    },
-    {
-      "t": 58,
       "sku": "sku-005",
       "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 58,
+      "t": 54,
+      "sku": "sku-004",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 76
+    },
+    {
+      "t": 54,
       "sku": "sku-005",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 53
+      "weight": 62
     },
     {
-      "t": 58,
+      "t": 54,
       "sku": "sku-006",
       "station": "kuter",
       "status": "start",
-      "waited": 58,
-      "weight": 70
+      "waited": 54,
+      "weight": 66
     },
     {
       "t": 64,
@@ -494,67 +494,67 @@
     {
       "t": 64,
       "sku": "sku-004",
-      "station": "rama#1",
+      "station": "rama#2",
       "status": "on_rama",
       "waited": 0,
-      "weight": 191,
+      "weight": 177,
       "recipe": "polukopch"
     },
     {
       "t": 64,
-      "sku": "Rama#1",
+      "sku": "Rama#2",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 191,
+      "weight": 177,
       "recipe": "polukopch"
     },
     {
       "t": 64,
-      "sku": "Rama#1",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 191,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 66,
       "sku": "sku-005",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 66,
+      "t": 64,
+      "sku": "sku-006",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 64,
       "sku": "sku-005",
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 53
+      "weight": 62
     },
     {
-      "t": 72,
-      "sku": "sku-006",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 72,
+      "t": 64,
       "sku": "sku-006",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 70
+      "weight": 66
     },
     {
-      "t": 72,
+      "t": 64,
       "sku": "sku-007",
       "station": "kuter",
       "status": "start",
-      "waited": 72,
-      "weight": 67
+      "waited": 64,
+      "weight": 43
+    },
+    {
+      "t": 64,
+      "sku": "Rama#2",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 177,
+      "recipe": "polukopch"
     },
     {
       "t": 74,
@@ -566,2360 +566,1246 @@
     {
       "t": 74,
       "sku": "sku-005",
-      "station": "rama#2",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 115,
-      "recipe": "varenka"
-    },
-    {
-      "t": 80,
-      "sku": "sku-006",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 80,
-      "sku": "sku-006",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 70
-    },
-    {
-      "t": 82,
-      "sku": "sku-007",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 82,
-      "sku": "sku-007",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 67
-    },
-    {
-      "t": 82,
-      "sku": "sku-008",
-      "station": "kuter",
-      "status": "start",
-      "waited": 82,
-      "weight": 88
-    },
-    {
-      "t": 88,
-      "sku": "sku-006",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 88,
-      "sku": "sku-006",
-      "station": "rama#2",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 185,
-      "recipe": "varenka"
-    },
-    {
-      "t": 88,
-      "sku": "Rama#2",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 185,
-      "recipe": "varenka"
-    },
-    {
-      "t": 88,
-      "sku": "Rama#2",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 185,
-      "recipe": "varenka"
-    },
-    {
-      "t": 92,
-      "sku": "sku-007",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 92,
-      "sku": "sku-008",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 92,
-      "sku": "sku-007",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 67
-    },
-    {
-      "t": 92,
-      "sku": "sku-008",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 88
-    },
-    {
-      "t": 92,
-      "sku": "sku-009",
-      "station": "kuter",
-      "status": "start",
-      "waited": 92,
-      "weight": 88
-    },
-    {
-      "t": 102,
-      "sku": "sku-007",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 102,
-      "sku": "sku-007",
       "station": "rama#3",
       "status": "on_rama",
       "waited": 0,
-      "weight": 67,
+      "weight": 62,
       "recipe": "polukopch"
     },
     {
-      "t": 102,
-      "sku": "sku-008",
+      "t": 74,
+      "sku": "sku-006",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 102,
-      "sku": "sku-008",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 88
-    },
-    {
-      "t": 106,
-      "sku": "sku-009",
+      "t": 74,
+      "sku": "sku-007",
       "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 106,
-      "sku": "sku-009",
+      "t": 74,
+      "sku": "sku-006",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 66
+    },
+    {
+      "t": 74,
+      "sku": "sku-007",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 88
+      "weight": 43
     },
     {
-      "t": 106,
-      "sku": "sku-010",
+      "t": 74,
+      "sku": "sku-008",
       "station": "kuter",
       "status": "start",
-      "waited": 106,
-      "weight": 41
+      "waited": 74,
+      "weight": 49
     },
     {
-      "t": 112,
-      "sku": "sku-008",
+      "t": 84,
+      "sku": "sku-006",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 112,
-      "sku": "sku-008",
+      "t": 84,
+      "sku": "sku-006",
       "station": "rama#3",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 155,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 112,
-      "sku": "Rama#3",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 155,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 112,
-      "sku": "Rama#3",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 155,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 114,
-      "sku": "sku-009",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 114,
-      "sku": "sku-009",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 88
-    },
-    {
-      "t": 120,
-      "sku": "sku-010",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 120,
-      "sku": "sku-010",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 41
-    },
-    {
-      "t": 120,
-      "sku": "sku-011",
-      "station": "kuter",
-      "status": "start",
-      "waited": 120,
-      "weight": 46
-    },
-    {
-      "t": 122,
-      "sku": "sku-009",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 122,
-      "sku": "sku-009",
-      "station": "rama#4",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 88,
-      "recipe": "varenka"
-    },
-    {
-      "t": 128,
-      "sku": "sku-010",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 128,
-      "sku": "sku-010",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 41
-    },
-    {
-      "t": 130,
-      "sku": "sku-011",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 130,
-      "sku": "sku-011",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 46
-    },
-    {
-      "t": 130,
-      "sku": "sku-012",
-      "station": "kuter",
-      "status": "start",
-      "waited": 130,
-      "weight": 71
-    },
-    {
-      "t": 136,
-      "sku": "sku-010",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 136,
-      "sku": "sku-010",
-      "station": "rama#4",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 129,
-      "recipe": "varenka"
-    },
-    {
-      "t": 140,
-      "sku": "sku-011",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 140,
-      "sku": "sku-011",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 46
-    },
-    {
-      "t": 144,
-      "sku": "sku-012",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 144,
-      "sku": "sku-012",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 71
-    },
-    {
-      "t": 144,
-      "sku": "sku-013",
-      "station": "kuter",
-      "status": "start",
-      "waited": 144,
-      "weight": 56
-    },
-    {
-      "t": 150,
-      "sku": "sku-011",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 150,
-      "sku": "sku-011",
-      "station": "rama#5",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 46,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 152,
-      "sku": "sku-012",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 152,
-      "sku": "sku-012",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 71
-    },
-    {
-      "t": 158,
-      "sku": "sku-013",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 158,
-      "sku": "sku-013",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 56
-    },
-    {
-      "t": 158,
-      "sku": "sku-014",
-      "station": "kuter",
-      "status": "start",
-      "waited": 158,
-      "weight": 87
-    },
-    {
-      "t": 160,
-      "sku": "sku-012",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 160,
-      "sku": "sku-012",
-      "station": "rama#4",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "varenka"
-    },
-    {
-      "t": 160,
-      "sku": "Rama#4",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "varenka"
-    },
-    {
-      "t": 160,
-      "sku": "Rama#4",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "varenka"
-    },
-    {
-      "t": 166,
-      "sku": "sku-013",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 166,
-      "sku": "sku-013",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 56
-    },
-    {
-      "t": 172,
-      "sku": "sku-014",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 172,
-      "sku": "sku-014",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 87
-    },
-    {
-      "t": 172,
-      "sku": "sku-015",
-      "station": "kuter",
-      "status": "start",
-      "waited": 172,
-      "weight": 83
-    },
-    {
-      "t": 174,
-      "sku": "sku-013",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 174,
-      "sku": "sku-013",
-      "station": "rama#6",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 56,
-      "recipe": "varenka"
-    },
-    {
-      "t": 180,
-      "sku": "sku-014",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 180,
-      "sku": "sku-014",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 87
-    },
-    {
-      "t": 186,
-      "sku": "sku-015",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 186,
-      "sku": "sku-015",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 83
-    },
-    {
-      "t": 186,
-      "sku": "sku-016",
-      "station": "kuter",
-      "status": "start",
-      "waited": 186,
-      "weight": 46
-    },
-    {
-      "t": 188,
-      "sku": "Rama#2",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 188,
-      "sku": "Rama#2",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 185,
-      "recipe": "varenka"
-    },
-    {
-      "t": 188,
-      "sku": "sku-014",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 188,
-      "sku": "sku-014",
-      "station": "rama#6",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 143,
-      "recipe": "varenka"
-    },
-    {
-      "t": 194,
-      "sku": "sku-015",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 194,
-      "sku": "sku-015",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 83
-    },
-    {
-      "t": 196,
-      "sku": "sku-016",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 196,
-      "sku": "sku-016",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 46
-    },
-    {
-      "t": 196,
-      "sku": "sku-017",
-      "station": "kuter",
-      "status": "start",
-      "waited": 196,
-      "weight": 42
-    },
-    {
-      "t": 202,
-      "sku": "sku-015",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 202,
-      "sku": "sku-015",
-      "station": "rama#6",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 226,
-      "recipe": "varenka"
-    },
-    {
-      "t": 202,
-      "sku": "Rama#6",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 226,
-      "recipe": "varenka"
-    },
-    {
-      "t": 202,
-      "sku": "Rama#6",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 226,
-      "recipe": "varenka"
-    },
-    {
-      "t": 206,
-      "sku": "sku-016",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 206,
-      "sku": "sku-016",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 46
-    },
-    {
-      "t": 210,
-      "sku": "sku-017",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 210,
-      "sku": "sku-017",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 42
-    },
-    {
-      "t": 210,
-      "sku": "sku-018",
-      "station": "kuter",
-      "status": "start",
-      "waited": 210,
-      "weight": 85
-    },
-    {
-      "t": 216,
-      "sku": "sku-016",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 216,
-      "sku": "sku-016",
-      "station": "rama#5",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 92,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 218,
-      "sku": "sku-017",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 218,
-      "sku": "sku-017",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 42
-    },
-    {
-      "t": 220,
-      "sku": "sku-018",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 220,
-      "sku": "sku-018",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 85
-    },
-    {
-      "t": 220,
-      "sku": "sku-019",
-      "station": "kuter",
-      "status": "start",
-      "waited": 220,
-      "weight": 67
-    },
-    {
-      "t": 226,
-      "sku": "sku-017",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 226,
-      "sku": "sku-017",
-      "station": "rama#7",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 42,
-      "recipe": "varenka"
-    },
-    {
-      "t": 230,
-      "sku": "sku-018",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 230,
-      "sku": "sku-018",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 85
-    },
-    {
-      "t": 234,
-      "sku": "sku-019",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 234,
-      "sku": "sku-019",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 67
-    },
-    {
-      "t": 234,
-      "sku": "sku-020",
-      "station": "kuter",
-      "status": "start",
-      "waited": 234,
-      "weight": 94
-    },
-    {
-      "t": 240,
-      "sku": "sku-018",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 240,
-      "sku": "sku-018",
-      "station": "rama#5",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 177,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 240,
-      "sku": "Rama#5",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 177,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 240,
-      "sku": "Rama#5",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 177,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 242,
-      "sku": "sku-019",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 242,
-      "sku": "sku-019",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 67
-    },
-    {
-      "t": 244,
-      "sku": "sku-020",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 244,
-      "sku": "sku-020",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 94
-    },
-    {
-      "t": 244,
-      "sku": "sku-021",
-      "station": "kuter",
-      "status": "start",
-      "waited": 244,
-      "weight": 73
-    },
-    {
-      "t": 250,
-      "sku": "sku-019",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 250,
-      "sku": "sku-019",
-      "station": "rama#7",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 109,
-      "recipe": "varenka"
-    },
-    {
-      "t": 254,
-      "sku": "sku-020",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 254,
-      "sku": "sku-021",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 254,
-      "sku": "sku-020",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 94
-    },
-    {
-      "t": 254,
-      "sku": "sku-021",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 73
-    },
-    {
-      "t": 254,
-      "sku": "sku-022",
-      "station": "kuter",
-      "status": "start",
-      "waited": 254,
-      "weight": 68
-    },
-    {
-      "t": 260,
-      "sku": "Rama#4",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 260,
-      "sku": "Rama#4",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "varenka"
-    },
-    {
-      "t": 260,
-      "sku": "Rama#2",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 185,
-      "recipe": "varenka"
-    },
-    {
-      "t": 260,
-      "sku": "Rama#4",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "varenka"
-    },
-    {
-      "t": 264,
-      "sku": "sku-020",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 264,
-      "sku": "sku-020",
-      "station": "rama#8",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 94,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 264,
-      "sku": "sku-021",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 264,
-      "sku": "sku-022",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 264,
-      "sku": "sku-021",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 73
-    },
-    {
-      "t": 264,
-      "sku": "sku-022",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 68
-    },
-    {
-      "t": 264,
-      "sku": "sku-023",
-      "station": "kuter",
-      "status": "start",
-      "waited": 264,
-      "weight": 61
-    },
-    {
-      "t": 274,
-      "sku": "sku-021",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 274,
-      "sku": "sku-021",
-      "station": "rama#8",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 167,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 274,
-      "sku": "Rama#8",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 167,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 274,
-      "sku": "sku-022",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 274,
-      "sku": "sku-022",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 68
-    },
-    {
-      "t": 274,
-      "sku": "Rama#8",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 167,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 278,
-      "sku": "sku-023",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 278,
-      "sku": "sku-023",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 61
-    },
-    {
-      "t": 278,
-      "sku": "sku-024",
-      "station": "kuter",
-      "status": "start",
-      "waited": 278,
-      "weight": 61
-    },
-    {
-      "t": 284,
-      "sku": "sku-022",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 284,
-      "sku": "sku-022",
-      "station": "rama#9",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 68,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 286,
-      "sku": "sku-023",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 286,
-      "sku": "sku-023",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 61
-    },
-    {
-      "t": 292,
-      "sku": "sku-024",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 292,
-      "sku": "sku-024",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 61
-    },
-    {
-      "t": 292,
-      "sku": "sku-025",
-      "station": "kuter",
-      "status": "start",
-      "waited": 292,
-      "weight": 80
-    },
-    {
-      "t": 294,
-      "sku": "sku-023",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 294,
-      "sku": "sku-023",
-      "station": "rama#7",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 170,
-      "recipe": "varenka"
-    },
-    {
-      "t": 294,
-      "sku": "Rama#7",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 170,
-      "recipe": "varenka"
-    },
-    {
-      "t": 294,
-      "sku": "Rama#7",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 170,
-      "recipe": "varenka"
-    },
-    {
-      "t": 300,
-      "sku": "sku-024",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 300,
-      "sku": "sku-024",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 61
-    },
-    {
-      "t": 302,
-      "sku": "Rama#6",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 302,
-      "sku": "Rama#6",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 226,
-      "recipe": "varenka"
-    },
-    {
-      "t": 304,
-      "sku": "Rama#1",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 304,
-      "sku": "Rama#1",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 191,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 306,
-      "sku": "sku-025",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 306,
-      "sku": "sku-025",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 80
-    },
-    {
-      "t": 306,
-      "sku": "sku-026",
-      "station": "kuter",
-      "status": "start",
-      "waited": 306,
-      "weight": 60
-    },
-    {
-      "t": 308,
-      "sku": "sku-024",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 308,
-      "sku": "sku-024",
-      "station": "rama#10",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 61,
-      "recipe": "varenka"
-    },
-    {
-      "t": 314,
-      "sku": "sku-025",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 314,
-      "sku": "sku-025",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 80
-    },
-    {
-      "t": 316,
-      "sku": "sku-026",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 316,
-      "sku": "sku-026",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 60
-    },
-    {
-      "t": 316,
-      "sku": "sku-027",
-      "station": "kuter",
-      "status": "start",
-      "waited": 316,
-      "weight": 65
-    },
-    {
-      "t": 320,
-      "sku": "Rama#2",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 320,
-      "sku": "Rama#4",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 320,
-      "sku": "Rama#2",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 185,
-      "recipe": "varenka"
-    },
-    {
-      "t": 320,
-      "sku": "Rama#4",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "varenka"
-    },
-    {
-      "t": 322,
-      "sku": "sku-025",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 322,
-      "sku": "sku-025",
-      "station": "rama#10",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 141,
-      "recipe": "varenka"
-    },
-    {
-      "t": 326,
-      "sku": "sku-026",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 326,
-      "sku": "sku-026",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 60
-    },
-    {
-      "t": 330,
-      "sku": "sku-027",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 330,
-      "sku": "sku-027",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 65
-    },
-    {
-      "t": 330,
-      "sku": "sku-028",
-      "station": "kuter",
-      "status": "start",
-      "waited": 330,
-      "weight": 72
-    },
-    {
-      "t": 336,
-      "sku": "sku-026",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 336,
-      "sku": "sku-026",
-      "station": "rama#9",
       "status": "on_rama",
       "waited": 0,
       "weight": 128,
       "recipe": "polukopch"
     },
     {
-      "t": 338,
-      "sku": "sku-027",
+      "t": 84,
+      "sku": "sku-007",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 338,
-      "sku": "sku-027",
+      "t": 84,
+      "sku": "sku-007",
       "station": "klipsator",
       "status": "start",
       "waited": 0,
+      "weight": 43
+    },
+    {
+      "t": 88,
+      "sku": "sku-008",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 88,
+      "sku": "sku-008",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 49
+    },
+    {
+      "t": 88,
+      "sku": "sku-009",
+      "station": "kuter",
+      "status": "start",
+      "waited": 88,
+      "weight": 52
+    },
+    {
+      "t": 94,
+      "sku": "sku-007",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 94,
+      "sku": "sku-007",
+      "station": "rama#3",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 171,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 94,
+      "sku": "Rama#3",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 171,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 94,
+      "sku": "Rama#3",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 171,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 96,
+      "sku": "sku-008",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 96,
+      "sku": "sku-008",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 49
+    },
+    {
+      "t": 98,
+      "sku": "sku-009",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 98,
+      "sku": "sku-009",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 52
+    },
+    {
+      "t": 98,
+      "sku": "sku-010",
+      "station": "kuter",
+      "status": "start",
+      "waited": 98,
       "weight": 65
     },
     {
-      "t": 340,
-      "sku": "sku-028",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 340,
-      "sku": "sku-028",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 72
-    },
-    {
-      "t": 340,
-      "sku": "sku-029",
-      "station": "kuter",
-      "status": "start",
-      "waited": 340,
-      "weight": 92
-    },
-    {
-      "t": 346,
-      "sku": "sku-027",
+      "t": 104,
+      "sku": "sku-008",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 346,
-      "sku": "sku-027",
-      "station": "rama#10",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 206,
-      "recipe": "varenka"
-    },
-    {
-      "t": 346,
-      "sku": "Rama#10",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 206,
-      "recipe": "varenka"
-    },
-    {
-      "t": 346,
-      "sku": "Rama#10",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 206,
-      "recipe": "varenka"
-    },
-    {
-      "t": 350,
-      "sku": "Rama#2",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 350,
-      "sku": "Rama#4",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 350,
-      "sku": "sku-028",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 350,
-      "sku": "sku-029",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 350,
-      "sku": "sku-028",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 72
-    },
-    {
-      "t": 350,
-      "sku": "sku-029",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 92
-    },
-    {
-      "t": 350,
-      "sku": "sku-030",
-      "station": "kuter",
-      "status": "start",
-      "waited": 350,
-      "weight": 41
-    },
-    {
-      "t": 350,
-      "sku": "Rama#2",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 185,
-      "recipe": "varenka"
-    },
-    {
-      "t": 350,
-      "sku": "Rama#4",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "varenka"
-    },
-    {
-      "t": 352,
-      "sku": "Rama#3",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 352,
-      "sku": "Rama#3",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 155,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 352,
-      "sku": "Rama#1",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 191,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 352,
-      "sku": "Rama#3",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 155,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 360,
-      "sku": "sku-028",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 360,
-      "sku": "sku-028",
-      "station": "rama#9",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 360,
-      "sku": "Rama#9",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 360,
-      "sku": "sku-029",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 360,
-      "sku": "sku-029",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 92
-    },
-    {
-      "t": 360,
-      "sku": "Rama#9",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 364,
-      "sku": "sku-030",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 364,
-      "sku": "sku-030",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 41
-    },
-    {
-      "t": 364,
-      "sku": "sku-031",
-      "station": "kuter",
-      "status": "start",
-      "waited": 364,
-      "weight": 96
-    },
-    {
-      "t": 370,
-      "sku": "sku-029",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 370,
-      "sku": "sku-029",
-      "station": "rama#11",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 92,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 372,
-      "sku": "sku-030",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 372,
-      "sku": "sku-030",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 41
-    },
-    {
-      "t": 374,
-      "sku": "sku-031",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 374,
-      "sku": "sku-031",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 96
-    },
-    {
-      "t": 374,
-      "sku": "sku-032",
-      "station": "kuter",
-      "status": "start",
-      "waited": 374,
-      "weight": 66
-    },
-    {
-      "t": 380,
-      "sku": "sku-030",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 380,
-      "sku": "sku-030",
-      "station": "rama#12",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 41,
-      "recipe": "varenka"
-    },
-    {
-      "t": 384,
-      "sku": "sku-031",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 384,
-      "sku": "sku-031",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 96
-    },
-    {
-      "t": 388,
-      "sku": "sku-032",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 388,
-      "sku": "sku-032",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 66
-    },
-    {
-      "t": 388,
-      "sku": "sku-033",
-      "station": "kuter",
-      "status": "start",
-      "waited": 388,
-      "weight": 90
-    },
-    {
-      "t": 394,
-      "sku": "Rama#7",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 394,
-      "sku": "Rama#7",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 170,
-      "recipe": "varenka"
-    },
-    {
-      "t": 394,
-      "sku": "sku-031",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 394,
-      "sku": "sku-031",
-      "station": "rama#11",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 188,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 394,
-      "sku": "Rama#11",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 188,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 394,
-      "sku": "Rama#6",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 226,
-      "recipe": "varenka"
-    },
-    {
-      "t": 394,
-      "sku": "Rama#7",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 170,
-      "recipe": "varenka"
-    },
-    {
-      "t": 394,
-      "sku": "Rama#11",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 188,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 396,
-      "sku": "sku-032",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 396,
-      "sku": "sku-032",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 66
-    },
-    {
-      "t": 398,
-      "sku": "sku-033",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 398,
-      "sku": "sku-033",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 90
-    },
-    {
-      "t": 398,
-      "sku": "sku-034",
-      "station": "kuter",
-      "status": "start",
-      "waited": 398,
-      "weight": 50
-    },
-    {
-      "t": 400,
-      "sku": "Rama#2",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 400,
-      "sku": "Rama#4",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 400,
-      "sku": "Rama#2",
-      "station": "sklad",
-      "status": "stored",
-      "waited": 0,
-      "weight": 185
-    },
-    {
-      "t": 400,
-      "sku": "Rama#4",
-      "station": "sklad",
-      "status": "stored",
-      "waited": 0,
-      "weight": 200
-    },
-    {
-      "t": 404,
-      "sku": "sku-032",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 404,
-      "sku": "sku-032",
-      "station": "rama#12",
+      "t": 104,
+      "sku": "sku-008",
+      "station": "rama#1",
       "status": "on_rama",
       "waited": 0,
       "weight": 107,
       "recipe": "varenka"
     },
     {
-      "t": 408,
-      "sku": "sku-033",
+      "t": 108,
+      "sku": "sku-009",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 408,
-      "sku": "sku-033",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 90
-    },
-    {
-      "t": 412,
-      "sku": "sku-034",
+      "t": 108,
+      "sku": "sku-010",
       "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 412,
-      "sku": "sku-034",
+      "t": 108,
+      "sku": "sku-009",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 52
+    },
+    {
+      "t": 108,
+      "sku": "sku-010",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 50
+      "weight": 65
     },
     {
-      "t": 412,
-      "sku": "sku-035",
+      "t": 108,
+      "sku": "sku-011",
       "station": "kuter",
       "status": "start",
-      "waited": 412,
-      "weight": 54
+      "waited": 108,
+      "weight": 100
     },
     {
-      "t": 418,
-      "sku": "sku-033",
+      "t": 118,
+      "sku": "sku-009",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 418,
-      "sku": "sku-033",
-      "station": "rama#13",
+      "t": 118,
+      "sku": "sku-009",
+      "station": "rama#4",
       "status": "on_rama",
       "waited": 0,
-      "weight": 90,
+      "weight": 52,
       "recipe": "polukopch"
     },
     {
-      "t": 420,
-      "sku": "sku-034",
+      "t": 118,
+      "sku": "sku-010",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 420,
-      "sku": "sku-034",
+      "t": 118,
+      "sku": "sku-010",
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 50
+      "weight": 65
     },
     {
-      "t": 426,
-      "sku": "sku-035",
+      "t": 122,
+      "sku": "sku-011",
       "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 426,
-      "sku": "sku-035",
+      "t": 122,
+      "sku": "sku-011",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 54
+      "weight": 100
     },
     {
-      "t": 426,
-      "sku": "sku-036",
+      "t": 122,
+      "sku": "sku-012",
       "station": "kuter",
       "status": "start",
-      "waited": 426,
-      "weight": 49
+      "waited": 122,
+      "weight": 47
     },
     {
-      "t": 428,
-      "sku": "sku-034",
+      "t": 128,
+      "sku": "sku-010",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 428,
-      "sku": "sku-034",
-      "station": "rama#12",
+      "t": 128,
+      "sku": "sku-010",
+      "station": "rama#4",
       "status": "on_rama",
       "waited": 0,
-      "weight": 157,
+      "weight": 117,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 130,
+      "sku": "sku-011",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 130,
+      "sku": "sku-011",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 100
+    },
+    {
+      "t": 132,
+      "sku": "sku-012",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 132,
+      "sku": "sku-012",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 47
+    },
+    {
+      "t": 132,
+      "sku": "sku-013",
+      "station": "kuter",
+      "status": "start",
+      "waited": 132,
+      "weight": 85
+    },
+    {
+      "t": 138,
+      "sku": "sku-011",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 138,
+      "sku": "sku-011",
+      "station": "rama#1",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 207,
       "recipe": "varenka"
     },
     {
-      "t": 428,
-      "sku": "Rama#12",
+      "t": 138,
+      "sku": "Rama#1",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 157,
+      "weight": 207,
       "recipe": "varenka"
     },
     {
-      "t": 428,
-      "sku": "Rama#12",
+      "t": 138,
+      "sku": "Rama#1",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 157,
+      "weight": 207,
       "recipe": "varenka"
     },
     {
-      "t": 434,
-      "sku": "sku-035",
+      "t": 142,
+      "sku": "sku-012",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 434,
-      "sku": "sku-035",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 54
-    },
-    {
-      "t": 436,
-      "sku": "sku-036",
+      "t": 142,
+      "sku": "sku-013",
       "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 436,
-      "sku": "sku-036",
+      "t": 142,
+      "sku": "sku-012",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 47
+    },
+    {
+      "t": 142,
+      "sku": "sku-013",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 49
+      "weight": 85
     },
     {
-      "t": 436,
-      "sku": "sku-037",
+      "t": 142,
+      "sku": "sku-014",
       "station": "kuter",
       "status": "start",
-      "waited": 436,
-      "weight": 73
+      "waited": 142,
+      "weight": 81
     },
     {
-      "t": 442,
-      "sku": "sku-035",
+      "t": 152,
+      "sku": "sku-012",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 442,
-      "sku": "sku-035",
-      "station": "rama#14",
+      "t": 152,
+      "sku": "sku-012",
+      "station": "rama#4",
       "status": "on_rama",
       "waited": 0,
-      "weight": 54,
+      "weight": 164,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 152,
+      "sku": "Rama#4",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 164,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 152,
+      "sku": "sku-013",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 152,
+      "sku": "sku-014",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 152,
+      "sku": "sku-013",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 85
+    },
+    {
+      "t": 152,
+      "sku": "sku-014",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 81
+    },
+    {
+      "t": 152,
+      "sku": "sku-015",
+      "station": "kuter",
+      "status": "start",
+      "waited": 152,
+      "weight": 68
+    },
+    {
+      "t": 152,
+      "sku": "Rama#4",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 164,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 162,
+      "sku": "sku-013",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 162,
+      "sku": "sku-013",
+      "station": "rama#5",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 85,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 162,
+      "sku": "sku-014",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 162,
+      "sku": "sku-014",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 81
+    },
+    {
+      "t": 166,
+      "sku": "sku-015",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 166,
+      "sku": "sku-015",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 68
+    },
+    {
+      "t": 166,
+      "sku": "sku-016",
+      "station": "kuter",
+      "status": "start",
+      "waited": 166,
+      "weight": 76
+    },
+    {
+      "t": 172,
+      "sku": "sku-014",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 172,
+      "sku": "sku-014",
+      "station": "rama#5",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 166,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 172,
+      "sku": "Rama#5",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 166,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 172,
+      "sku": "Rama#5",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 166,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 174,
+      "sku": "sku-015",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 174,
+      "sku": "sku-015",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 68
+    },
+    {
+      "t": 180,
+      "sku": "sku-016",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 180,
+      "sku": "sku-016",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 76
+    },
+    {
+      "t": 180,
+      "sku": "sku-017",
+      "station": "kuter",
+      "status": "start",
+      "waited": 180,
+      "weight": 45
+    },
+    {
+      "t": 182,
+      "sku": "sku-015",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 182,
+      "sku": "sku-015",
+      "station": "rama#6",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 68,
       "recipe": "varenka"
     },
     {
-      "t": 446,
-      "sku": "Rama#10",
+      "t": 188,
+      "sku": "sku-016",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 188,
+      "sku": "sku-016",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 76
+    },
+    {
+      "t": 190,
+      "sku": "sku-017",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 190,
+      "sku": "sku-017",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 45
+    },
+    {
+      "t": 190,
+      "sku": "sku-018",
+      "station": "kuter",
+      "status": "start",
+      "waited": 190,
+      "weight": 63
+    },
+    {
+      "t": 196,
+      "sku": "sku-016",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 196,
+      "sku": "sku-016",
+      "station": "rama#6",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 144,
+      "recipe": "varenka"
+    },
+    {
+      "t": 200,
+      "sku": "sku-017",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 200,
+      "sku": "sku-018",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 200,
+      "sku": "sku-017",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 45
+    },
+    {
+      "t": 200,
+      "sku": "sku-018",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 63
+    },
+    {
+      "t": 200,
+      "sku": "sku-019",
+      "station": "kuter",
+      "status": "start",
+      "waited": 200,
+      "weight": 66
+    },
+    {
+      "t": 210,
+      "sku": "sku-017",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 210,
+      "sku": "sku-017",
+      "station": "rama#7",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 45,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 210,
+      "sku": "sku-018",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 210,
+      "sku": "sku-018",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 63
+    },
+    {
+      "t": 214,
+      "sku": "sku-019",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 214,
+      "sku": "sku-019",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 66
+    },
+    {
+      "t": 214,
+      "sku": "sku-020",
+      "station": "kuter",
+      "status": "start",
+      "waited": 214,
+      "weight": 77
+    },
+    {
+      "t": 220,
+      "sku": "sku-018",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 220,
+      "sku": "sku-018",
+      "station": "rama#7",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 108,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 222,
+      "sku": "sku-019",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 222,
+      "sku": "sku-019",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 66
+    },
+    {
+      "t": 224,
+      "sku": "sku-020",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 224,
+      "sku": "sku-020",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 77
+    },
+    {
+      "t": 224,
+      "sku": "sku-021",
+      "station": "kuter",
+      "status": "start",
+      "waited": 224,
+      "weight": 93
+    },
+    {
+      "t": 230,
+      "sku": "sku-019",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 230,
+      "sku": "sku-019",
+      "station": "rama#6",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 210,
+      "recipe": "varenka"
+    },
+    {
+      "t": 230,
+      "sku": "Rama#6",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 210,
+      "recipe": "varenka"
+    },
+    {
+      "t": 230,
+      "sku": "Rama#6",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 210,
+      "recipe": "varenka"
+    },
+    {
+      "t": 234,
+      "sku": "sku-020",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 234,
+      "sku": "sku-021",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 234,
+      "sku": "sku-020",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 77
+    },
+    {
+      "t": 234,
+      "sku": "sku-021",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 93
+    },
+    {
+      "t": 234,
+      "sku": "sku-022",
+      "station": "kuter",
+      "status": "start",
+      "waited": 234,
+      "weight": 48
+    },
+    {
+      "t": 238,
+      "sku": "Rama#1",
       "station": "osadka",
       "status": "done",
       "waited": 0,
       "recipe": "varenka"
     },
     {
-      "t": 446,
-      "sku": "Rama#10",
+      "t": 238,
+      "sku": "Rama#1",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 206,
+      "weight": 207,
       "recipe": "varenka"
     },
     {
-      "t": 446,
-      "sku": "sku-036",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 446,
-      "sku": "sku-037",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 446,
-      "sku": "sku-036",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 49
-    },
-    {
-      "t": 446,
-      "sku": "sku-037",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 73
-    },
-    {
-      "t": 446,
-      "sku": "sku-038",
-      "station": "kuter",
-      "status": "start",
-      "waited": 446,
-      "weight": 41
-    },
-    {
-      "t": 454,
-      "sku": "Rama#6",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 454,
-      "sku": "Rama#7",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 454,
-      "sku": "Rama#6",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 226,
-      "recipe": "varenka"
-    },
-    {
-      "t": 454,
-      "sku": "Rama#7",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 170,
-      "recipe": "varenka"
-    },
-    {
-      "t": 456,
-      "sku": "sku-036",
+      "t": 244,
+      "sku": "sku-020",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 456,
-      "sku": "sku-036",
-      "station": "rama#13",
+      "t": 244,
+      "sku": "sku-020",
+      "station": "rama#7",
       "status": "on_rama",
       "waited": 0,
-      "weight": 139,
+      "weight": 185,
       "recipe": "polukopch"
     },
     {
-      "t": 456,
-      "sku": "sku-037",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 456,
-      "sku": "sku-037",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 73
-    },
-    {
-      "t": 460,
-      "sku": "sku-038",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 460,
-      "sku": "sku-038",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 41
-    },
-    {
-      "t": 460,
-      "sku": "sku-039",
-      "station": "kuter",
-      "status": "start",
-      "waited": 460,
-      "weight": 63
-    },
-    {
-      "t": 462,
-      "sku": "Rama#1",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 462,
-      "sku": "Rama#3",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 462,
-      "sku": "Rama#1",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 191,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 462,
-      "sku": "Rama#3",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 155,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 466,
-      "sku": "sku-037",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 466,
-      "sku": "sku-037",
-      "station": "rama#13",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 212,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 466,
-      "sku": "Rama#13",
+      "t": 244,
+      "sku": "Rama#7",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 212,
+      "weight": 185,
       "recipe": "polukopch"
     },
     {
-      "t": 466,
-      "sku": "Rama#13",
+      "t": 244,
+      "sku": "sku-021",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 244,
+      "sku": "sku-021",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 93
+    },
+    {
+      "t": 244,
+      "sku": "Rama#7",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 212,
+      "weight": 185,
       "recipe": "polukopch"
     },
     {
-      "t": 468,
-      "sku": "sku-038",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 468,
-      "sku": "sku-038",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 41
-    },
-    {
-      "t": 474,
-      "sku": "sku-039",
+      "t": 248,
+      "sku": "sku-022",
       "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 474,
-      "sku": "sku-039",
+      "t": 248,
+      "sku": "sku-022",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 63
+      "weight": 48
     },
     {
-      "t": 474,
-      "sku": "sku-040",
+      "t": 248,
+      "sku": "sku-023",
       "station": "kuter",
       "status": "start",
-      "waited": 474,
-      "weight": 80
+      "waited": 248,
+      "weight": 58
     },
     {
-      "t": 476,
-      "sku": "sku-038",
+      "t": 254,
+      "sku": "sku-021",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 476,
-      "sku": "sku-038",
-      "station": "rama#14",
+      "t": 254,
+      "sku": "sku-021",
+      "station": "rama#8",
       "status": "on_rama",
       "waited": 0,
-      "weight": 95,
+      "weight": 93,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 256,
+      "sku": "sku-022",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 256,
+      "sku": "sku-022",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 48
+    },
+    {
+      "t": 258,
+      "sku": "sku-023",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 258,
+      "sku": "sku-023",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 58
+    },
+    {
+      "t": 258,
+      "sku": "sku-024",
+      "station": "kuter",
+      "status": "start",
+      "waited": 258,
+      "weight": 94
+    },
+    {
+      "t": 264,
+      "sku": "sku-022",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 264,
+      "sku": "sku-022",
+      "station": "rama#9",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 48,
       "recipe": "varenka"
     },
     {
-      "t": 480,
-      "sku": "Rama#5",
+      "t": 268,
+      "sku": "sku-023",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 268,
+      "sku": "sku-023",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 58
+    },
+    {
+      "t": 272,
+      "sku": "sku-024",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 272,
+      "sku": "sku-024",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 94
+    },
+    {
+      "t": 272,
+      "sku": "sku-025",
+      "station": "kuter",
+      "status": "start",
+      "waited": 272,
+      "weight": 68
+    },
+    {
+      "t": 278,
+      "sku": "sku-023",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 278,
+      "sku": "sku-023",
+      "station": "rama#8",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 151,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 278,
+      "sku": "Rama#8",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 151,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 278,
+      "sku": "Rama#8",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 151,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 280,
+      "sku": "sku-024",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 280,
+      "sku": "sku-024",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 94
+    },
+    {
+      "t": 282,
+      "sku": "sku-025",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 282,
+      "sku": "sku-025",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 68
+    },
+    {
+      "t": 282,
+      "sku": "sku-026",
+      "station": "kuter",
+      "status": "start",
+      "waited": 282,
+      "weight": 78
+    },
+    {
+      "t": 288,
+      "sku": "sku-024",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 288,
+      "sku": "sku-024",
+      "station": "rama#9",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 142,
+      "recipe": "varenka"
+    },
+    {
+      "t": 292,
+      "sku": "sku-025",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 292,
+      "sku": "sku-025",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 68
+    },
+    {
+      "t": 296,
+      "sku": "sku-026",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 296,
+      "sku": "sku-026",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 78
+    },
+    {
+      "t": 296,
+      "sku": "sku-027",
+      "station": "kuter",
+      "status": "start",
+      "waited": 296,
+      "weight": 74
+    },
+    {
+      "t": 302,
+      "sku": "sku-025",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 302,
+      "sku": "sku-025",
+      "station": "rama#10",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 68,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 304,
+      "sku": "Rama#2",
       "station": "osadka",
       "status": "done",
       "waited": 0,
       "recipe": "polukopch"
     },
     {
-      "t": 480,
-      "sku": "Rama#5",
+      "t": 304,
+      "sku": "Rama#2",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
@@ -2927,930 +1813,2115 @@
       "recipe": "polukopch"
     },
     {
-      "t": 482,
-      "sku": "sku-039",
+      "t": 304,
+      "sku": "sku-026",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 482,
-      "sku": "sku-039",
+      "t": 304,
+      "sku": "sku-026",
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 63
+      "weight": 78
     },
     {
-      "t": 484,
-      "sku": "Rama#6",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 484,
-      "sku": "Rama#7",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 484,
-      "sku": "sku-040",
+      "t": 306,
+      "sku": "sku-027",
       "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 484,
-      "sku": "sku-040",
+      "t": 306,
+      "sku": "sku-027",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 80
+      "weight": 74
     },
     {
-      "t": 484,
-      "sku": "sku-041",
+      "t": 306,
+      "sku": "sku-028",
       "station": "kuter",
       "status": "start",
-      "waited": 484,
-      "weight": 44
+      "waited": 306,
+      "weight": 92
     },
     {
-      "t": 484,
-      "sku": "Rama#6",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 226,
-      "recipe": "varenka"
-    },
-    {
-      "t": 484,
-      "sku": "Rama#7",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 170,
-      "recipe": "varenka"
-    },
-    {
-      "t": 490,
-      "sku": "sku-039",
+      "t": 312,
+      "sku": "sku-026",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 490,
-      "sku": "sku-039",
-      "station": "rama#14",
+      "t": 312,
+      "sku": "sku-026",
+      "station": "rama#9",
       "status": "on_rama",
       "waited": 0,
-      "weight": 158,
+      "weight": 220,
       "recipe": "varenka"
     },
     {
-      "t": 490,
-      "sku": "Rama#14",
+      "t": 312,
+      "sku": "Rama#9",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 158,
+      "weight": 220,
       "recipe": "varenka"
     },
     {
-      "t": 490,
-      "sku": "Rama#14",
+      "t": 312,
+      "sku": "Rama#9",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 158,
+      "weight": 220,
       "recipe": "varenka"
     },
     {
-      "t": 492,
-      "sku": "Rama#1",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 492,
-      "sku": "Rama#3",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 492,
-      "sku": "Rama#1",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 191,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 492,
-      "sku": "Rama#3",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 155,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 494,
-      "sku": "sku-040",
+      "t": 316,
+      "sku": "sku-027",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 494,
-      "sku": "sku-041",
+      "t": 316,
+      "sku": "sku-027",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 74
+    },
+    {
+      "t": 320,
+      "sku": "sku-028",
       "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 494,
-      "sku": "sku-040",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 80
-    },
-    {
-      "t": 494,
-      "sku": "sku-041",
+      "t": 320,
+      "sku": "sku-028",
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 44
+      "weight": 92
     },
     {
-      "t": 494,
-      "sku": "sku-042",
+      "t": 320,
+      "sku": "sku-029",
       "station": "kuter",
       "status": "start",
-      "waited": 494,
-      "weight": 49
+      "waited": 320,
+      "weight": 54
     },
     {
-      "t": 504,
-      "sku": "sku-040",
+      "t": 326,
+      "sku": "sku-027",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 504,
-      "sku": "sku-040",
-      "station": "rama#15",
+      "t": 326,
+      "sku": "sku-027",
+      "station": "rama#10",
       "status": "on_rama",
       "waited": 0,
-      "weight": 80,
+      "weight": 142,
       "recipe": "polukopch"
     },
     {
-      "t": 504,
-      "sku": "sku-041",
+      "t": 328,
+      "sku": "sku-028",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 504,
-      "sku": "sku-041",
+      "t": 328,
+      "sku": "sku-028",
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 44
+      "weight": 92
     },
     {
-      "t": 508,
-      "sku": "sku-042",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 508,
-      "sku": "sku-042",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 49
-    },
-    {
-      "t": 508,
-      "sku": "sku-043",
-      "station": "kuter",
-      "status": "start",
-      "waited": 508,
-      "weight": 96
-    },
-    {
-      "t": 514,
-      "sku": "Rama#8",
+      "t": 330,
+      "sku": "Rama#6",
       "station": "osadka",
       "status": "done",
       "waited": 0,
-      "recipe": "polukopch"
+      "recipe": "varenka"
     },
     {
-      "t": 514,
-      "sku": "Rama#8",
+      "t": 330,
+      "sku": "Rama#6",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 167,
+      "weight": 210,
+      "recipe": "varenka"
+    },
+    {
+      "t": 330,
+      "sku": "Rama#1",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 207,
+      "recipe": "varenka",
+      "section": 1
+    },
+    {
+      "t": 330,
+      "sku": "Rama#6",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 210,
+      "recipe": "varenka",
+      "section": 1
+    },
+    {
+      "t": 334,
+      "sku": "Rama#3",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
       "recipe": "polukopch"
     },
     {
-      "t": 514,
-      "sku": "sku-041",
-      "station": "klipsator",
+      "t": 334,
+      "sku": "Rama#3",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 171,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 334,
+      "sku": "sku-029",
+      "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 514,
-      "sku": "sku-041",
-      "station": "rama#15",
-      "status": "on_rama",
+      "t": 334,
+      "sku": "sku-029",
+      "station": "shpric",
+      "status": "start",
       "waited": 0,
-      "weight": 124,
-      "recipe": "polukopch"
+      "weight": 54
     },
     {
-      "t": 514,
-      "sku": "Rama#5",
+      "t": 334,
+      "sku": "sku-030",
+      "station": "kuter",
+      "status": "start",
+      "waited": 334,
+      "weight": 100
+    },
+    {
+      "t": 334,
+      "sku": "Rama#2",
       "station": "termokamera",
       "status": "start",
       "waited": 0,
       "weight": 177,
-      "recipe": "polukopch"
+      "recipe": "polukopch",
+      "section": 2
     },
     {
-      "t": 514,
-      "sku": "Rama#8",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 167,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 516,
-      "sku": "sku-042",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 516,
-      "sku": "sku-042",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 49
-    },
-    {
-      "t": 522,
-      "sku": "sku-043",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 522,
-      "sku": "sku-043",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 96
-    },
-    {
-      "t": 522,
-      "sku": "sku-044",
-      "station": "kuter",
-      "status": "start",
-      "waited": 522,
-      "weight": 44
-    },
-    {
-      "t": 524,
-      "sku": "sku-042",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 524,
-      "sku": "sku-042",
-      "station": "rama#16",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 49,
-      "recipe": "varenka"
-    },
-    {
-      "t": 528,
-      "sku": "Rama#12",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 528,
-      "sku": "Rama#12",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 157,
-      "recipe": "varenka"
-    },
-    {
-      "t": 528,
-      "sku": "Rama#10",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 206,
-      "recipe": "varenka"
-    },
-    {
-      "t": 528,
-      "sku": "Rama#12",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 157,
-      "recipe": "varenka"
-    },
-    {
-      "t": 530,
-      "sku": "sku-043",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 530,
-      "sku": "sku-043",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 96
-    },
-    {
-      "t": 532,
-      "sku": "sku-044",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 532,
-      "sku": "sku-044",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 44
-    },
-    {
-      "t": 532,
-      "sku": "sku-045",
-      "station": "kuter",
-      "status": "start",
-      "waited": 532,
-      "weight": 98
-    },
-    {
-      "t": 534,
-      "sku": "Rama#6",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 534,
-      "sku": "Rama#7",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 534,
-      "sku": "Rama#6",
-      "station": "sklad",
-      "status": "stored",
-      "waited": 0,
-      "weight": 226
-    },
-    {
-      "t": 534,
-      "sku": "Rama#7",
-      "station": "sklad",
-      "status": "stored",
-      "waited": 0,
-      "weight": 170
-    },
-    {
-      "t": 538,
-      "sku": "sku-043",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 538,
-      "sku": "sku-043",
-      "station": "rama#16",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 145,
-      "recipe": "varenka"
-    },
-    {
-      "t": 542,
-      "sku": "Rama#1",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 542,
+      "t": 334,
       "sku": "Rama#3",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 542,
-      "sku": "sku-044",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 542,
-      "sku": "sku-045",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 542,
-      "sku": "Rama#1",
-      "station": "sklad",
-      "status": "stored",
-      "waited": 0,
-      "weight": 191
-    },
-    {
-      "t": 542,
-      "sku": "sku-044",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 44
-    },
-    {
-      "t": 542,
-      "sku": "sku-045",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 98
-    },
-    {
-      "t": 542,
-      "sku": "sku-046",
-      "station": "kuter",
-      "status": "start",
-      "waited": 542,
-      "weight": 42
-    },
-    {
-      "t": 552,
-      "sku": "sku-044",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 552,
-      "sku": "sku-044",
-      "station": "rama#15",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 168,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 552,
-      "sku": "Rama#15",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 168,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 552,
-      "sku": "sku-045",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 552,
-      "sku": "sku-045",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 98
-    },
-    {
-      "t": 552,
-      "sku": "Rama#15",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 168,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 556,
-      "sku": "sku-046",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 556,
-      "sku": "sku-046",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 42
-    },
-    {
-      "t": 556,
-      "sku": "sku-047",
-      "station": "kuter",
-      "status": "start",
-      "waited": 556,
-      "weight": 56
-    },
-    {
-      "t": 562,
-      "sku": "sku-045",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 562,
-      "sku": "sku-045",
-      "station": "rama#17",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 98,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 564,
-      "sku": "sku-046",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 564,
-      "sku": "sku-046",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 42
-    },
-    {
-      "t": 570,
-      "sku": "sku-047",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 570,
-      "sku": "sku-047",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 56
-    },
-    {
-      "t": 570,
-      "sku": "sku-048",
-      "station": "kuter",
-      "status": "start",
-      "waited": 570,
-      "weight": 48
-    },
-    {
-      "t": 572,
-      "sku": "sku-046",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 572,
-      "sku": "sku-046",
-      "station": "rama#16",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 187,
-      "recipe": "varenka"
-    },
-    {
-      "t": 572,
-      "sku": "Rama#16",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 187,
-      "recipe": "varenka"
-    },
-    {
-      "t": 572,
-      "sku": "Rama#16",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 187,
-      "recipe": "varenka"
-    },
-    {
-      "t": 578,
-      "sku": "sku-047",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 578,
-      "sku": "sku-047",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 56
-    },
-    {
-      "t": 580,
-      "sku": "sku-048",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 580,
-      "sku": "sku-048",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 48
-    },
-    {
-      "t": 580,
-      "sku": "sku-049",
-      "station": "kuter",
-      "status": "start",
-      "waited": 580,
-      "weight": 71
-    },
-    {
-      "t": 586,
-      "sku": "sku-047",
-      "station": "klipsator",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 586,
-      "sku": "sku-047",
-      "station": "rama#18",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 56,
-      "recipe": "varenka"
-    },
-    {
-      "t": 588,
-      "sku": "Rama#10",
       "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 588,
-      "sku": "Rama#12",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 588,
-      "sku": "Rama#10",
-      "station": "ohlazdenie",
       "status": "start",
       "waited": 0,
-      "weight": 206,
-      "recipe": "varenka"
+      "weight": 171,
+      "recipe": "polukopch",
+      "section": 2
     },
     {
-      "t": 588,
-      "sku": "Rama#12",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 157,
-      "recipe": "varenka"
-    },
-    {
-      "t": 590,
-      "sku": "Rama#14",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 590,
-      "sku": "Rama#14",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 158,
-      "recipe": "varenka"
-    },
-    {
-      "t": 590,
-      "sku": "sku-048",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 590,
-      "sku": "sku-049",
-      "station": "kuter",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 590,
-      "sku": "sku-048",
-      "station": "klipsator",
-      "status": "start",
-      "waited": 0,
-      "weight": 48
-    },
-    {
-      "t": 590,
-      "sku": "sku-049",
-      "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 71
-    },
-    {
-      "t": 590,
-      "sku": "sku-050",
-      "station": "kuter",
-      "status": "start",
-      "waited": 590,
-      "weight": 62
-    },
-    {
-      "t": 600,
-      "sku": "Rama#9",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 600,
-      "sku": "Rama#9",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 600,
-      "sku": "sku-048",
+      "t": 336,
+      "sku": "sku-028",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 600,
-      "sku": "sku-048",
-      "station": "rama#17",
+      "t": 336,
+      "sku": "sku-028",
+      "station": "rama#11",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 92,
+      "recipe": "varenka"
+    },
+    {
+      "t": 342,
+      "sku": "sku-029",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 342,
+      "sku": "sku-029",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 54
+    },
+    {
+      "t": 344,
+      "sku": "sku-030",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 344,
+      "sku": "sku-030",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 100
+    },
+    {
+      "t": 344,
+      "sku": "sku-031",
+      "station": "kuter",
+      "status": "start",
+      "waited": 344,
+      "weight": 74
+    },
+    {
+      "t": 350,
+      "sku": "sku-029",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 350,
+      "sku": "sku-029",
+      "station": "rama#11",
       "status": "on_rama",
       "waited": 0,
       "weight": 146,
+      "recipe": "varenka"
+    },
+    {
+      "t": 354,
+      "sku": "sku-030",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 354,
+      "sku": "sku-031",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 354,
+      "sku": "sku-030",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 100
+    },
+    {
+      "t": 354,
+      "sku": "sku-031",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 74
+    },
+    {
+      "t": 354,
+      "sku": "sku-032",
+      "station": "kuter",
+      "status": "start",
+      "waited": 354,
+      "weight": 95
+    },
+    {
+      "t": 364,
+      "sku": "sku-030",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 364,
+      "sku": "sku-030",
+      "station": "rama#10",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 242,
       "recipe": "polukopch"
     },
     {
-      "t": 600,
+      "t": 364,
+      "sku": "Rama#10",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 242,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 364,
+      "sku": "sku-031",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 364,
+      "sku": "sku-032",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 364,
+      "sku": "sku-031",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 74
+    },
+    {
+      "t": 364,
+      "sku": "sku-032",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 95
+    },
+    {
+      "t": 364,
+      "sku": "sku-033",
+      "station": "kuter",
+      "status": "start",
+      "waited": 364,
+      "weight": 60
+    },
+    {
+      "t": 364,
+      "sku": "Rama#10",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 242,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 374,
+      "sku": "sku-031",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 374,
+      "sku": "sku-031",
+      "station": "rama#12",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 74,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 374,
+      "sku": "sku-032",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 374,
+      "sku": "sku-033",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 374,
+      "sku": "sku-032",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 95
+    },
+    {
+      "t": 374,
+      "sku": "sku-033",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 60
+    },
+    {
+      "t": 374,
+      "sku": "sku-034",
+      "station": "kuter",
+      "status": "start",
+      "waited": 374,
+      "weight": 63
+    },
+    {
+      "t": 384,
+      "sku": "sku-032",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 384,
+      "sku": "sku-032",
+      "station": "rama#12",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 169,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 384,
+      "sku": "Rama#12",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 169,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 384,
+      "sku": "sku-033",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 384,
+      "sku": "sku-034",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 384,
+      "sku": "sku-033",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 60
+    },
+    {
+      "t": 384,
+      "sku": "sku-034",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 63
+    },
+    {
+      "t": 384,
+      "sku": "sku-035",
+      "station": "kuter",
+      "status": "start",
+      "waited": 384,
+      "weight": 100
+    },
+    {
+      "t": 384,
+      "sku": "Rama#12",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 169,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 390,
+      "sku": "Rama#1",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka",
+      "section": 1
+    },
+    {
+      "t": 390,
+      "sku": "Rama#6",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka",
+      "section": 1
+    },
+    {
+      "t": 390,
+      "sku": "Rama#1",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 207,
+      "recipe": "varenka"
+    },
+    {
+      "t": 390,
+      "sku": "Rama#6",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 210,
+      "recipe": "varenka"
+    },
+    {
+      "t": 392,
+      "sku": "Rama#4",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 392,
+      "sku": "Rama#4",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 164,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 394,
+      "sku": "sku-033",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 394,
+      "sku": "sku-033",
+      "station": "rama#13",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 60,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 394,
+      "sku": "sku-034",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 394,
+      "sku": "sku-034",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 63
+    },
+    {
+      "t": 398,
+      "sku": "sku-035",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 398,
+      "sku": "sku-035",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 100
+    },
+    {
+      "t": 398,
+      "sku": "sku-036",
+      "station": "kuter",
+      "status": "start",
+      "waited": 398,
+      "weight": 50
+    },
+    {
+      "t": 404,
+      "sku": "sku-034",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 404,
+      "sku": "sku-034",
+      "station": "rama#13",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 123,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 406,
+      "sku": "sku-035",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 406,
+      "sku": "sku-035",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 100
+    },
+    {
+      "t": 412,
+      "sku": "Rama#5",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 412,
+      "sku": "Rama#5",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 166,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 412,
+      "sku": "Rama#9",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 412,
+      "sku": "Rama#9",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 220,
+      "recipe": "varenka"
+    },
+    {
+      "t": 412,
+      "sku": "sku-036",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 412,
+      "sku": "sku-036",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 50
+    },
+    {
+      "t": 412,
+      "sku": "sku-037",
+      "station": "kuter",
+      "status": "start",
+      "waited": 412,
+      "weight": 67
+    },
+    {
+      "t": 412,
+      "sku": "Rama#4",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 164,
+      "recipe": "polukopch",
+      "section": 3
+    },
+    {
+      "t": 412,
+      "sku": "Rama#5",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 166,
+      "recipe": "polukopch",
+      "section": 3
+    },
+    {
+      "t": 414,
+      "sku": "sku-035",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 414,
+      "sku": "sku-035",
+      "station": "rama#11",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 246,
+      "recipe": "varenka"
+    },
+    {
+      "t": 414,
+      "sku": "Rama#11",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 246,
+      "recipe": "varenka"
+    },
+    {
+      "t": 414,
+      "sku": "Rama#11",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 246,
+      "recipe": "varenka"
+    },
+    {
+      "t": 420,
+      "sku": "Rama#1",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 420,
+      "sku": "Rama#6",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 420,
+      "sku": "sku-036",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 420,
+      "sku": "sku-036",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 50
+    },
+    {
+      "t": 420,
+      "sku": "Rama#1",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 207,
+      "recipe": "varenka"
+    },
+    {
+      "t": 420,
+      "sku": "Rama#6",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 210,
+      "recipe": "varenka"
+    },
+    {
+      "t": 426,
+      "sku": "sku-037",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 426,
+      "sku": "sku-037",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 67
+    },
+    {
+      "t": 426,
+      "sku": "sku-038",
+      "station": "kuter",
+      "status": "start",
+      "waited": 426,
+      "weight": 83
+    },
+    {
+      "t": 428,
+      "sku": "sku-036",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 428,
+      "sku": "sku-036",
+      "station": "rama#14",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 50,
+      "recipe": "varenka"
+    },
+    {
+      "t": 434,
+      "sku": "sku-037",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 434,
+      "sku": "sku-037",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 67
+    },
+    {
+      "t": 440,
+      "sku": "sku-038",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 440,
+      "sku": "sku-038",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 83
+    },
+    {
+      "t": 440,
+      "sku": "sku-039",
+      "station": "kuter",
+      "status": "start",
+      "waited": 440,
+      "weight": 100
+    },
+    {
+      "t": 442,
+      "sku": "sku-037",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 442,
+      "sku": "sku-037",
+      "station": "rama#14",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 117,
+      "recipe": "varenka"
+    },
+    {
+      "t": 444,
+      "sku": "Rama#2",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch",
+      "section": 2
+    },
+    {
+      "t": 444,
+      "sku": "Rama#3",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch",
+      "section": 2
+    },
+    {
+      "t": 444,
+      "sku": "Rama#2",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 177,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 444,
+      "sku": "Rama#3",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 171,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 448,
+      "sku": "sku-038",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 448,
+      "sku": "sku-038",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 83
+    },
+    {
+      "t": 454,
+      "sku": "sku-039",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 454,
+      "sku": "sku-039",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 100
+    },
+    {
+      "t": 454,
+      "sku": "sku-040",
+      "station": "kuter",
+      "status": "start",
+      "waited": 454,
+      "weight": 61
+    },
+    {
+      "t": 456,
+      "sku": "sku-038",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 456,
+      "sku": "sku-038",
+      "station": "rama#14",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 200,
+      "recipe": "varenka"
+    },
+    {
+      "t": 456,
+      "sku": "Rama#14",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 200,
+      "recipe": "varenka"
+    },
+    {
+      "t": 456,
+      "sku": "Rama#14",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200,
+      "recipe": "varenka"
+    },
+    {
+      "t": 462,
+      "sku": "sku-039",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 462,
+      "sku": "sku-039",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 100
+    },
+    {
+      "t": 464,
+      "sku": "sku-040",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 464,
+      "sku": "sku-040",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 61
+    },
+    {
+      "t": 464,
+      "sku": "sku-041",
+      "station": "kuter",
+      "status": "start",
+      "waited": 464,
+      "weight": 96
+    },
+    {
+      "t": 470,
+      "sku": "Rama#1",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 470,
+      "sku": "Rama#6",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 470,
+      "sku": "sku-039",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 470,
+      "sku": "sku-039",
+      "station": "rama#15",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 100,
+      "recipe": "varenka"
+    },
+    {
+      "t": 470,
+      "sku": "Rama#1",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 207
+    },
+    {
+      "t": 470,
+      "sku": "Rama#6",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 210
+    },
+    {
+      "t": 474,
+      "sku": "Rama#2",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 474,
+      "sku": "Rama#3",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 474,
+      "sku": "sku-040",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 474,
+      "sku": "sku-040",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 61
+    },
+    {
+      "t": 474,
+      "sku": "Rama#2",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 177,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 474,
+      "sku": "Rama#3",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 171,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 478,
+      "sku": "sku-041",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 478,
+      "sku": "sku-041",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 96
+    },
+    {
+      "t": 478,
+      "sku": "sku-042",
+      "station": "kuter",
+      "status": "start",
+      "waited": 478,
+      "weight": 81
+    },
+    {
+      "t": 484,
+      "sku": "Rama#7",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 484,
+      "sku": "Rama#7",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 185,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 484,
+      "sku": "sku-040",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 484,
+      "sku": "sku-040",
+      "station": "rama#13",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 184,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 484,
+      "sku": "Rama#13",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 184,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 484,
+      "sku": "Rama#13",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 184,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 486,
+      "sku": "sku-041",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 486,
+      "sku": "sku-041",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 96
+    },
+    {
+      "t": 488,
+      "sku": "sku-042",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 488,
+      "sku": "sku-042",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 81
+    },
+    {
+      "t": 488,
+      "sku": "sku-043",
+      "station": "kuter",
+      "status": "start",
+      "waited": 488,
+      "weight": 44
+    },
+    {
+      "t": 494,
+      "sku": "sku-041",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 494,
+      "sku": "sku-041",
+      "station": "rama#15",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 196,
+      "recipe": "varenka"
+    },
+    {
+      "t": 494,
+      "sku": "Rama#15",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 196,
+      "recipe": "varenka"
+    },
+    {
+      "t": 494,
+      "sku": "Rama#15",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 196,
+      "recipe": "varenka"
+    },
+    {
+      "t": 498,
+      "sku": "sku-042",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 498,
+      "sku": "sku-042",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 81
+    },
+    {
+      "t": 502,
+      "sku": "sku-043",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 502,
+      "sku": "sku-043",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 44
+    },
+    {
+      "t": 502,
+      "sku": "sku-044",
+      "station": "kuter",
+      "status": "start",
+      "waited": 502,
+      "weight": 80
+    },
+    {
+      "t": 508,
+      "sku": "sku-042",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 508,
+      "sku": "sku-042",
+      "station": "rama#16",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 81,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 510,
+      "sku": "sku-043",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 510,
+      "sku": "sku-043",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 44
+    },
+    {
+      "t": 512,
+      "sku": "sku-044",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 512,
+      "sku": "sku-044",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 80
+    },
+    {
+      "t": 512,
+      "sku": "sku-045",
+      "station": "kuter",
+      "status": "start",
+      "waited": 512,
+      "weight": 49
+    },
+    {
+      "t": 514,
+      "sku": "Rama#11",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 514,
+      "sku": "Rama#11",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 246,
+      "recipe": "varenka"
+    },
+    {
+      "t": 514,
+      "sku": "Rama#9",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 220,
+      "recipe": "varenka",
+      "section": 4
+    },
+    {
+      "t": 514,
+      "sku": "Rama#11",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 246,
+      "recipe": "varenka",
+      "section": 4
+    },
+    {
+      "t": 518,
+      "sku": "Rama#8",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 518,
+      "sku": "Rama#8",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 151,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 518,
+      "sku": "sku-043",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 518,
+      "sku": "sku-043",
+      "station": "rama#17",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 44,
+      "recipe": "varenka"
+    },
+    {
+      "t": 518,
+      "sku": "Rama#7",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 185,
+      "recipe": "polukopch",
+      "section": 5
+    },
+    {
+      "t": 518,
+      "sku": "Rama#8",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 151,
+      "recipe": "polukopch",
+      "section": 5
+    },
+    {
+      "t": 522,
+      "sku": "Rama#4",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch",
+      "section": 3
+    },
+    {
+      "t": 522,
+      "sku": "Rama#5",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch",
+      "section": 3
+    },
+    {
+      "t": 522,
+      "sku": "sku-044",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 522,
+      "sku": "sku-044",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 80
+    },
+    {
+      "t": 522,
+      "sku": "Rama#4",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 164,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 522,
+      "sku": "Rama#5",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 166,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 524,
+      "sku": "Rama#2",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 524,
+      "sku": "Rama#3",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 524,
+      "sku": "Rama#2",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 177
+    },
+    {
+      "t": 524,
+      "sku": "Rama#3",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 171
+    },
+    {
+      "t": 526,
+      "sku": "sku-045",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 526,
+      "sku": "sku-045",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 49
+    },
+    {
+      "t": 526,
+      "sku": "sku-046",
+      "station": "kuter",
+      "status": "start",
+      "waited": 526,
+      "weight": 55
+    },
+    {
+      "t": 532,
+      "sku": "sku-044",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 532,
+      "sku": "sku-044",
+      "station": "rama#16",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 161,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 532,
+      "sku": "Rama#16",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 161,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 532,
+      "sku": "Rama#16",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 161,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 534,
+      "sku": "sku-045",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 534,
+      "sku": "sku-045",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 49
+    },
+    {
+      "t": 540,
+      "sku": "sku-046",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 540,
+      "sku": "sku-046",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 55
+    },
+    {
+      "t": 540,
+      "sku": "sku-047",
+      "station": "kuter",
+      "status": "start",
+      "waited": 540,
+      "weight": 85
+    },
+    {
+      "t": 542,
+      "sku": "sku-045",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 542,
+      "sku": "sku-045",
+      "station": "rama#17",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 93,
+      "recipe": "varenka"
+    },
+    {
+      "t": 548,
+      "sku": "sku-046",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 548,
+      "sku": "sku-046",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 55
+    },
+    {
+      "t": 552,
+      "sku": "Rama#4",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 552,
+      "sku": "Rama#5",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 552,
+      "sku": "Rama#4",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 164,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 552,
+      "sku": "Rama#5",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 166,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 554,
+      "sku": "sku-047",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 554,
+      "sku": "sku-047",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 85
+    },
+    {
+      "t": 554,
+      "sku": "sku-048",
+      "station": "kuter",
+      "status": "start",
+      "waited": 554,
+      "weight": 69
+    },
+    {
+      "t": 556,
+      "sku": "Rama#14",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 556,
+      "sku": "Rama#14",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 200,
+      "recipe": "varenka"
+    },
+    {
+      "t": 556,
+      "sku": "sku-046",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 556,
+      "sku": "sku-046",
+      "station": "rama#17",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 148,
+      "recipe": "varenka"
+    },
+    {
+      "t": 562,
+      "sku": "sku-047",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 562,
+      "sku": "sku-047",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 85
+    },
+    {
+      "t": 568,
+      "sku": "sku-048",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 568,
+      "sku": "sku-048",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 69
+    },
+    {
+      "t": 568,
+      "sku": "sku-049",
+      "station": "kuter",
+      "status": "start",
+      "waited": 568,
+      "weight": 59
+    },
+    {
+      "t": 570,
+      "sku": "sku-047",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 570,
+      "sku": "sku-047",
+      "station": "rama#17",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 233,
+      "recipe": "varenka"
+    },
+    {
+      "t": 570,
+      "sku": "Rama#17",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 233,
+      "recipe": "varenka"
+    },
+    {
+      "t": 570,
+      "sku": "Rama#17",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 233,
+      "recipe": "varenka"
+    },
+    {
+      "t": 574,
+      "sku": "Rama#9",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka",
+      "section": 4
+    },
+    {
+      "t": 574,
+      "sku": "Rama#11",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka",
+      "section": 4
+    },
+    {
+      "t": 574,
+      "sku": "Rama#9",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 220,
+      "recipe": "varenka"
+    },
+    {
+      "t": 574,
+      "sku": "Rama#11",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 246,
+      "recipe": "varenka"
+    },
+    {
+      "t": 576,
+      "sku": "sku-048",
+      "station": "shpric",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 576,
+      "sku": "sku-048",
+      "station": "klipsator",
+      "status": "start",
+      "waited": 0,
+      "weight": 69
+    },
+    {
+      "t": 582,
+      "sku": "sku-049",
+      "station": "kuter",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 582,
+      "sku": "sku-049",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 59
+    },
+    {
+      "t": 582,
+      "sku": "sku-050",
+      "station": "kuter",
+      "status": "start",
+      "waited": 582,
+      "weight": 62
+    },
+    {
+      "t": 584,
+      "sku": "sku-048",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 584,
+      "sku": "sku-048",
+      "station": "rama#18",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 69,
+      "recipe": "varenka"
+    },
+    {
+      "t": 590,
       "sku": "sku-049",
       "station": "shpric",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 600,
+      "t": 590,
       "sku": "sku-049",
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 71
+      "weight": 59
     },
     {
-      "t": 604,
+      "t": 594,
+      "sku": "Rama#15",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 594,
+      "sku": "Rama#15",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 196,
+      "recipe": "varenka"
+    },
+    {
+      "t": 594,
+      "sku": "Rama#14",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 200,
+      "recipe": "varenka",
+      "section": 6
+    },
+    {
+      "t": 594,
+      "sku": "Rama#15",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 196,
+      "recipe": "varenka",
+      "section": 6
+    },
+    {
+      "t": 596,
       "sku": "sku-050",
       "station": "kuter",
       "status": "done",
       "waited": 0
     },
     {
+      "t": 596,
+      "sku": "sku-050",
+      "station": "shpric",
+      "status": "start",
+      "waited": 0,
+      "weight": 62
+    },
+    {
+      "t": 598,
+      "sku": "sku-049",
+      "station": "klipsator",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 598,
+      "sku": "sku-049",
+      "station": "rama#18",
+      "status": "on_rama",
+      "waited": 0,
+      "weight": 128,
+      "recipe": "varenka"
+    },
+    {
+      "t": 602,
+      "sku": "Rama#4",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 602,
+      "sku": "Rama#5",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 602,
+      "sku": "Rama#4",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 164
+    },
+    {
+      "t": 604,
+      "sku": "Rama#10",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 604,
+      "sku": "Rama#10",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 242,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 604,
+      "sku": "Rama#9",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 604,
+      "sku": "Rama#11",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
       "t": 604,
       "sku": "sku-050",
       "station": "shpric",
-      "status": "start",
-      "waited": 0,
-      "weight": 62
-    },
-    {
-      "t": 610,
-      "sku": "sku-049",
-      "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 610,
-      "sku": "sku-049",
-      "station": "rama#17",
-      "status": "on_rama",
-      "waited": 0,
-      "weight": 217,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 610,
-      "sku": "Rama#17",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 217,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 610,
-      "sku": "Rama#17",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 217,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 612,
-      "sku": "sku-050",
-      "station": "shpric",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 612,
+      "t": 604,
       "sku": "sku-050",
       "station": "klipsator",
       "status": "start",
@@ -3858,560 +3929,590 @@
       "weight": 62
     },
     {
-      "t": 618,
-      "sku": "Rama#10",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 618,
-      "sku": "Rama#12",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 618,
-      "sku": "Rama#10",
+      "t": 604,
+      "sku": "Rama#9",
       "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 206,
+      "weight": 220,
       "recipe": "varenka"
     },
     {
-      "t": 618,
-      "sku": "Rama#12",
+      "t": 604,
+      "sku": "Rama#11",
       "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 157,
+      "weight": 246,
       "recipe": "varenka"
     },
     {
-      "t": 620,
+      "t": 612,
       "sku": "sku-050",
       "station": "klipsator",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 620,
+      "t": 612,
       "sku": "sku-050",
       "station": "rama#18",
       "status": "on_rama",
       "waited": 0,
-      "weight": 118,
+      "weight": 190,
       "recipe": "varenka"
     },
     {
-      "t": 620,
+      "t": 612,
       "sku": "Rama#18",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 118,
+      "weight": 190,
       "recipe": "varenka"
     },
     {
-      "t": 620,
+      "t": 612,
       "sku": "Rama#18",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 118,
+      "weight": 190,
       "recipe": "varenka"
     },
     {
       "t": 624,
-      "sku": "Rama#5",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 624,
-      "sku": "Rama#8",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 624,
-      "sku": "Rama#5",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 177,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 624,
-      "sku": "Rama#8",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 167,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 634,
-      "sku": "Rama#11",
+      "sku": "Rama#12",
       "station": "osadka",
       "status": "done",
       "waited": 0,
       "recipe": "polukopch"
     },
     {
-      "t": 634,
-      "sku": "Rama#11",
+      "t": 624,
+      "sku": "Rama#12",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 188,
+      "weight": 169,
       "recipe": "polukopch"
     },
     {
-      "t": 634,
-      "sku": "Rama#9",
+      "t": 624,
+      "sku": "Rama#10",
       "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 242,
+      "recipe": "polukopch",
+      "section": 7
+    },
+    {
+      "t": 624,
+      "sku": "Rama#12",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 169,
+      "recipe": "polukopch",
+      "section": 7
+    },
+    {
+      "t": 628,
+      "sku": "Rama#7",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch",
+      "section": 5
+    },
+    {
+      "t": 628,
+      "sku": "Rama#8",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch",
+      "section": 5
+    },
+    {
+      "t": 628,
+      "sku": "Rama#7",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 185,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 628,
+      "sku": "Rama#8",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 151,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 654,
+      "sku": "Rama#14",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka",
+      "section": 6
+    },
+    {
+      "t": 654,
+      "sku": "Rama#15",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka",
+      "section": 6
+    },
+    {
+      "t": 654,
+      "sku": "Rama#9",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 654,
+      "sku": "Rama#11",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 654,
+      "sku": "Rama#14",
+      "station": "ohlazdenie",
       "status": "start",
       "waited": 0,
       "weight": 200,
+      "recipe": "varenka"
+    },
+    {
+      "t": 654,
+      "sku": "Rama#15",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 196,
+      "recipe": "varenka"
+    },
+    {
+      "t": 658,
+      "sku": "Rama#7",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
       "recipe": "polukopch"
     },
     {
-      "t": 634,
-      "sku": "Rama#11",
+      "t": 658,
+      "sku": "Rama#8",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 658,
+      "sku": "Rama#7",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 185,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 658,
+      "sku": "Rama#8",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 151,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 670,
+      "sku": "Rama#17",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 670,
+      "sku": "Rama#17",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 233,
+      "recipe": "varenka"
+    },
+    {
+      "t": 684,
+      "sku": "Rama#14",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 684,
+      "sku": "Rama#15",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 684,
+      "sku": "Rama#14",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200,
+      "recipe": "varenka"
+    },
+    {
+      "t": 684,
+      "sku": "Rama#15",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 196,
+      "recipe": "varenka"
+    },
+    {
+      "t": 708,
+      "sku": "Rama#7",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 708,
+      "sku": "Rama#8",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 712,
+      "sku": "Rama#18",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 712,
+      "sku": "Rama#18",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 190,
+      "recipe": "varenka"
+    },
+    {
+      "t": 712,
+      "sku": "Rama#17",
       "station": "termokamera",
       "status": "start",
       "waited": 0,
-      "weight": 188,
+      "weight": 233,
+      "recipe": "varenka",
+      "section": 8
+    },
+    {
+      "t": 712,
+      "sku": "Rama#18",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 190,
+      "recipe": "varenka",
+      "section": 8
+    },
+    {
+      "t": 724,
+      "sku": "Rama#13",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
       "recipe": "polukopch"
     },
     {
-      "t": 654,
-      "sku": "Rama#5",
+      "t": 724,
+      "sku": "Rama#13",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 184,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 734,
+      "sku": "Rama#10",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch",
+      "section": 7
+    },
+    {
+      "t": 734,
+      "sku": "Rama#12",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch",
+      "section": 7
+    },
+    {
+      "t": 734,
+      "sku": "Rama#14",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 734,
+      "sku": "Rama#15",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 734,
+      "sku": "Rama#10",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 242,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 734,
+      "sku": "Rama#12",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 169,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 764,
+      "sku": "Rama#10",
       "station": "ohlazdenie",
       "status": "done",
       "waited": 0,
       "recipe": "polukopch"
     },
     {
-      "t": 654,
-      "sku": "Rama#8",
+      "t": 764,
+      "sku": "Rama#12",
       "station": "ohlazdenie",
       "status": "done",
       "waited": 0,
       "recipe": "polukopch"
     },
     {
-      "t": 654,
-      "sku": "Rama#5",
+      "t": 764,
+      "sku": "Rama#10",
       "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 177,
+      "weight": 242,
       "recipe": "polukopch"
     },
     {
-      "t": 654,
-      "sku": "Rama#8",
+      "t": 764,
+      "sku": "Rama#12",
       "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 167,
+      "weight": 169,
       "recipe": "polukopch"
     },
     {
-      "t": 668,
+      "t": 772,
+      "sku": "Rama#16",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 772,
+      "sku": "Rama#16",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 161,
+      "recipe": "polukopch"
+    },
+    {
+      "t": 772,
+      "sku": "Rama#17",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka",
+      "section": 8
+    },
+    {
+      "t": 772,
+      "sku": "Rama#18",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka",
+      "section": 8
+    },
+    {
+      "t": 772,
+      "sku": "Rama#13",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 184,
+      "recipe": "polukopch",
+      "section": 9
+    },
+    {
+      "t": 772,
+      "sku": "Rama#16",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 161,
+      "recipe": "polukopch",
+      "section": 9
+    },
+    {
+      "t": 772,
+      "sku": "Rama#17",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 233,
+      "recipe": "varenka"
+    },
+    {
+      "t": 772,
+      "sku": "Rama#18",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 190,
+      "recipe": "varenka"
+    },
+    {
+      "t": 802,
+      "sku": "Rama#17",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 802,
+      "sku": "Rama#18",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0,
+      "recipe": "varenka"
+    },
+    {
+      "t": 802,
+      "sku": "Rama#17",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 233,
+      "recipe": "varenka"
+    },
+    {
+      "t": 802,
+      "sku": "Rama#18",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 190,
+      "recipe": "varenka"
+    },
+    {
+      "t": 814,
       "sku": "Rama#10",
       "station": "upakovka",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 668,
+      "t": 814,
       "sku": "Rama#12",
       "station": "upakovka",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 672,
-      "sku": "Rama#16",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 672,
-      "sku": "Rama#16",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 187,
-      "recipe": "varenka"
-    },
-    {
-      "t": 672,
-      "sku": "Rama#14",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 158,
-      "recipe": "varenka"
-    },
-    {
-      "t": 672,
-      "sku": "Rama#16",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 187,
-      "recipe": "varenka"
-    },
-    {
-      "t": 704,
-      "sku": "Rama#5",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 704,
-      "sku": "Rama#8",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 706,
-      "sku": "Rama#13",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 706,
-      "sku": "Rama#13",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 212,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 720,
-      "sku": "Rama#18",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 720,
-      "sku": "Rama#18",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 118,
-      "recipe": "varenka"
-    },
-    {
-      "t": 732,
-      "sku": "Rama#14",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 732,
-      "sku": "Rama#16",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 732,
-      "sku": "Rama#14",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 158,
-      "recipe": "varenka"
-    },
-    {
-      "t": 732,
-      "sku": "Rama#16",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 187,
-      "recipe": "varenka"
-    },
-    {
-      "t": 744,
-      "sku": "Rama#9",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 744,
-      "sku": "Rama#11",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 744,
-      "sku": "Rama#9",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 744,
-      "sku": "Rama#11",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 188,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 762,
-      "sku": "Rama#14",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 762,
-      "sku": "Rama#16",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 762,
-      "sku": "Rama#14",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 158,
-      "recipe": "varenka"
-    },
-    {
-      "t": 762,
-      "sku": "Rama#16",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 187,
-      "recipe": "varenka"
-    },
-    {
-      "t": 774,
-      "sku": "Rama#9",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 774,
-      "sku": "Rama#11",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 774,
-      "sku": "Rama#9",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 200,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 774,
-      "sku": "Rama#11",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 188,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 792,
-      "sku": "Rama#15",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 792,
-      "sku": "Rama#15",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 168,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 792,
-      "sku": "Rama#13",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 212,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 792,
-      "sku": "Rama#15",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 168,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 812,
-      "sku": "Rama#14",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 812,
-      "sku": "Rama#16",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 824,
-      "sku": "Rama#9",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 824,
-      "sku": "Rama#11",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 850,
+      "t": 852,
       "sku": "Rama#17",
-      "station": "osadka",
+      "station": "upakovka",
       "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
+      "waited": 0
     },
     {
-      "t": 850,
-      "sku": "Rama#17",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 217,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 850,
+      "t": 852,
       "sku": "Rama#18",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 118,
-      "recipe": "varenka"
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
     },
     {
-      "t": 850,
-      "sku": "Rama#17",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 217,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 902,
+      "t": 882,
       "sku": "Rama#13",
       "station": "termokamera",
       "status": "done",
       "waited": 0,
-      "recipe": "polukopch"
+      "recipe": "polukopch",
+      "section": 9
     },
     {
-      "t": 902,
-      "sku": "Rama#15",
+      "t": 882,
+      "sku": "Rama#16",
       "station": "termokamera",
       "status": "done",
       "waited": 0,
-      "recipe": "polukopch"
+      "recipe": "polukopch",
+      "section": 9
     },
     {
-      "t": 902,
+      "t": 882,
       "sku": "Rama#13",
       "station": "ohlazdenie",
       "status": "start",
       "waited": 0,
-      "weight": 212,
+      "weight": 184,
       "recipe": "polukopch"
     },
     {
-      "t": 902,
-      "sku": "Rama#15",
+      "t": 882,
+      "sku": "Rama#16",
       "station": "ohlazdenie",
       "status": "start",
       "waited": 0,
-      "weight": 168,
+      "weight": 161,
       "recipe": "polukopch"
     },
     {
-      "t": 910,
-      "sku": "Rama#18",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 910,
-      "sku": "Rama#18",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 118,
-      "recipe": "varenka"
-    },
-    {
-      "t": 932,
+      "t": 912,
       "sku": "Rama#13",
       "station": "ohlazdenie",
       "status": "done",
@@ -4419,106 +4520,41 @@
       "recipe": "polukopch"
     },
     {
-      "t": 932,
-      "sku": "Rama#15",
+      "t": 912,
+      "sku": "Rama#16",
       "station": "ohlazdenie",
       "status": "done",
       "waited": 0,
       "recipe": "polukopch"
     },
     {
-      "t": 932,
+      "t": 912,
       "sku": "Rama#13",
       "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 212,
+      "weight": 184,
       "recipe": "polukopch"
     },
     {
-      "t": 932,
-      "sku": "Rama#15",
+      "t": 912,
+      "sku": "Rama#16",
       "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 168,
+      "weight": 161,
       "recipe": "polukopch"
     },
     {
-      "t": 940,
-      "sku": "Rama#18",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "varenka"
-    },
-    {
-      "t": 940,
-      "sku": "Rama#18",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 118,
-      "recipe": "varenka"
-    },
-    {
-      "t": 960,
-      "sku": "Rama#17",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 960,
-      "sku": "Rama#17",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 217,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 982,
+      "t": 962,
       "sku": "Rama#13",
       "station": "upakovka",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 982,
-      "sku": "Rama#15",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 990,
-      "sku": "Rama#18",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 990,
-      "sku": "Rama#17",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 990,
-      "sku": "Rama#17",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 217,
-      "recipe": "polukopch"
-    },
-    {
-      "t": 1040,
-      "sku": "Rama#17",
+      "t": 962,
+      "sku": "Rama#16",
       "station": "upakovka",
       "status": "done",
       "waited": 0

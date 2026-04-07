@@ -35,9 +35,12 @@ function computeState(events, currentTime, initialSkus = []) {
     const { station, sku, status, weight, recipe: evRecipe } = event
     if (!station) continue
 
+    const evSection = event.section ?? null
+
     const mergeRecipe = (prev, w) => ({
       weight: w ?? prev?.weight ?? 0,
       recipe: evRecipe ?? prev?.recipe,
+      section: evSection ?? prev?.section,
     })
 
     if (status === 'on_rama') {
@@ -76,6 +79,7 @@ function computeState(events, currentTime, initialSkus = []) {
       sku,
       weight: data?.weight ?? data ?? 0,
       recipe: data?.recipe,
+      section: data?.section,
     }))
     stationItems[station] = items
     statuses[station] = items.length > 0 ? 'busy' : 'idle'

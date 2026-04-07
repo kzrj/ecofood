@@ -110,8 +110,20 @@ function ContainerLevel({ x, y, w, h, level, capacity }) {
 // Термокамера: три визуально разделённые секции, в каждой две рамы рядом
 // -----------------------------------------------------------------------
 function TermoKameraSections({ contentX, contentY, contentW, contentH, items }) {
-  const cap = TERMO_SECTIONS * TERMO_FRAMES_PER_SECTION
-  const slots = Array.from({ length: cap }, (_, i) => items[i] ?? null)
+  // Группируем рамы по section_id из лога; если section нет — каждая в своей группе
+  const sectionMap = new Map()
+  for (const item of items) {
+    const key = item.section ?? `solo_${item.sku}`
+    if (!sectionMap.has(key)) sectionMap.set(key, [])
+    sectionMap.get(key).push(item)
+  }
+  const groups = Array.from(sectionMap.values())
+  // Заполняем до TERMO_SECTIONS пустыми секциями для отображения
+  while (groups.length < TERMO_SECTIONS) groups.push([])
+  const slots = groups.slice(0, TERMO_SECTIONS).flatMap(g => {
+    const pair = [g[0] ?? null, g[1] ?? null]
+    return pair
+  })
 
   const sectionH =
     (contentH - (TERMO_SECTIONS - 1) * TERMO_SECTION_GAP) / TERMO_SECTIONS
