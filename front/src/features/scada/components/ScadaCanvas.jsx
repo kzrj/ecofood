@@ -9,8 +9,11 @@ import {
 } from '../stationsConfig'
 import StationNode from './StationNode'
 import QueueNode from './QueueNode'
+import DwellTimeLabel from './DwellTimeLabel'
 
 const QUEUE_ABOVE_GAP = 20
+/** Место над узлом под две строки «вар / п/к … мин» */
+const DWELL_LABEL_H = 28
 
 /** Остальные станции — по центру MAIN_FLOW_Y; «На вход» — выше, чтобы влезли все SKU. */
 function nodeY(station, index) {
@@ -72,6 +75,22 @@ export default function ScadaCanvas({ statuses = {}, stationItems = {} }) {
               x1={nodeX(idx) + nodeWidth(station)}
               x2={nodeX(idx + 1)}
             />
+          )
+        })}
+
+        {STATIONS.map((station, i) => {
+          const nx = nodeX(i)
+          const ny = nodeY(station, i)
+          const nw = nodeWidth(station)
+          return (
+            <g key={`dwell-${station.id}`}>
+              <DwellTimeLabel
+                stationId={station.id}
+                cx={nx + nw / 2}
+                yTop={ny - DWELL_LABEL_H}
+                ramaCapacityKg={station.ramaCapacityKg}
+              />
+            </g>
           )
         })}
 

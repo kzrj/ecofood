@@ -24,7 +24,6 @@ def run(sku_list=None):
     termokamera = simpy.Resource(env, capacity=3)
     ohlazdenie = simpy.Resource(env, capacity=4)
     upakovka = simpy.Resource(env, capacity=100)
-    sklad = simpy.Container(env, capacity=1000)
 
     collect_ramas_osadka = simpy.Store(env)
     collect_ramas_termokamera = simpy.Store(env)
@@ -45,6 +44,9 @@ def run(sku_list=None):
     total_ramas = calculate_total_ramas(sku_list)
 
     total_weight = sum(w for _, _, w in sku_list)
+
+    # Ёмкость склада = суммарный вес партии (склад не является узким местом)
+    sklad = simpy.Container(env, capacity=total_weight)
 
     print(f"\nЗапуск: {len(sku_list)} SKU | {total_weight} кг | {total_ramas} рамы")
     for rn, cnt in counts.items():

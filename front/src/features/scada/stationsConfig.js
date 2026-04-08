@@ -3,7 +3,7 @@ export const STATIONS = [
   { id: 'kuter',             label: 'Кутер',        capacity: 1   },
   { id: 'shpric',            label: 'Шприц',        capacity: 1   },
   { id: 'klipsator',         label: 'Клипсатор',    capacity: 1   },
-  { id: 'queue_osadka',      label: 'К осадке',     type: 'queue' },
+  { id: 'queue_osadka',      label: 'К осадке',     type: 'queue', ramaCapacityKg: 150 },
   { id: 'osadka',            label: 'Осадка',       capacity: 100, height: 280 },
   { id: 'queue_termokamera', label: 'К термо',      type: 'queue' },
   { id: 'termokamera',       label: 'Термокамера',  capacity: 6, width: 200, height: 320 },
@@ -34,5 +34,5 @@ export const nodeX = (index) => _xMap[STATIONS[index].id]
 export const SVG_W = _cx - GAP + PAD
 
 /** Центр основного потока; очередь «На вход» выше этой линии (высокий блок под SKU). */
-export const MAIN_FLOW_Y = 700
-export const SVG_H = 920
+export const MAIN_FLOW_Y = 740
+export const SVG_H = 940

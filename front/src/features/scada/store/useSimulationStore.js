@@ -19,6 +19,7 @@ function computeState(events, currentTime, initialSkus = []) {
   // inProgress[station] = Map<sku, {weight, recipe?}>
   const inProgress = {}
   let skadLevel = 0
+  const skuRecipeMap = new Map(initialSkus.map(({ id, recipe }) => [id, recipe]))
 
   // Заполняем начальную очередь кутера всеми SKU
   if (initialSkus.length > 0) {
@@ -39,7 +40,7 @@ function computeState(events, currentTime, initialSkus = []) {
 
     const mergeRecipe = (prev, w) => ({
       weight: w ?? prev?.weight ?? 0,
-      recipe: evRecipe ?? prev?.recipe,
+      recipe: evRecipe ?? prev?.recipe ?? skuRecipeMap.get(sku),
       section: evSection ?? prev?.section,
     })
 

@@ -31,8 +31,7 @@ RECIPES = {
 }
 
 RAMA_CAPACITY  = 150   # кг
-SKU_WEIGHT_MIN = 40    # кг
-SKU_WEIGHT_MAX = 100   # кг
+SKU_WEIGHT_STEPS = [50, 100, 150]   # возможные веса SKU (кратно 50)
 OHLAZDENIE_TIME = 30   # мин
 UPAKOVKA_TIME  = 50    # мин на раму
 
@@ -268,21 +267,16 @@ def run():
     termokamera = simpy.Resource(env, capacity=3)
     ohlazdenie  = simpy.Resource(env, capacity=4)
     upakovka    = simpy.Resource(env, capacity=100)
-    sklad       = simpy.Container(env, capacity=1000)
 
     collect_ramas_osadka      = simpy.Store(env)
     collect_ramas_termokamera = simpy.Store(env)
     collect_ramas_ohlazdenie  = simpy.Store(env)
     collect_ramas_upakovka    = simpy.Store(env)
 
-    sku_list = [
-        ('var-1', 'varenka',  random.randint(SKU_WEIGHT_MIN, SKU_WEIGHT_MAX)),
-        ('var-2', 'varenka',  random.randint(SKU_WEIGHT_MIN, SKU_WEIGHT_MAX)),
-        ('var-3', 'varenka',  random.randint(SKU_WEIGHT_MIN, SKU_WEIGHT_MAX)),
-        ('var-4', 'varenka',  random.randint(SKU_WEIGHT_MIN, SKU_WEIGHT_MAX)),
-        ('pk-1',  'polukopch', random.randint(SKU_WEIGHT_MIN, SKU_WEIGHT_MAX)),
-        ('pk-2',  'polukopch', random.randint(SKU_WEIGHT_MIN, SKU_WEIGHT_MAX)),
-    ]
+    sku_list = (
+        [(f'var-{i}', 'varenka',   random.choice(SKU_WEIGHT_STEPS)) for i in range(1, 31)] +
+        [(f'pk-{i}',  'polukopch', random.choice(SKU_WEIGHT_STEPS)) for i in range(1, 21)]
+    )
 
     # Считаем количество SKU и суммарный вес по каждому типу
     counts  = {}
@@ -299,6 +293,9 @@ def run():
     total_ramas = calculate_total_ramas(sku_list)
 
     total_weight = sum(w for _, _, w in sku_list)
+
+    # Ёмкость склада = суммарный вес всей партии (склад не является узким местом)
+    sklad = simpy.Container(env, capacity=total_weight)
 
     print(f"\nЗапуск: {len(sku_list)} SKU | {total_weight} кг | {total_ramas} рамы")
     for rn, cnt in counts.items():

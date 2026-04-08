@@ -1,55 +1,55 @@
 {
-  "total_time": 1113.8,
+  "total_time": 1110,
   "sku_list": [
     {
       "id": "var-1",
       "recipe": "varenka",
-      "weight": 69
+      "weight": 150
     },
     {
       "id": "var-2",
       "recipe": "varenka",
-      "weight": 96
+      "weight": 100
     },
     {
       "id": "var-3",
       "recipe": "varenka",
-      "weight": 41
+      "weight": 100
     },
     {
       "id": "var-4",
       "recipe": "varenka",
-      "weight": 64
+      "weight": 100
     },
     {
       "id": "var-5",
       "recipe": "varenka",
-      "weight": 97
+      "weight": 150
     },
     {
       "id": "var-6",
       "recipe": "varenka",
-      "weight": 51
+      "weight": 150
     },
     {
       "id": "var-7",
       "recipe": "varenka",
-      "weight": 97
+      "weight": 150
     },
     {
       "id": "var-8",
       "recipe": "varenka",
-      "weight": 74
+      "weight": 150
     },
     {
       "id": "var-9",
       "recipe": "varenka",
-      "weight": 96
+      "weight": 50
     },
     {
       "id": "var-10",
       "recipe": "varenka",
-      "weight": 56
+      "weight": 150
     },
     {
       "id": "var-11",
@@ -59,197 +59,197 @@
     {
       "id": "var-12",
       "recipe": "varenka",
-      "weight": 67
+      "weight": 50
     },
     {
       "id": "var-13",
       "recipe": "varenka",
-      "weight": 74
+      "weight": 100
     },
     {
       "id": "var-14",
       "recipe": "varenka",
-      "weight": 51
+      "weight": 50
     },
     {
       "id": "var-15",
       "recipe": "varenka",
-      "weight": 45
+      "weight": 100
     },
     {
       "id": "var-16",
       "recipe": "varenka",
-      "weight": 67
+      "weight": 50
     },
     {
       "id": "var-17",
       "recipe": "varenka",
-      "weight": 97
+      "weight": 100
     },
     {
       "id": "var-18",
       "recipe": "varenka",
-      "weight": 52
+      "weight": 100
     },
     {
       "id": "var-19",
       "recipe": "varenka",
-      "weight": 91
+      "weight": 100
     },
     {
       "id": "var-20",
       "recipe": "varenka",
-      "weight": 71
+      "weight": 50
     },
     {
       "id": "var-21",
       "recipe": "varenka",
-      "weight": 99
+      "weight": 150
     },
     {
       "id": "var-22",
       "recipe": "varenka",
-      "weight": 94
+      "weight": 100
     },
     {
       "id": "var-23",
       "recipe": "varenka",
-      "weight": 62
+      "weight": 100
     },
     {
       "id": "var-24",
       "recipe": "varenka",
-      "weight": 48
+      "weight": 150
     },
     {
       "id": "var-25",
       "recipe": "varenka",
-      "weight": 62
+      "weight": 150
     },
     {
       "id": "var-26",
       "recipe": "varenka",
-      "weight": 67
+      "weight": 50
     },
     {
       "id": "var-27",
       "recipe": "varenka",
-      "weight": 60
+      "weight": 150
     },
     {
       "id": "var-28",
       "recipe": "varenka",
-      "weight": 86
+      "weight": 100
     },
     {
       "id": "var-29",
       "recipe": "varenka",
-      "weight": 95
+      "weight": 50
     },
     {
       "id": "var-30",
       "recipe": "varenka",
-      "weight": 49
+      "weight": 100
     },
     {
       "id": "pk-1",
       "recipe": "polukopch",
-      "weight": 94
+      "weight": 50
     },
     {
       "id": "pk-2",
       "recipe": "polukopch",
-      "weight": 84
+      "weight": 50
     },
     {
       "id": "pk-3",
       "recipe": "polukopch",
-      "weight": 77
+      "weight": 150
     },
     {
       "id": "pk-4",
       "recipe": "polukopch",
-      "weight": 40
+      "weight": 100
     },
     {
       "id": "pk-5",
       "recipe": "polukopch",
-      "weight": 59
+      "weight": 150
     },
     {
       "id": "pk-6",
       "recipe": "polukopch",
-      "weight": 64
+      "weight": 50
     },
     {
       "id": "pk-7",
       "recipe": "polukopch",
-      "weight": 49
+      "weight": 150
     },
     {
       "id": "pk-8",
       "recipe": "polukopch",
-      "weight": 49
+      "weight": 150
     },
     {
       "id": "pk-9",
       "recipe": "polukopch",
-      "weight": 70
+      "weight": 50
     },
     {
       "id": "pk-10",
       "recipe": "polukopch",
-      "weight": 87
+      "weight": 50
     },
     {
       "id": "pk-11",
       "recipe": "polukopch",
-      "weight": 61
+      "weight": 50
     },
     {
       "id": "pk-12",
       "recipe": "polukopch",
-      "weight": 77
+      "weight": 100
     },
     {
       "id": "pk-13",
       "recipe": "polukopch",
-      "weight": 46
+      "weight": 100
     },
     {
       "id": "pk-14",
       "recipe": "polukopch",
-      "weight": 82
+      "weight": 150
     },
     {
       "id": "pk-15",
       "recipe": "polukopch",
-      "weight": 47
+      "weight": 150
     },
     {
       "id": "pk-16",
       "recipe": "polukopch",
-      "weight": 58
+      "weight": 150
     },
     {
       "id": "pk-17",
       "recipe": "polukopch",
-      "weight": 56
+      "weight": 150
     },
     {
       "id": "pk-18",
       "recipe": "polukopch",
-      "weight": 53
+      "weight": 150
     },
     {
       "id": "pk-19",
       "recipe": "polukopch",
-      "weight": 69
+      "weight": 100
     },
     {
       "id": "pk-20",
       "recipe": "polukopch",
-      "weight": 71
+      "weight": 100
     }
   ],
   "events": [
@@ -259,7 +259,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 0,
-      "weight": 69
+      "weight": 150
     },
     {
       "t": 14,
@@ -274,7 +274,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 69
+      "weight": 150
     },
     {
       "t": 14,
@@ -282,7 +282,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 14,
-      "weight": 96
+      "weight": 100
     },
     {
       "t": 22,
@@ -297,7 +297,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 69
+      "weight": 150
     },
     {
       "t": 28,
@@ -312,7 +312,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 96
+      "weight": 100
     },
     {
       "t": 28,
@@ -320,7 +320,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 28,
-      "weight": 41
+      "weight": 100
     },
     {
       "t": 30,
@@ -335,7 +335,23 @@
       "station": "rama#1",
       "status": "on_rama",
       "waited": 0,
-      "weight": 69
+      "weight": 150
+    },
+    {
+      "t": 30,
+      "sku": "Rama#1",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 30,
+      "sku": "Rama#1",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 36,
@@ -350,7 +366,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 96
+      "weight": 100
     },
     {
       "t": 42,
@@ -365,7 +381,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 41
+      "weight": 100
     },
     {
       "t": 42,
@@ -373,7 +389,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 42,
-      "weight": 64
+      "weight": 100
     },
     {
       "t": 44,
@@ -385,26 +401,10 @@
     {
       "t": 44,
       "sku": "var-2",
-      "station": "rama#1",
+      "station": "rama#2",
       "status": "on_rama",
       "waited": 0,
-      "weight": 165
-    },
-    {
-      "t": 44,
-      "sku": "Rama#1",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 165
-    },
-    {
-      "t": 44,
-      "sku": "Rama#1",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 165
+      "weight": 100
     },
     {
       "t": 50,
@@ -419,7 +419,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 41
+      "weight": 100
     },
     {
       "t": 56,
@@ -434,7 +434,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 64
+      "weight": 100
     },
     {
       "t": 56,
@@ -442,7 +442,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 56,
-      "weight": 97
+      "weight": 150
     },
     {
       "t": 58,
@@ -457,7 +457,23 @@
       "station": "rama#2",
       "status": "on_rama",
       "waited": 0,
-      "weight": 41
+      "weight": 200
+    },
+    {
+      "t": 58,
+      "sku": "Rama#2",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 58,
+      "sku": "Rama#2",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 64,
@@ -472,7 +488,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 64
+      "weight": 100
     },
     {
       "t": 70,
@@ -487,7 +503,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 97
+      "weight": 150
     },
     {
       "t": 70,
@@ -495,7 +511,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 70,
-      "weight": 51
+      "weight": 150
     },
     {
       "t": 72,
@@ -507,10 +523,10 @@
     {
       "t": 72,
       "sku": "var-4",
-      "station": "rama#2",
+      "station": "rama#3",
       "status": "on_rama",
       "waited": 0,
-      "weight": 105
+      "weight": 100
     },
     {
       "t": 78,
@@ -525,7 +541,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 97
+      "weight": 150
     },
     {
       "t": 84,
@@ -540,7 +556,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 51
+      "weight": 150
     },
     {
       "t": 84,
@@ -548,7 +564,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 84,
-      "weight": 97
+      "weight": 150
     },
     {
       "t": 86,
@@ -560,26 +576,26 @@
     {
       "t": 86,
       "sku": "var-5",
-      "station": "rama#2",
+      "station": "rama#3",
       "status": "on_rama",
       "waited": 0,
-      "weight": 202
+      "weight": 250
     },
     {
       "t": 86,
-      "sku": "Rama#2",
+      "sku": "Rama#3",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 202
+      "weight": 250
     },
     {
       "t": 86,
-      "sku": "Rama#2",
+      "sku": "Rama#3",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 202
+      "weight": 250
     },
     {
       "t": 92,
@@ -594,7 +610,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 51
+      "weight": 150
     },
     {
       "t": 98,
@@ -609,7 +625,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 97
+      "weight": 150
     },
     {
       "t": 98,
@@ -617,7 +633,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 98,
-      "weight": 74
+      "weight": 150
     },
     {
       "t": 100,
@@ -629,10 +645,26 @@
     {
       "t": 100,
       "sku": "var-6",
-      "station": "rama#3",
+      "station": "rama#4",
       "status": "on_rama",
       "waited": 0,
-      "weight": 51
+      "weight": 150
+    },
+    {
+      "t": 100,
+      "sku": "Rama#4",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 100,
+      "sku": "Rama#4",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 106,
@@ -647,7 +679,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 97
+      "weight": 150
     },
     {
       "t": 112,
@@ -662,7 +694,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 74
+      "weight": 150
     },
     {
       "t": 112,
@@ -670,7 +702,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 112,
-      "weight": 96
+      "weight": 50
     },
     {
       "t": 114,
@@ -682,10 +714,26 @@
     {
       "t": 114,
       "sku": "var-7",
-      "station": "rama#3",
+      "station": "rama#5",
       "status": "on_rama",
       "waited": 0,
-      "weight": 148
+      "weight": 150
+    },
+    {
+      "t": 114,
+      "sku": "Rama#5",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 114,
+      "sku": "Rama#5",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 120,
@@ -700,7 +748,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 74
+      "weight": 150
     },
     {
       "t": 126,
@@ -715,7 +763,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 96
+      "weight": 50
     },
     {
       "t": 126,
@@ -723,7 +771,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 126,
-      "weight": 56
+      "weight": 150
     },
     {
       "t": 128,
@@ -735,26 +783,41 @@
     {
       "t": 128,
       "sku": "var-8",
-      "station": "rama#3",
+      "station": "rama#6",
       "status": "on_rama",
       "waited": 0,
-      "weight": 222
+      "weight": 150
     },
     {
       "t": 128,
-      "sku": "Rama#3",
+      "sku": "Rama#6",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 222
+      "weight": 150
     },
     {
       "t": 128,
-      "sku": "Rama#3",
+      "sku": "Rama#6",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 222
+      "weight": 150
+    },
+    {
+      "t": 130,
+      "sku": "Rama#1",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 130,
+      "sku": "Rama#1",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 134,
@@ -769,7 +832,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 96
+      "weight": 50
     },
     {
       "t": 140,
@@ -784,7 +847,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 56
+      "weight": 150
     },
     {
       "t": 140,
@@ -804,25 +867,10 @@
     {
       "t": 142,
       "sku": "var-9",
-      "station": "rama#4",
+      "station": "rama#7",
       "status": "on_rama",
       "waited": 0,
-      "weight": 96
-    },
-    {
-      "t": 144,
-      "sku": "Rama#1",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 144,
-      "sku": "Rama#1",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 165
+      "weight": 50
     },
     {
       "t": 148,
@@ -837,7 +885,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 56
+      "weight": 150
     },
     {
       "t": 154,
@@ -860,7 +908,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 154,
-      "weight": 67
+      "weight": 50
     },
     {
       "t": 156,
@@ -872,26 +920,57 @@
     {
       "t": 156,
       "sku": "var-10",
-      "station": "rama#4",
+      "station": "rama#7",
       "status": "on_rama",
       "waited": 0,
-      "weight": 152
+      "weight": 200
     },
     {
       "t": 156,
-      "sku": "Rama#4",
+      "sku": "Rama#7",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 152
+      "weight": 200
     },
     {
       "t": 156,
-      "sku": "Rama#4",
+      "sku": "Rama#7",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 152
+      "weight": 200
+    },
+    {
+      "t": 158,
+      "sku": "Rama#2",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 158,
+      "sku": "Rama#2",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 158,
+      "sku": "Rama#1",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 158,
+      "sku": "Rama#2",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 162,
@@ -921,7 +1000,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 67
+      "weight": 50
     },
     {
       "t": 168,
@@ -929,7 +1008,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 168,
-      "weight": 74
+      "weight": 100
     },
     {
       "t": 170,
@@ -941,7 +1020,7 @@
     {
       "t": 170,
       "sku": "var-11",
-      "station": "rama#5",
+      "station": "rama#8",
       "status": "on_rama",
       "waited": 0,
       "weight": 50
@@ -959,7 +1038,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 67
+      "weight": 50
     },
     {
       "t": 182,
@@ -974,7 +1053,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 74
+      "weight": 100
     },
     {
       "t": 182,
@@ -982,7 +1061,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 182,
-      "weight": 51
+      "weight": 50
     },
     {
       "t": 184,
@@ -994,41 +1073,25 @@
     {
       "t": 184,
       "sku": "var-12",
-      "station": "rama#5",
+      "station": "rama#8",
       "status": "on_rama",
       "waited": 0,
-      "weight": 117
+      "weight": 100
     },
     {
       "t": 186,
-      "sku": "Rama#2",
+      "sku": "Rama#3",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 186,
-      "sku": "Rama#2",
+      "sku": "Rama#3",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 202
-    },
-    {
-      "t": 186,
-      "sku": "Rama#1",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 165
-    },
-    {
-      "t": 186,
-      "sku": "Rama#2",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 202
+      "weight": 250
     },
     {
       "t": 190,
@@ -1043,7 +1106,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 74
+      "weight": 100
     },
     {
       "t": 196,
@@ -1058,7 +1121,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 51
+      "weight": 50
     },
     {
       "t": 196,
@@ -1066,7 +1129,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 196,
-      "weight": 45
+      "weight": 100
     },
     {
       "t": 198,
@@ -1078,26 +1141,57 @@
     {
       "t": 198,
       "sku": "var-13",
-      "station": "rama#5",
+      "station": "rama#8",
       "status": "on_rama",
       "waited": 0,
-      "weight": 191
+      "weight": 200
     },
     {
       "t": 198,
-      "sku": "Rama#5",
+      "sku": "Rama#8",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 191
+      "weight": 200
     },
     {
       "t": 198,
-      "sku": "Rama#5",
+      "sku": "Rama#8",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 191
+      "weight": 200
+    },
+    {
+      "t": 200,
+      "sku": "Rama#4",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 200,
+      "sku": "Rama#4",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 200,
+      "sku": "Rama#3",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 250
+    },
+    {
+      "t": 200,
+      "sku": "Rama#4",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 204,
@@ -1112,7 +1206,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 51
+      "weight": 50
     },
     {
       "t": 210,
@@ -1127,7 +1221,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 45
+      "weight": 100
     },
     {
       "t": 210,
@@ -1135,7 +1229,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 210,
-      "weight": 67
+      "weight": 50
     },
     {
       "t": 212,
@@ -1147,10 +1241,39 @@
     {
       "t": 212,
       "sku": "var-14",
-      "station": "rama#6",
+      "station": "rama#9",
       "status": "on_rama",
       "waited": 0,
-      "weight": 51
+      "weight": 50
+    },
+    {
+      "t": 214,
+      "sku": "Rama#5",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 214,
+      "sku": "Rama#5",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 218,
+      "sku": "Rama#1",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 218,
+      "sku": "Rama#2",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
     },
     {
       "t": 218,
@@ -1165,7 +1288,23 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 45
+      "weight": 100
+    },
+    {
+      "t": 218,
+      "sku": "Rama#1",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 218,
+      "sku": "Rama#2",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 224,
@@ -1180,7 +1319,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 67
+      "weight": 50
     },
     {
       "t": 224,
@@ -1188,7 +1327,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 224,
-      "weight": 97
+      "weight": 100
     },
     {
       "t": 226,
@@ -1200,25 +1339,57 @@
     {
       "t": 226,
       "sku": "var-15",
-      "station": "rama#6",
+      "station": "rama#9",
       "status": "on_rama",
       "waited": 0,
-      "weight": 96
+      "weight": 150
+    },
+    {
+      "t": 226,
+      "sku": "Rama#9",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 226,
+      "sku": "Rama#9",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 228,
-      "sku": "Rama#3",
+      "sku": "Rama#6",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 228,
-      "sku": "Rama#3",
+      "sku": "Rama#6",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 222
+      "weight": 150
+    },
+    {
+      "t": 228,
+      "sku": "Rama#5",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 228,
+      "sku": "Rama#6",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 232,
@@ -1233,7 +1404,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 67
+      "weight": 50
     },
     {
       "t": 238,
@@ -1248,7 +1419,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 97
+      "weight": 100
     },
     {
       "t": 238,
@@ -1256,7 +1427,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 238,
-      "weight": 52
+      "weight": 100
     },
     {
       "t": 240,
@@ -1268,40 +1439,10 @@
     {
       "t": 240,
       "sku": "var-16",
-      "station": "rama#6",
+      "station": "rama#10",
       "status": "on_rama",
       "waited": 0,
-      "weight": 163
-    },
-    {
-      "t": 240,
-      "sku": "Rama#6",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 163
-    },
-    {
-      "t": 240,
-      "sku": "Rama#6",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 163
-    },
-    {
-      "t": 246,
-      "sku": "Rama#1",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 246,
-      "sku": "Rama#2",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
+      "weight": 50
     },
     {
       "t": 246,
@@ -1316,23 +1457,37 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 97
+      "weight": 100
     },
     {
-      "t": 246,
+      "t": 248,
       "sku": "Rama#1",
       "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 165
+      "status": "done",
+      "waited": 0
     },
     {
-      "t": 246,
+      "t": 248,
       "sku": "Rama#2",
       "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 248,
+      "sku": "Rama#1",
+      "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 202
+      "weight": 150
+    },
+    {
+      "t": 248,
+      "sku": "Rama#2",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 252,
@@ -1347,7 +1502,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 52
+      "weight": 100
     },
     {
       "t": 252,
@@ -1355,7 +1510,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 252,
-      "weight": 91
+      "weight": 100
     },
     {
       "t": 254,
@@ -1367,41 +1522,55 @@
     {
       "t": 254,
       "sku": "var-17",
-      "station": "rama#7",
+      "station": "rama#10",
       "status": "on_rama",
       "waited": 0,
-      "weight": 97
+      "weight": 150
+    },
+    {
+      "t": 254,
+      "sku": "Rama#10",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 254,
+      "sku": "Rama#10",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 256,
-      "sku": "Rama#4",
+      "sku": "Rama#7",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 256,
-      "sku": "Rama#4",
+      "sku": "Rama#7",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 152
+      "weight": 200
     },
     {
-      "t": 256,
+      "t": 260,
       "sku": "Rama#3",
       "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 222
+      "status": "done",
+      "waited": 0
     },
     {
-      "t": 256,
+      "t": 260,
       "sku": "Rama#4",
       "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 152
+      "status": "done",
+      "waited": 0
     },
     {
       "t": 260,
@@ -1416,7 +1585,23 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 52
+      "weight": 100
+    },
+    {
+      "t": 260,
+      "sku": "Rama#3",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 250
+    },
+    {
+      "t": 260,
+      "sku": "Rama#4",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 266,
@@ -1431,7 +1616,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 91
+      "weight": 100
     },
     {
       "t": 266,
@@ -1439,7 +1624,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 266,
-      "weight": 71
+      "weight": 50
     },
     {
       "t": 268,
@@ -1451,10 +1636,10 @@
     {
       "t": 268,
       "sku": "var-18",
-      "station": "rama#7",
+      "station": "rama#11",
       "status": "on_rama",
       "waited": 0,
-      "weight": 149
+      "weight": 100
     },
     {
       "t": 274,
@@ -1469,21 +1654,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 91
-    },
-    {
-      "t": 276,
-      "sku": "Rama#1",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 276,
-      "sku": "Rama#2",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
+      "weight": 100
     },
     {
       "t": 280,
@@ -1498,7 +1669,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 71
+      "weight": 50
     },
     {
       "t": 280,
@@ -1506,7 +1677,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 280,
-      "weight": 99
+      "weight": 150
     },
     {
       "t": 282,
@@ -1518,26 +1689,40 @@
     {
       "t": 282,
       "sku": "var-19",
-      "station": "rama#7",
+      "station": "rama#11",
       "status": "on_rama",
       "waited": 0,
-      "weight": 240
+      "weight": 200
     },
     {
       "t": 282,
-      "sku": "Rama#7",
+      "sku": "Rama#11",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 240
+      "weight": 200
     },
     {
       "t": 282,
-      "sku": "Rama#7",
+      "sku": "Rama#11",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 240
+      "weight": 200
+    },
+    {
+      "t": 288,
+      "sku": "Rama#5",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 288,
+      "sku": "Rama#6",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
     },
     {
       "t": 288,
@@ -1552,7 +1737,53 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 71
+      "weight": 50
+    },
+    {
+      "t": 288,
+      "sku": "Rama#5",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 288,
+      "sku": "Rama#6",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 290,
+      "sku": "Rama#3",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 290,
+      "sku": "Rama#4",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 290,
+      "sku": "Rama#3",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 250
+    },
+    {
+      "t": 290,
+      "sku": "Rama#4",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 294,
@@ -1567,7 +1798,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 99
+      "weight": 150
     },
     {
       "t": 294,
@@ -1575,7 +1806,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 294,
-      "weight": 94
+      "weight": 100
     },
     {
       "t": 296,
@@ -1587,25 +1818,71 @@
     {
       "t": 296,
       "sku": "var-20",
-      "station": "rama#8",
+      "station": "rama#12",
       "status": "on_rama",
       "waited": 0,
-      "weight": 71
+      "weight": 50
     },
     {
       "t": 298,
-      "sku": "Rama#5",
+      "sku": "Rama#8",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 298,
-      "sku": "Rama#5",
+      "sku": "Rama#8",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 191
+      "weight": 200
+    },
+    {
+      "t": 298,
+      "sku": "Rama#1",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 298,
+      "sku": "Rama#2",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 298,
+      "sku": "Rama#1",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 298,
+      "sku": "Rama#2",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 298,
+      "sku": "Rama#7",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 298,
+      "sku": "Rama#8",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 302,
@@ -1620,7 +1897,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 99
+      "weight": 150
     },
     {
       "t": 308,
@@ -1635,7 +1912,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 94
+      "weight": 100
     },
     {
       "t": 308,
@@ -1643,7 +1920,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 308,
-      "weight": 62
+      "weight": 100
     },
     {
       "t": 310,
@@ -1655,40 +1932,26 @@
     {
       "t": 310,
       "sku": "var-21",
-      "station": "rama#8",
+      "station": "rama#12",
       "status": "on_rama",
       "waited": 0,
-      "weight": 170
+      "weight": 200
     },
     {
       "t": 310,
-      "sku": "Rama#8",
+      "sku": "Rama#12",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 170
+      "weight": 200
     },
     {
       "t": 310,
-      "sku": "Rama#8",
+      "sku": "Rama#12",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 170
-    },
-    {
-      "t": 316,
-      "sku": "Rama#3",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 316,
-      "sku": "Rama#4",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
+      "weight": 200
     },
     {
       "t": 316,
@@ -1703,23 +1966,37 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 94
+      "weight": 100
     },
     {
-      "t": 316,
-      "sku": "Rama#3",
+      "t": 318,
+      "sku": "Rama#5",
       "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 222
+      "status": "done",
+      "waited": 0
     },
     {
-      "t": 316,
-      "sku": "Rama#4",
+      "t": 318,
+      "sku": "Rama#6",
       "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 318,
+      "sku": "Rama#5",
+      "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 152
+      "weight": 150
+    },
+    {
+      "t": 318,
+      "sku": "Rama#6",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 322,
@@ -1734,7 +2011,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 62
+      "weight": 100
     },
     {
       "t": 322,
@@ -1742,7 +2019,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 322,
-      "weight": 48
+      "weight": 150
     },
     {
       "t": 324,
@@ -1754,10 +2031,25 @@
     {
       "t": 324,
       "sku": "var-22",
-      "station": "rama#9",
+      "station": "rama#13",
       "status": "on_rama",
       "waited": 0,
-      "weight": 94
+      "weight": 100
+    },
+    {
+      "t": 326,
+      "sku": "Rama#9",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 326,
+      "sku": "Rama#9",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 330,
@@ -1772,7 +2064,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 62
+      "weight": 100
     },
     {
       "t": 336,
@@ -1787,7 +2079,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 48
+      "weight": 150
     },
     {
       "t": 336,
@@ -1795,7 +2087,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 336,
-      "weight": 62
+      "weight": 150
     },
     {
       "t": 338,
@@ -1807,57 +2099,56 @@
     {
       "t": 338,
       "sku": "var-23",
-      "station": "rama#9",
+      "station": "rama#13",
       "status": "on_rama",
       "waited": 0,
-      "weight": 156
+      "weight": 200
     },
     {
       "t": 338,
-      "sku": "Rama#9",
+      "sku": "Rama#13",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 156
+      "weight": 200
     },
     {
       "t": 338,
-      "sku": "Rama#9",
+      "sku": "Rama#13",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 156
+      "weight": 200
     },
     {
       "t": 340,
-      "sku": "Rama#6",
-      "station": "osadka",
+      "sku": "Rama#3",
+      "station": "upakovka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 340,
-      "sku": "Rama#6",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 163
+      "sku": "Rama#4",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
     },
     {
       "t": 340,
-      "sku": "Rama#5",
-      "station": "termokamera",
-      "status": "start",
+      "sku": "Rama#3",
+      "station": "sklad",
+      "status": "stored",
       "waited": 0,
-      "weight": 191
+      "weight": 250
     },
     {
       "t": 340,
-      "sku": "Rama#6",
-      "station": "termokamera",
-      "status": "start",
+      "sku": "Rama#4",
+      "station": "sklad",
+      "status": "stored",
       "waited": 0,
-      "weight": 163
+      "weight": 150
     },
     {
       "t": 344,
@@ -1872,29 +2163,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 48
-    },
-    {
-      "t": 346,
-      "sku": "Rama#3",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 346,
-      "sku": "Rama#4",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 346,
-      "sku": "batch1(589kg)",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 589
+      "weight": 150
     },
     {
       "t": 350,
@@ -1909,7 +2178,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 62
+      "weight": 150
     },
     {
       "t": 350,
@@ -1917,7 +2186,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 350,
-      "weight": 67
+      "weight": 50
     },
     {
       "t": 352,
@@ -1929,10 +2198,71 @@
     {
       "t": 352,
       "sku": "var-24",
-      "station": "rama#10",
+      "station": "rama#14",
       "status": "on_rama",
       "waited": 0,
-      "weight": 48
+      "weight": 150
+    },
+    {
+      "t": 352,
+      "sku": "Rama#14",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 352,
+      "sku": "Rama#14",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 354,
+      "sku": "Rama#10",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 354,
+      "sku": "Rama#10",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 354,
+      "sku": "Rama#9",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 354,
+      "sku": "Rama#10",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 358,
+      "sku": "Rama#7",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 358,
+      "sku": "Rama#8",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
     },
     {
       "t": 358,
@@ -1947,7 +2277,23 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 62
+      "weight": 150
+    },
+    {
+      "t": 358,
+      "sku": "Rama#7",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 358,
+      "sku": "Rama#8",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 364,
@@ -1962,7 +2308,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 67
+      "weight": 50
     },
     {
       "t": 364,
@@ -1970,7 +2316,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 364,
-      "weight": 60
+      "weight": 150
     },
     {
       "t": 366,
@@ -1982,10 +2328,56 @@
     {
       "t": 366,
       "sku": "var-25",
-      "station": "rama#10",
+      "station": "rama#15",
       "status": "on_rama",
       "waited": 0,
-      "weight": 110
+      "weight": 150
+    },
+    {
+      "t": 366,
+      "sku": "Rama#15",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 366,
+      "sku": "Rama#15",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 368,
+      "sku": "Rama#5",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 368,
+      "sku": "Rama#6",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 368,
+      "sku": "Rama#5",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 368,
+      "sku": "Rama#6",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 372,
@@ -2000,7 +2392,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 67
+      "weight": 50
     },
     {
       "t": 378,
@@ -2015,7 +2407,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 60
+      "weight": 150
     },
     {
       "t": 378,
@@ -2023,7 +2415,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 378,
-      "weight": 86
+      "weight": 100
     },
     {
       "t": 380,
@@ -2035,41 +2427,25 @@
     {
       "t": 380,
       "sku": "var-26",
-      "station": "rama#10",
+      "station": "rama#16",
       "status": "on_rama",
       "waited": 0,
-      "weight": 177
-    },
-    {
-      "t": 380,
-      "sku": "Rama#10",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 177
-    },
-    {
-      "t": 380,
-      "sku": "Rama#10",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 177
+      "weight": 50
     },
     {
       "t": 382,
-      "sku": "Rama#7",
+      "sku": "Rama#11",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 382,
-      "sku": "Rama#7",
+      "sku": "Rama#11",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 240
+      "weight": 200
     },
     {
       "t": 386,
@@ -2084,7 +2460,37 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 60
+      "weight": 150
+    },
+    {
+      "t": 388,
+      "sku": "Rama#7",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 388,
+      "sku": "Rama#8",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 388,
+      "sku": "Rama#7",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 388,
+      "sku": "Rama#8",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 392,
@@ -2099,7 +2505,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 86
+      "weight": 100
     },
     {
       "t": 392,
@@ -2107,7 +2513,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 392,
-      "weight": 95
+      "weight": 50
     },
     {
       "t": 394,
@@ -2119,24 +2525,26 @@
     {
       "t": 394,
       "sku": "var-27",
-      "station": "rama#11",
+      "station": "rama#16",
       "status": "on_rama",
       "waited": 0,
-      "weight": 60
+      "weight": 200
     },
     {
-      "t": 400,
-      "sku": "Rama#5",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
+      "t": 394,
+      "sku": "Rama#16",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 200
     },
     {
-      "t": 400,
-      "sku": "Rama#6",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
+      "t": 394,
+      "sku": "Rama#16",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 400,
@@ -2151,23 +2559,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 86
-    },
-    {
-      "t": 400,
-      "sku": "Rama#5",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 191
-    },
-    {
-      "t": 400,
-      "sku": "Rama#6",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 163
+      "weight": 100
     },
     {
       "t": 406,
@@ -2182,7 +2574,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 95
+      "weight": 50
     },
     {
       "t": 406,
@@ -2190,7 +2582,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 406,
-      "weight": 49
+      "weight": 100
     },
     {
       "t": 408,
@@ -2202,41 +2594,55 @@
     {
       "t": 408,
       "sku": "var-28",
-      "station": "rama#11",
+      "station": "rama#17",
       "status": "on_rama",
       "waited": 0,
-      "weight": 146
+      "weight": 100
     },
     {
       "t": 410,
-      "sku": "Rama#8",
+      "sku": "Rama#12",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 410,
-      "sku": "Rama#8",
+      "sku": "Rama#12",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 170
+      "weight": 200
     },
     {
       "t": 410,
-      "sku": "Rama#7",
+      "sku": "Rama#11",
       "station": "termokamera",
       "status": "start",
       "waited": 0,
-      "weight": 240
+      "weight": 200
     },
     {
       "t": 410,
-      "sku": "Rama#8",
+      "sku": "Rama#12",
       "station": "termokamera",
       "status": "start",
       "waited": 0,
-      "weight": 170
+      "weight": 200
+    },
+    {
+      "t": 414,
+      "sku": "Rama#9",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 414,
+      "sku": "Rama#10",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
     },
     {
       "t": 414,
@@ -2251,22 +2657,23 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 95
+      "weight": 50
     },
     {
-      "t": 416.7,
-      "sku": "batch1(589kg)",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 416.7,
-      "sku": "batch1(589kg)",
-      "station": "sklad",
-      "status": "stored",
+      "t": 414,
+      "sku": "Rama#9",
+      "station": "ohlazdenie",
+      "status": "start",
       "waited": 0,
-      "weight": 589
+      "weight": 150
+    },
+    {
+      "t": 414,
+      "sku": "Rama#10",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 420,
@@ -2281,7 +2688,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 49
+      "weight": 100
     },
     {
       "t": 420,
@@ -2289,7 +2696,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 420,
-      "weight": 94
+      "weight": 50
     },
     {
       "t": 422,
@@ -2301,26 +2708,26 @@
     {
       "t": 422,
       "sku": "var-29",
-      "station": "rama#11",
+      "station": "rama#17",
       "status": "on_rama",
       "waited": 0,
-      "weight": 241
+      "weight": 150
     },
     {
       "t": 422,
-      "sku": "Rama#11",
+      "sku": "Rama#17",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 241
+      "weight": 150
     },
     {
       "t": 422,
-      "sku": "Rama#11",
+      "sku": "Rama#17",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 241
+      "weight": 150
     },
     {
       "t": 428,
@@ -2335,21 +2742,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 49
-    },
-    {
-      "t": 430,
-      "sku": "Rama#5",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 430,
-      "sku": "Rama#6",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
+      "weight": 100
     },
     {
       "t": 430,
@@ -2364,7 +2757,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 94
+      "weight": 50
     },
     {
       "t": 430,
@@ -2372,15 +2765,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 430,
-      "weight": 84
-    },
-    {
-      "t": 430,
-      "sku": "batch2(506kg)",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 506
+      "weight": 50
     },
     {
       "t": 436,
@@ -2392,41 +2777,71 @@
     {
       "t": 436,
       "sku": "var-30",
-      "station": "rama#12",
+      "station": "rama#18",
       "status": "on_rama",
       "waited": 0,
-      "weight": 49
+      "weight": 100
     },
     {
       "t": 436,
-      "sku": "Rama#12",
+      "sku": "Rama#18",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 49
+      "weight": 100
     },
     {
       "t": 436,
-      "sku": "Rama#12",
+      "sku": "Rama#18",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 49
+      "weight": 100
     },
     {
       "t": 438,
-      "sku": "Rama#9",
+      "sku": "Rama#13",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 438,
-      "sku": "Rama#9",
+      "sku": "Rama#13",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 156
+      "weight": 200
+    },
+    {
+      "t": 438,
+      "sku": "Rama#7",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 438,
+      "sku": "Rama#8",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 438,
+      "sku": "Rama#7",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 438,
+      "sku": "Rama#8",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 440,
@@ -2448,7 +2863,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 94
+      "weight": 50
     },
     {
       "t": 440,
@@ -2456,7 +2871,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 84
+      "weight": 50
     },
     {
       "t": 440,
@@ -2464,7 +2879,37 @@
       "station": "kuter",
       "status": "start",
       "waited": 440,
-      "weight": 77
+      "weight": 150
+    },
+    {
+      "t": 444,
+      "sku": "Rama#9",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 444,
+      "sku": "Rama#10",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 444,
+      "sku": "Rama#9",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 444,
+      "sku": "Rama#10",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 450,
@@ -2476,10 +2921,10 @@
     {
       "t": 450,
       "sku": "pk-1",
-      "station": "rama#13",
+      "station": "rama#19",
       "status": "on_rama",
       "waited": 0,
-      "weight": 94
+      "weight": 50
     },
     {
       "t": 450,
@@ -2501,7 +2946,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 84
+      "weight": 50
     },
     {
       "t": 450,
@@ -2509,7 +2954,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 77
+      "weight": 150
     },
     {
       "t": 450,
@@ -2517,7 +2962,38 @@
       "station": "kuter",
       "status": "start",
       "waited": 450,
-      "weight": 40
+      "weight": 100
+    },
+    {
+      "t": 452,
+      "sku": "Rama#14",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 452,
+      "sku": "Rama#14",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 452,
+      "sku": "Rama#13",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 452,
+      "sku": "Rama#14",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 460,
@@ -2529,18 +3005,10 @@
     {
       "t": 460,
       "sku": "pk-2",
-      "station": "rama#13",
+      "station": "rama#19",
       "status": "on_rama",
       "waited": 0,
-      "weight": 178
-    },
-    {
-      "t": 460,
-      "sku": "Rama#13",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 178
+      "weight": 100
     },
     {
       "t": 460,
@@ -2562,7 +3030,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 77
+      "weight": 150
     },
     {
       "t": 460,
@@ -2570,7 +3038,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 40
+      "weight": 100
     },
     {
       "t": 460,
@@ -2578,26 +3046,33 @@
       "station": "kuter",
       "status": "start",
       "waited": 460,
-      "weight": 59
+      "weight": 150
     },
     {
-      "t": 460,
-      "sku": "Rama#13",
+      "t": 466,
+      "sku": "Rama#15",
       "station": "osadka",
-      "status": "start",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 466,
+      "sku": "Rama#15",
+      "station": "queue_termokamera",
+      "status": "entered",
       "waited": 0,
-      "weight": 178
+      "weight": 150
     },
     {
       "t": 470,
-      "sku": "Rama#7",
+      "sku": "Rama#11",
       "station": "termokamera",
       "status": "done",
       "waited": 0
     },
     {
       "t": 470,
-      "sku": "Rama#8",
+      "sku": "Rama#12",
       "station": "termokamera",
       "status": "done",
       "waited": 0
@@ -2612,10 +3087,18 @@
     {
       "t": 470,
       "sku": "pk-3",
-      "station": "rama#14",
+      "station": "rama#19",
       "status": "on_rama",
       "waited": 0,
-      "weight": 77
+      "weight": 250
+    },
+    {
+      "t": 470,
+      "sku": "Rama#19",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 250
     },
     {
       "t": 470,
@@ -2637,7 +3120,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 40
+      "weight": 100
     },
     {
       "t": 470,
@@ -2645,7 +3128,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 59
+      "weight": 150
     },
     {
       "t": 470,
@@ -2653,38 +3136,31 @@
       "station": "kuter",
       "status": "start",
       "waited": 470,
-      "weight": 64
+      "weight": 50
     },
     {
       "t": 470,
-      "sku": "Rama#7",
+      "sku": "Rama#11",
       "station": "ohlazdenie",
       "status": "start",
       "waited": 0,
-      "weight": 240
+      "weight": 200
     },
     {
       "t": 470,
-      "sku": "Rama#8",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 170
-    },
-    {
-      "t": 480,
-      "sku": "Rama#10",
+      "sku": "Rama#19",
       "station": "osadka",
-      "status": "done",
-      "waited": 0
+      "status": "start",
+      "waited": 0,
+      "weight": 250
     },
     {
-      "t": 480,
-      "sku": "Rama#10",
-      "station": "queue_termokamera",
-      "status": "entered",
+      "t": 470,
+      "sku": "Rama#12",
+      "station": "ohlazdenie",
+      "status": "start",
       "waited": 0,
-      "weight": 177
+      "weight": 200
     },
     {
       "t": 480,
@@ -2696,10 +3172,10 @@
     {
       "t": 480,
       "sku": "pk-4",
-      "station": "rama#14",
+      "station": "rama#20",
       "status": "on_rama",
       "waited": 0,
-      "weight": 117
+      "weight": 100
     },
     {
       "t": 480,
@@ -2721,7 +3197,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 59
+      "weight": 150
     },
     {
       "t": 480,
@@ -2729,7 +3205,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 64
+      "weight": 50
     },
     {
       "t": 480,
@@ -2737,23 +3213,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 480,
-      "weight": 49
-    },
-    {
-      "t": 480,
-      "sku": "Rama#9",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 156
-    },
-    {
-      "t": 480,
-      "sku": "Rama#10",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 177
+      "weight": 150
     },
     {
       "t": 490,
@@ -2765,18 +3225,18 @@
     {
       "t": 490,
       "sku": "pk-5",
-      "station": "rama#14",
+      "station": "rama#20",
       "status": "on_rama",
       "waited": 0,
-      "weight": 176
+      "weight": 250
     },
     {
       "t": 490,
-      "sku": "Rama#14",
+      "sku": "Rama#20",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 176
+      "weight": 250
     },
     {
       "t": 490,
@@ -2798,7 +3258,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 64
+      "weight": 50
     },
     {
       "t": 490,
@@ -2806,7 +3266,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 49
+      "weight": 150
     },
     {
       "t": 490,
@@ -2814,41 +3274,87 @@
       "station": "kuter",
       "status": "start",
       "waited": 490,
-      "weight": 49
+      "weight": 150
     },
     {
       "t": 490,
-      "sku": "Rama#14",
+      "sku": "Rama#20",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 176
+      "weight": 250
     },
     {
-      "t": 490.7,
-      "sku": "batch2(506kg)",
+      "t": 494,
+      "sku": "Rama#16",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 494,
+      "sku": "Rama#16",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 494,
+      "sku": "Rama#9",
       "station": "upakovka",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 490.7,
-      "sku": "batch2(506kg)",
+      "t": 494,
+      "sku": "Rama#10",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 494,
+      "sku": "Rama#9",
       "station": "sklad",
       "status": "stored",
       "waited": 0,
-      "weight": 506
+      "weight": 150
+    },
+    {
+      "t": 494,
+      "sku": "Rama#10",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 494,
+      "sku": "Rama#15",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 494,
+      "sku": "Rama#16",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 500,
-      "sku": "Rama#7",
+      "sku": "Rama#11",
       "station": "ohlazdenie",
       "status": "done",
       "waited": 0
     },
     {
       "t": 500,
-      "sku": "Rama#8",
+      "sku": "Rama#12",
       "station": "ohlazdenie",
       "status": "done",
       "waited": 0
@@ -2863,10 +3369,10 @@
     {
       "t": 500,
       "sku": "pk-6",
-      "station": "rama#15",
+      "station": "rama#21",
       "status": "on_rama",
       "waited": 0,
-      "weight": 64
+      "weight": 50
     },
     {
       "t": 500,
@@ -2888,7 +3394,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 49
+      "weight": 150
     },
     {
       "t": 500,
@@ -2896,7 +3402,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 49
+      "weight": 150
     },
     {
       "t": 500,
@@ -2904,7 +3410,23 @@
       "station": "kuter",
       "status": "start",
       "waited": 500,
-      "weight": 70
+      "weight": 50
+    },
+    {
+      "t": 500,
+      "sku": "Rama#11",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 500,
+      "sku": "Rama#12",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 510,
@@ -2916,10 +3438,18 @@
     {
       "t": 510,
       "sku": "pk-7",
-      "station": "rama#15",
+      "station": "rama#21",
       "status": "on_rama",
       "waited": 0,
-      "weight": 113
+      "weight": 200
+    },
+    {
+      "t": 510,
+      "sku": "Rama#21",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 510,
@@ -2941,7 +3471,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 49
+      "weight": 150
     },
     {
       "t": 510,
@@ -2949,7 +3479,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 70
+      "weight": 50
     },
     {
       "t": 510,
@@ -2957,7 +3487,45 @@
       "station": "kuter",
       "status": "start",
       "waited": 510,
-      "weight": 87
+      "weight": 50
+    },
+    {
+      "t": 510,
+      "sku": "Rama#21",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 512,
+      "sku": "Rama#13",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 512,
+      "sku": "Rama#14",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 512,
+      "sku": "Rama#13",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 512,
+      "sku": "Rama#14",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 520,
@@ -2969,18 +3537,18 @@
     {
       "t": 520,
       "sku": "pk-8",
-      "station": "rama#15",
+      "station": "rama#22",
       "status": "on_rama",
       "waited": 0,
-      "weight": 162
+      "weight": 150
     },
     {
       "t": 520,
-      "sku": "Rama#15",
+      "sku": "Rama#22",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 162
+      "weight": 150
     },
     {
       "t": 520,
@@ -3002,7 +3570,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 70
+      "weight": 50
     },
     {
       "t": 520,
@@ -3010,7 +3578,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 87
+      "weight": 50
     },
     {
       "t": 520,
@@ -3018,30 +3586,30 @@
       "station": "kuter",
       "status": "start",
       "waited": 520,
-      "weight": 61
+      "weight": 50
     },
     {
       "t": 520,
-      "sku": "Rama#15",
+      "sku": "Rama#22",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 162
+      "weight": 150
     },
     {
       "t": 522,
-      "sku": "Rama#11",
+      "sku": "Rama#17",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 522,
-      "sku": "Rama#11",
+      "sku": "Rama#17",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 241
+      "weight": 150
     },
     {
       "t": 530,
@@ -3053,10 +3621,10 @@
     {
       "t": 530,
       "sku": "pk-9",
-      "station": "rama#16",
+      "station": "rama#23",
       "status": "on_rama",
       "waited": 0,
-      "weight": 70
+      "weight": 50
     },
     {
       "t": 530,
@@ -3078,7 +3646,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 87
+      "weight": 50
     },
     {
       "t": 530,
@@ -3086,7 +3654,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 61
+      "weight": 50
     },
     {
       "t": 530,
@@ -3094,52 +3662,38 @@
       "station": "kuter",
       "status": "start",
       "waited": 530,
-      "weight": 77
+      "weight": 100
     },
     {
       "t": 536,
-      "sku": "Rama#12",
+      "sku": "Rama#18",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 536,
-      "sku": "Rama#12",
+      "sku": "Rama#18",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 49
+      "weight": 100
     },
     {
       "t": 536,
-      "sku": "Rama#11",
+      "sku": "Rama#17",
       "station": "termokamera",
       "status": "start",
       "waited": 0,
-      "weight": 241
+      "weight": 150
     },
     {
       "t": 536,
-      "sku": "Rama#12",
+      "sku": "Rama#18",
       "station": "termokamera",
       "status": "start",
       "waited": 0,
-      "weight": 49
-    },
-    {
-      "t": 540,
-      "sku": "Rama#9",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 540,
-      "sku": "Rama#10",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
+      "weight": 100
     },
     {
       "t": 540,
@@ -3151,18 +3705,10 @@
     {
       "t": 540,
       "sku": "pk-10",
-      "station": "rama#16",
+      "station": "rama#23",
       "status": "on_rama",
       "waited": 0,
-      "weight": 157
-    },
-    {
-      "t": 540,
-      "sku": "Rama#16",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 157
+      "weight": 100
     },
     {
       "t": 540,
@@ -3184,7 +3730,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 61
+      "weight": 50
     },
     {
       "t": 540,
@@ -3192,7 +3738,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 77
+      "weight": 100
     },
     {
       "t": 540,
@@ -3200,31 +3746,51 @@
       "station": "kuter",
       "status": "start",
       "waited": 540,
-      "weight": 46
+      "weight": 100
     },
     {
-      "t": 540,
-      "sku": "Rama#9",
+      "t": 542,
+      "sku": "Rama#13",
       "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 156
+      "status": "done",
+      "waited": 0
     },
     {
-      "t": 540,
-      "sku": "Rama#16",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 157
-    },
-    {
-      "t": 540,
-      "sku": "Rama#10",
+      "t": 542,
+      "sku": "Rama#14",
       "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 542,
+      "sku": "Rama#13",
+      "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 177
+      "weight": 200
+    },
+    {
+      "t": 542,
+      "sku": "Rama#14",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 550,
+      "sku": "Rama#11",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 550,
+      "sku": "Rama#12",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
     },
     {
       "t": 550,
@@ -3236,10 +3802,18 @@
     {
       "t": 550,
       "sku": "pk-11",
-      "station": "rama#17",
+      "station": "rama#23",
       "status": "on_rama",
       "waited": 0,
-      "weight": 61
+      "weight": 150
+    },
+    {
+      "t": 550,
+      "sku": "Rama#23",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 550,
@@ -3257,11 +3831,27 @@
     },
     {
       "t": 550,
+      "sku": "Rama#11",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 550,
+      "sku": "Rama#12",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 550,
       "sku": "pk-12",
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 77
+      "weight": 100
     },
     {
       "t": 550,
@@ -3269,7 +3859,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 46
+      "weight": 100
     },
     {
       "t": 550,
@@ -3277,7 +3867,45 @@
       "station": "kuter",
       "status": "start",
       "waited": 550,
-      "weight": 82
+      "weight": 150
+    },
+    {
+      "t": 550,
+      "sku": "Rama#23",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 554,
+      "sku": "Rama#15",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 554,
+      "sku": "Rama#16",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 554,
+      "sku": "Rama#15",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 554,
+      "sku": "Rama#16",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 560,
@@ -3289,10 +3917,10 @@
     {
       "t": 560,
       "sku": "pk-12",
-      "station": "rama#17",
+      "station": "rama#24",
       "status": "on_rama",
       "waited": 0,
-      "weight": 138
+      "weight": 100
     },
     {
       "t": 560,
@@ -3314,7 +3942,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 46
+      "weight": 100
     },
     {
       "t": 560,
@@ -3322,7 +3950,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 82
+      "weight": 150
     },
     {
       "t": 560,
@@ -3330,21 +3958,7 @@
       "station": "kuter",
       "status": "start",
       "waited": 560,
-      "weight": 47
-    },
-    {
-      "t": 570,
-      "sku": "Rama#9",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 570,
-      "sku": "Rama#10",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
+      "weight": 150
     },
     {
       "t": 570,
@@ -3356,18 +3970,18 @@
     {
       "t": 570,
       "sku": "pk-13",
-      "station": "rama#17",
+      "station": "rama#24",
       "status": "on_rama",
       "waited": 0,
-      "weight": 184
+      "weight": 200
     },
     {
       "t": 570,
-      "sku": "Rama#17",
+      "sku": "Rama#24",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 184
+      "weight": 200
     },
     {
       "t": 570,
@@ -3389,7 +4003,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 82
+      "weight": 150
     },
     {
       "t": 570,
@@ -3397,7 +4011,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 47
+      "weight": 150
     },
     {
       "t": 570,
@@ -3405,23 +4019,15 @@
       "station": "kuter",
       "status": "start",
       "waited": 570,
-      "weight": 58
+      "weight": 150
     },
     {
       "t": 570,
-      "sku": "batch3(566kg)",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 566
-    },
-    {
-      "t": 570,
-      "sku": "Rama#17",
+      "sku": "Rama#24",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 184
+      "weight": 200
     },
     {
       "t": 580,
@@ -3433,10 +4039,18 @@
     {
       "t": 580,
       "sku": "pk-14",
-      "station": "rama#18",
+      "station": "rama#25",
       "status": "on_rama",
       "waited": 0,
-      "weight": 82
+      "weight": 150
+    },
+    {
+      "t": 580,
+      "sku": "Rama#25",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 580,
@@ -3458,7 +4072,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 47
+      "weight": 150
     },
     {
       "t": 580,
@@ -3466,7 +4080,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 58
+      "weight": 150
     },
     {
       "t": 580,
@@ -3474,7 +4088,45 @@
       "station": "kuter",
       "status": "start",
       "waited": 580,
-      "weight": 56
+      "weight": 150
+    },
+    {
+      "t": 580,
+      "sku": "Rama#25",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 584,
+      "sku": "Rama#15",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 584,
+      "sku": "Rama#16",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 584,
+      "sku": "Rama#15",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 584,
+      "sku": "Rama#16",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 590,
@@ -3486,10 +4138,18 @@
     {
       "t": 590,
       "sku": "pk-15",
-      "station": "rama#18",
+      "station": "rama#26",
       "status": "on_rama",
       "waited": 0,
-      "weight": 129
+      "weight": 150
+    },
+    {
+      "t": 590,
+      "sku": "Rama#26",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 590,
@@ -3511,7 +4171,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 58
+      "weight": 150
     },
     {
       "t": 590,
@@ -3519,7 +4179,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 56
+      "weight": 150
     },
     {
       "t": 590,
@@ -3527,37 +4187,75 @@
       "station": "kuter",
       "status": "start",
       "waited": 590,
-      "weight": 53
+      "weight": 150
+    },
+    {
+      "t": 590,
+      "sku": "Rama#26",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 592,
+      "sku": "Rama#13",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 592,
+      "sku": "Rama#14",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 592,
+      "sku": "Rama#13",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 592,
+      "sku": "Rama#14",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 596,
-      "sku": "Rama#11",
+      "sku": "Rama#17",
       "station": "termokamera",
       "status": "done",
       "waited": 0
     },
     {
       "t": 596,
-      "sku": "Rama#12",
+      "sku": "Rama#18",
       "station": "termokamera",
       "status": "done",
       "waited": 0
     },
     {
       "t": 596,
-      "sku": "Rama#11",
+      "sku": "Rama#17",
       "station": "ohlazdenie",
       "status": "start",
       "waited": 0,
-      "weight": 241
+      "weight": 150
     },
     {
       "t": 596,
-      "sku": "Rama#12",
+      "sku": "Rama#18",
       "station": "ohlazdenie",
       "status": "start",
       "waited": 0,
-      "weight": 49
+      "weight": 100
     },
     {
       "t": 600,
@@ -3569,18 +4267,18 @@
     {
       "t": 600,
       "sku": "pk-16",
-      "station": "rama#18",
+      "station": "rama#27",
       "status": "on_rama",
       "waited": 0,
-      "weight": 187
+      "weight": 150
     },
     {
       "t": 600,
-      "sku": "Rama#18",
+      "sku": "Rama#27",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 187
+      "weight": 150
     },
     {
       "t": 600,
@@ -3602,7 +4300,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 56
+      "weight": 150
     },
     {
       "t": 600,
@@ -3610,7 +4308,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 53
+      "weight": 150
     },
     {
       "t": 600,
@@ -3618,15 +4316,15 @@
       "station": "kuter",
       "status": "start",
       "waited": 600,
-      "weight": 69
+      "weight": 100
     },
     {
       "t": 600,
-      "sku": "Rama#18",
+      "sku": "Rama#27",
       "station": "osadka",
       "status": "start",
       "waited": 0,
-      "weight": 187
+      "weight": 150
     },
     {
       "t": 610,
@@ -3638,10 +4336,18 @@
     {
       "t": 610,
       "sku": "pk-17",
-      "station": "rama#19",
+      "station": "rama#28",
       "status": "on_rama",
       "waited": 0,
-      "weight": 56
+      "weight": 150
+    },
+    {
+      "t": 610,
+      "sku": "Rama#28",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 610,
@@ -3663,7 +4369,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 53
+      "weight": 150
     },
     {
       "t": 610,
@@ -3671,7 +4377,7 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 69
+      "weight": 100
     },
     {
       "t": 610,
@@ -3679,7 +4385,15 @@
       "station": "kuter",
       "status": "start",
       "waited": 610,
-      "weight": 71
+      "weight": 100
+    },
+    {
+      "t": 610,
+      "sku": "Rama#28",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 620,
@@ -3691,10 +4405,18 @@
     {
       "t": 620,
       "sku": "pk-18",
-      "station": "rama#19",
+      "station": "rama#29",
       "status": "on_rama",
       "waited": 0,
-      "weight": 109
+      "weight": 150
+    },
+    {
+      "t": 620,
+      "sku": "Rama#29",
+      "station": "queue_osadka",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 620,
@@ -3716,7 +4438,7 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 69
+      "weight": 100
     },
     {
       "t": 620,
@@ -3724,21 +4446,45 @@
       "station": "shpric",
       "status": "start",
       "waited": 0,
-      "weight": 71
+      "weight": 100
+    },
+    {
+      "t": 620,
+      "sku": "Rama#29",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 626,
-      "sku": "Rama#11",
+      "sku": "Rama#17",
       "station": "ohlazdenie",
       "status": "done",
       "waited": 0
     },
     {
       "t": 626,
-      "sku": "Rama#12",
+      "sku": "Rama#18",
       "station": "ohlazdenie",
       "status": "done",
       "waited": 0
+    },
+    {
+      "t": 626,
+      "sku": "Rama#17",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 626,
+      "sku": "Rama#18",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 100
     },
     {
       "t": 630,
@@ -3750,18 +4496,10 @@
     {
       "t": 630,
       "sku": "pk-19",
-      "station": "rama#19",
+      "station": "rama#30",
       "status": "on_rama",
       "waited": 0,
-      "weight": 178
-    },
-    {
-      "t": 630,
-      "sku": "Rama#19",
-      "station": "queue_osadka",
-      "status": "entered",
-      "waited": 0,
-      "weight": 178
+      "weight": 100
     },
     {
       "t": 630,
@@ -3776,30 +4514,37 @@
       "station": "klipsator",
       "status": "start",
       "waited": 0,
-      "weight": 71
+      "weight": 100
     },
     {
-      "t": 630,
-      "sku": "Rama#19",
-      "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 178
-    },
-    {
-      "t": 637.9,
-      "sku": "batch3(566kg)",
+      "t": 634,
+      "sku": "Rama#15",
       "station": "upakovka",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 637.9,
-      "sku": "batch3(566kg)",
+      "t": 634,
+      "sku": "Rama#16",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 634,
+      "sku": "Rama#15",
       "station": "sklad",
       "status": "stored",
       "waited": 0,
-      "weight": 566
+      "weight": 150
+    },
+    {
+      "t": 634,
+      "sku": "Rama#16",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 640,
@@ -3811,455 +4556,872 @@
     {
       "t": 640,
       "sku": "pk-20",
-      "station": "rama#20",
+      "station": "rama#30",
       "status": "on_rama",
       "waited": 0,
-      "weight": 71
+      "weight": 200
     },
     {
       "t": 640,
-      "sku": "Rama#20",
+      "sku": "Rama#30",
       "station": "queue_osadka",
       "status": "entered",
       "waited": 0,
-      "weight": 71
+      "weight": 200
     },
     {
       "t": 640,
+      "sku": "Rama#30",
+      "station": "osadka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 676,
+      "sku": "Rama#17",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 676,
+      "sku": "Rama#18",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 676,
+      "sku": "Rama#17",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 676,
+      "sku": "Rama#18",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 100
+    },
+    {
+      "t": 710,
+      "sku": "Rama#19",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 710,
+      "sku": "Rama#19",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 250
+    },
+    {
+      "t": 730,
       "sku": "Rama#20",
       "station": "osadka",
-      "status": "start",
-      "waited": 0,
-      "weight": 71
-    },
-    {
-      "t": 700,
-      "sku": "Rama#13",
-      "station": "osadka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 700,
-      "sku": "Rama#13",
-      "station": "queue_termokamera",
-      "status": "entered",
-      "waited": 0,
-      "weight": 178
-    },
-    {
-      "t": 730,
-      "sku": "Rama#14",
-      "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 730,
-      "sku": "Rama#14",
+      "sku": "Rama#20",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 176
+      "weight": 250
     },
     {
       "t": 730,
-      "sku": "Rama#13",
+      "sku": "Rama#19",
       "station": "termokamera",
       "status": "start",
       "waited": 0,
-      "weight": 178
+      "weight": 250
     },
     {
       "t": 730,
-      "sku": "Rama#14",
+      "sku": "Rama#20",
       "station": "termokamera",
       "status": "start",
       "waited": 0,
-      "weight": 176
+      "weight": 250
+    },
+    {
+      "t": 750,
+      "sku": "Rama#21",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 750,
+      "sku": "Rama#21",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 200
     },
     {
       "t": 760,
-      "sku": "Rama#15",
+      "sku": "Rama#22",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 760,
-      "sku": "Rama#15",
+      "sku": "Rama#22",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 162
+      "weight": 150
     },
     {
-      "t": 780,
-      "sku": "Rama#16",
+      "t": 760,
+      "sku": "Rama#21",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 760,
+      "sku": "Rama#22",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 790,
+      "sku": "Rama#23",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 780,
-      "sku": "Rama#16",
+      "t": 790,
+      "sku": "Rama#23",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 157
-    },
-    {
-      "t": 780,
-      "sku": "Rama#15",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 162
-    },
-    {
-      "t": 780,
-      "sku": "Rama#16",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 157
+      "weight": 150
     },
     {
       "t": 810,
-      "sku": "Rama#17",
+      "sku": "Rama#24",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 810,
-      "sku": "Rama#17",
+      "sku": "Rama#24",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 184
+      "weight": 200
+    },
+    {
+      "t": 810,
+      "sku": "Rama#23",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 810,
+      "sku": "Rama#24",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 820,
+      "sku": "Rama#25",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 820,
+      "sku": "Rama#25",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 830,
+      "sku": "Rama#26",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 830,
+      "sku": "Rama#26",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 840,
-      "sku": "Rama#18",
+      "sku": "Rama#27",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 840,
-      "sku": "Rama#18",
+      "sku": "Rama#27",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 187
+      "weight": 150
     },
     {
       "t": 840,
-      "sku": "Rama#13",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 840,
-      "sku": "Rama#14",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 840,
-      "sku": "Rama#17",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 184
-    },
-    {
-      "t": 840,
-      "sku": "Rama#18",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 187
-    },
-    {
-      "t": 840,
-      "sku": "Rama#13",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 178
-    },
-    {
-      "t": 840,
-      "sku": "Rama#14",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 176
-    },
-    {
-      "t": 870,
       "sku": "Rama#19",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 840,
+      "sku": "Rama#20",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 840,
+      "sku": "Rama#25",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 840,
+      "sku": "Rama#26",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 840,
+      "sku": "Rama#19",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 250
+    },
+    {
+      "t": 840,
+      "sku": "Rama#20",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 250
+    },
+    {
+      "t": 850,
+      "sku": "Rama#28",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 870,
-      "sku": "Rama#19",
+      "t": 850,
+      "sku": "Rama#28",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 178
+      "weight": 150
+    },
+    {
+      "t": 860,
+      "sku": "Rama#29",
+      "station": "osadka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 860,
+      "sku": "Rama#29",
+      "station": "queue_termokamera",
+      "status": "entered",
+      "waited": 0,
+      "weight": 150
     },
     {
       "t": 870,
-      "sku": "Rama#13",
+      "sku": "Rama#21",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 870,
+      "sku": "Rama#22",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 870,
+      "sku": "Rama#19",
       "station": "ohlazdenie",
       "status": "done",
       "waited": 0
     },
     {
       "t": 870,
-      "sku": "Rama#14",
+      "sku": "Rama#20",
       "station": "ohlazdenie",
       "status": "done",
       "waited": 0
     },
     {
       "t": 870,
-      "sku": "batch4(645kg)",
+      "sku": "Rama#27",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 870,
+      "sku": "Rama#28",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 870,
+      "sku": "Rama#21",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 870,
+      "sku": "Rama#19",
       "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 645
+      "weight": 250
+    },
+    {
+      "t": 870,
+      "sku": "Rama#22",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 870,
+      "sku": "Rama#20",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 250
     },
     {
       "t": 880,
-      "sku": "Rama#20",
+      "sku": "Rama#30",
       "station": "osadka",
       "status": "done",
       "waited": 0
     },
     {
       "t": 880,
-      "sku": "Rama#20",
+      "sku": "Rama#30",
       "station": "queue_termokamera",
       "status": "entered",
       "waited": 0,
-      "weight": 71
+      "weight": 200
     },
     {
-      "t": 880,
-      "sku": "Rama#19",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 178
-    },
-    {
-      "t": 880,
-      "sku": "Rama#20",
-      "station": "termokamera",
-      "status": "start",
-      "waited": 0,
-      "weight": 71
-    },
-    {
-      "t": 890,
-      "sku": "Rama#15",
-      "station": "termokamera",
+      "t": 900,
+      "sku": "Rama#21",
+      "station": "ohlazdenie",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 890,
-      "sku": "Rama#16",
-      "station": "termokamera",
+      "t": 900,
+      "sku": "Rama#22",
+      "station": "ohlazdenie",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 890,
-      "sku": "Rama#15",
-      "station": "ohlazdenie",
+      "t": 900,
+      "sku": "Rama#21",
+      "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 162
+      "weight": 200
     },
     {
-      "t": 890,
-      "sku": "Rama#16",
-      "station": "ohlazdenie",
+      "t": 900,
+      "sku": "Rama#22",
+      "station": "upakovka",
       "status": "start",
       "waited": 0,
-      "weight": 157
+      "weight": 150
     },
     {
       "t": 920,
-      "sku": "Rama#15",
-      "station": "ohlazdenie",
+      "sku": "Rama#23",
+      "station": "termokamera",
       "status": "done",
       "waited": 0
     },
     {
       "t": 920,
-      "sku": "Rama#16",
-      "station": "ohlazdenie",
+      "sku": "Rama#24",
+      "station": "termokamera",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 947.4,
-      "sku": "batch4(645kg)",
+      "t": 920,
+      "sku": "Rama#19",
       "station": "upakovka",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 947.4,
-      "sku": "batch4(645kg)",
+      "t": 920,
+      "sku": "Rama#20",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 920,
+      "sku": "Rama#19",
       "station": "sklad",
       "status": "stored",
       "waited": 0,
-      "weight": 645
+      "weight": 250
     },
     {
-      "t": 950,
-      "sku": "Rama#17",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 950,
-      "sku": "Rama#18",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 950,
-      "sku": "Rama#17",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 184
-    },
-    {
-      "t": 950,
-      "sku": "Rama#18",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 187
-    },
-    {
-      "t": 980,
-      "sku": "Rama#17",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 980,
-      "sku": "Rama#18",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 980,
-      "sku": "batch5(679kg)",
-      "station": "upakovka",
-      "status": "start",
-      "waited": 0,
-      "weight": 679
-    },
-    {
-      "t": 990,
-      "sku": "Rama#19",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 990,
+      "t": 920,
       "sku": "Rama#20",
-      "station": "termokamera",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 990,
-      "sku": "Rama#19",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 178
-    },
-    {
-      "t": 990,
-      "sku": "Rama#20",
-      "station": "ohlazdenie",
-      "status": "start",
-      "waited": 0,
-      "weight": 71
-    },
-    {
-      "t": 1020,
-      "sku": "Rama#19",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 1020,
-      "sku": "Rama#20",
-      "station": "ohlazdenie",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 1061.5,
-      "sku": "batch5(679kg)",
-      "station": "upakovka",
-      "status": "done",
-      "waited": 0
-    },
-    {
-      "t": 1061.5,
-      "sku": "batch5(679kg)",
       "station": "sklad",
       "status": "stored",
       "waited": 0,
-      "weight": 679
+      "weight": 250
     },
     {
-      "t": 1061.5,
-      "sku": "batch6(436kg)",
-      "station": "upakovka",
+      "t": 920,
+      "sku": "Rama#29",
+      "station": "termokamera",
       "status": "start",
       "waited": 0,
-      "weight": 436
+      "weight": 150
     },
     {
-      "t": 1113.8,
-      "sku": "batch6(436kg)",
+      "t": 920,
+      "sku": "Rama#30",
+      "station": "termokamera",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 920,
+      "sku": "Rama#23",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 920,
+      "sku": "Rama#24",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 950,
+      "sku": "Rama#25",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 950,
+      "sku": "Rama#26",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 950,
+      "sku": "Rama#21",
       "station": "upakovka",
       "status": "done",
       "waited": 0
     },
     {
-      "t": 1113.8,
-      "sku": "batch6(436kg)",
+      "t": 950,
+      "sku": "Rama#22",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 950,
+      "sku": "Rama#23",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 950,
+      "sku": "Rama#24",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 950,
+      "sku": "Rama#21",
       "station": "sklad",
       "status": "stored",
       "waited": 0,
-      "weight": 436
+      "weight": 200
+    },
+    {
+      "t": 950,
+      "sku": "Rama#22",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 950,
+      "sku": "Rama#25",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 950,
+      "sku": "Rama#23",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 950,
+      "sku": "Rama#26",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 950,
+      "sku": "Rama#24",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 980,
+      "sku": "Rama#27",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 980,
+      "sku": "Rama#28",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 980,
+      "sku": "Rama#25",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 980,
+      "sku": "Rama#26",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 980,
+      "sku": "Rama#27",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 980,
+      "sku": "Rama#25",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 980,
+      "sku": "Rama#28",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 980,
+      "sku": "Rama#26",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1000,
+      "sku": "Rama#23",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1000,
+      "sku": "Rama#24",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1000,
+      "sku": "Rama#23",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1000,
+      "sku": "Rama#24",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 1010,
+      "sku": "Rama#27",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1010,
+      "sku": "Rama#28",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1010,
+      "sku": "Rama#27",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1010,
+      "sku": "Rama#28",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1030,
+      "sku": "Rama#29",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1030,
+      "sku": "Rama#30",
+      "station": "termokamera",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1030,
+      "sku": "Rama#25",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1030,
+      "sku": "Rama#26",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1030,
+      "sku": "Rama#25",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1030,
+      "sku": "Rama#26",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1030,
+      "sku": "Rama#29",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1030,
+      "sku": "Rama#30",
+      "station": "ohlazdenie",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 1060,
+      "sku": "Rama#27",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1060,
+      "sku": "Rama#28",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1060,
+      "sku": "Rama#29",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1060,
+      "sku": "Rama#30",
+      "station": "ohlazdenie",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1060,
+      "sku": "Rama#27",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1060,
+      "sku": "Rama#28",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1060,
+      "sku": "Rama#29",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1060,
+      "sku": "Rama#30",
+      "station": "upakovka",
+      "status": "start",
+      "waited": 0,
+      "weight": 200
+    },
+    {
+      "t": 1110,
+      "sku": "Rama#29",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1110,
+      "sku": "Rama#30",
+      "station": "upakovka",
+      "status": "done",
+      "waited": 0
+    },
+    {
+      "t": 1110,
+      "sku": "Rama#29",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 150
+    },
+    {
+      "t": 1110,
+      "sku": "Rama#30",
+      "station": "sklad",
+      "status": "stored",
+      "waited": 0,
+      "weight": 200
     }
   ]
 }

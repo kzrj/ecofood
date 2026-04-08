@@ -1,19 +1,19 @@
 import random
 
-from .common.constants import SKU_WEIGHT_MAX, SKU_WEIGHT_MIN
+from .common.constants import SKU_WEIGHT_STEPS
 from .common.recipes import RECIPES
 
 
 def make_random_sku_list(count=50, *, seed=None):
     """
     Список SKU для симуляции: (id, recipe_id, weight_kg).
-    Рецепт выбирается случайно из RECIPES; вес — равномерно в диапазоне SKU.
+    Рецепт выбирается случайно из RECIPES; вес — кратен 50 (50 / 100 / 150 кг).
     """
     if seed is not None:
         random.seed(seed)
     recipe_ids = tuple(RECIPES.keys())
     return [
-        (f"sku-{i:03d}", random.choice(recipe_ids), random.randint(SKU_WEIGHT_MIN, SKU_WEIGHT_MAX))
+        (f"sku-{i:03d}", random.choice(recipe_ids), random.choice(SKU_WEIGHT_STEPS))
         for i in range(1, count + 1)
     ]
 

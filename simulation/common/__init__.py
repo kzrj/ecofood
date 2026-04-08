@@ -1,8 +1,7 @@
 from .constants import (
     OHLAZDENIE_TIME,
     RAMA_CAPACITY,
-    SKU_WEIGHT_MAX,
-    SKU_WEIGHT_MIN,
+    SKU_WEIGHT_STEPS,
     UPAKOVKA_TIME,
 )
 from .logging import log_event
@@ -15,8 +14,7 @@ __all__ = [
     "RAMA_CAPACITY",
     "RECIPES",
     "Rama",
-    "SKU_WEIGHT_MAX",
-    "SKU_WEIGHT_MIN",
+    "SKU_WEIGHT_STEPS",
     "UPAKOVKA_TIME",
     "calculate_total_ramas",
     "get_prep_steps",
