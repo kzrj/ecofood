@@ -4,7 +4,7 @@ import { create } from 'zustand'
 // Вычисляем состояние всех станций на момент времени t
 // ---------------------------------------------------------------
 // Возвращает:
-//   statuses     — { stationId: 'busy' | 'idle' }
+//   statuses     — { stationId: 'busy' | 'idle' | 'retool' }
 //   stationItems — { stationId: [{sku, weight}] }  — что сейчас внутри
 //   skadLevel    — накопленный вес на складе (кг)
 // Связь: когда станция получает Start → она "вытаскивает" раму из своей входящей очереди
@@ -14,12 +14,17 @@ const UPSTREAM_QUEUE = {
   termokamera: 'queue_termokamera',
 }
 
+const TERMO_RETOOL_SKU_PREFIX = 'sec#'
+
 // initialSkus = [{id, recipe, weight}] — список SKU из лога
 function computeState(events, currentTime, initialSkus = []) {
-  // inProgress[station] = Map<sku, {weight, recipe?}>
+  // inProgress[station] = Map<sku, {weight, recipe?, section?, phase?}>
   const inProgress = {}
   let skadLevel = 0
+  /** накопленный вес на складе по каждому SKU (порции: 150 + 150 + …) */
+  const skladBySku = new Map()
   const skuRecipeMap = new Map(initialSkus.map(({ id, recipe }) => [id, recipe]))
+  const plannedTotal = initialSkus.reduce((s, x) => s + (x.weight ?? 0), 0)
 
   // Заполняем начальную очередь кутера всеми SKU
   if (initialSkus.length > 0) {
@@ -42,6 +47,7 @@ function computeState(events, currentTime, initialSkus = []) {
       weight: w ?? prev?.weight ?? 0,
       recipe: evRecipe ?? prev?.recipe ?? skuRecipeMap.get(sku),
       section: evSection ?? prev?.section,
+      phase: prev?.phase ?? null,
     })
 
     if (status === 'on_rama') {
@@ -56,10 +62,31 @@ function computeState(events, currentTime, initialSkus = []) {
         inProgress[station].set(sku, mergeRecipe(prev, weight))
       }
 
+    } else if (status === 'retool_start') {
+      if (!inProgress[station]) inProgress[station] = new Map()
+      const prev = inProgress[station].get(sku)
+      inProgress[station].set(sku, { ...mergeRecipe(prev, weight), phase: 'retool' })
+
+      // SKU уже захватил ресурс станции → уходит из входящей очереди
+      const q = UPSTREAM_QUEUE[station]
+      if (q) inProgress[q]?.delete(sku)
+
+    } else if (status === 'retool_done') {
+      // Термо: переналадка относится к секции, а не к SKU → убираем плейсхолдер.
+      if (station === 'termokamera' && String(sku).startsWith(TERMO_RETOOL_SKU_PREFIX)) {
+        inProgress[station]?.delete(sku)
+      } else {
+        // Prep: не удаляем item — сразу после этого обычно идёт 'start' (на том же t).
+        // Если вдруг между done и start есть зазор — считаем, что станция занята.
+        if (!inProgress[station]) inProgress[station] = new Map()
+        const prev = inProgress[station].get(sku)
+        if (prev) inProgress[station].set(sku, { ...prev, phase: prev.phase === 'retool' ? 'ready' : prev.phase })
+      }
+
     } else if (status === 'start') {
       if (!inProgress[station]) inProgress[station] = new Map()
       const prev = inProgress[station].get(sku)
-      inProgress[station].set(sku, mergeRecipe(prev, weight))
+      inProgress[station].set(sku, { ...mergeRecipe(prev, weight), phase: 'process' })
 
       const q = UPSTREAM_QUEUE[station]
       if (q) inProgress[q]?.delete(sku)
@@ -67,8 +94,10 @@ function computeState(events, currentTime, initialSkus = []) {
     } else if (status === 'done') {
       inProgress[station]?.delete(sku)
 
-    } else if (status === 'stored') {
-      skadLevel += weight ?? 0
+    } else if (status === 'stored' && station === 'sklad') {
+      const w = weight ?? 0
+      skadLevel += w
+      skladBySku.set(sku, (skladBySku.get(sku) ?? 0) + w)
     }
   }
 
@@ -81,14 +110,27 @@ function computeState(events, currentTime, initialSkus = []) {
       weight: data?.weight ?? data ?? 0,
       recipe: data?.recipe,
       section: data?.section,
+      phase: data?.phase ?? null,
     }))
     stationItems[station] = items
-    statuses[station] = items.length > 0 ? 'busy' : 'idle'
+    statuses[station] = items.some((it) => it.phase === 'retool') ? 'retool' : items.length > 0 ? 'busy' : 'idle'
   }
 
-  // Склад — накопленный вес
-  if (skadLevel > 0) {
-    stationItems['sklad'] = [{ sku: `${skadLevel} кг`, weight: skadLevel }]
+  // Склад: общий уровень + ячейки по SKU (частичные приходы суммируются)
+  if (initialSkus.length > 0) {
+    const skuRows = initialSkus.map(({ id, recipe, weight: planned }) => ({
+      sku: id,
+      recipe,
+      weight: skladBySku.get(id) ?? 0,
+      planned,
+    }))
+    stationItems['sklad'] = [
+      { kind: 'total', weight: skadLevel, plannedTotal: plannedTotal || undefined },
+      ...skuRows,
+    ]
+    statuses['sklad'] = skadLevel > 0 ? 'busy' : 'idle'
+  } else if (skadLevel > 0) {
+    stationItems['sklad'] = [{ kind: 'total', weight: skadLevel }]
     statuses['sklad'] = 'busy'
   }
 

@@ -1,6 +1,8 @@
 import simpy
 
 from .common import RECIPES, calculate_total_ramas
+from .common.constants import PREP_RETOOL_TIME_MIN
+from .common.constants import TERMO_RETOOL_TIME_MIN
 from .io.export import print_log, save_log
 from .osadka import osadka_dispatcher
 from .ohlazdenie import ohlazdenie_dispatcher
@@ -19,6 +21,7 @@ def run(sku_list=None):
         "shpric": simpy.Resource(env, capacity=1),
         "klipsator": simpy.Resource(env, capacity=1),
     }
+    prep_state = {name: {"last_recipe": None} for name in stations}
 
     osadka = simpy.Resource(env, capacity=100)
     termokamera = simpy.Resource(env, capacity=3)
@@ -62,7 +65,15 @@ def run(sku_list=None):
         osadka_dispatcher(env, collect_ramas_osadka, collect_ramas_termokamera, osadka, log, total_ramas)
     )
     env.process(
-        termokamera_dispatcher(env, collect_ramas_termokamera, collect_ramas_ohlazdenie, termokamera, log, total_ramas)
+        termokamera_dispatcher(
+            env,
+            collect_ramas_termokamera,
+            collect_ramas_ohlazdenie,
+            termokamera,
+            log,
+            total_ramas,
+            retool_time_min=TERMO_RETOOL_TIME_MIN,
+        )
     )
     env.process(
         ohlazdenie_dispatcher(env, collect_ramas_ohlazdenie, collect_ramas_upakovka, ohlazdenie, log, total_ramas)
@@ -72,7 +83,19 @@ def run(sku_list=None):
     for sku_id, recipe_name, weight in sku_list:
         recipe = RECIPES[recipe_name]
         env.process(
-            sku_pipeline(env, sku_id, recipe_name, weight, recipe, stations, rama_state, collect_ramas_osadka, log)
+            sku_pipeline(
+                env,
+                sku_id,
+                recipe_name,
+                weight,
+                recipe,
+                stations,
+                rama_state,
+                collect_ramas_osadka,
+                log,
+                prep_state=prep_state,
+                prep_retool_time_min=PREP_RETOOL_TIME_MIN,
+            )
         )
 
     env.run()

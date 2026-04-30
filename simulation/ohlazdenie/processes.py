@@ -1,4 +1,4 @@
-from ..common.constants import OHLAZDENIE_TIME
+from ..common.recipes import RECIPES
 from ..common.logging import log_event
 
 
@@ -6,7 +6,7 @@ def ohlazdenie_slot(env, rama, ohlazdenie, collect_ramas_upakovka, log):
     with ohlazdenie.request() as req:
         yield req
         log_event(log, env.now, str(rama), "ohlazdenie", "start", weight=rama.weight, recipe=rama.recipe_name)
-        yield env.timeout(OHLAZDENIE_TIME)
+        yield env.timeout(RECIPES[rama.recipe_name]["ohlazdenie"])
         log_event(log, env.now, str(rama), "ohlazdenie", "done", recipe=rama.recipe_name)
 
     yield collect_ramas_upakovka.put(rama)

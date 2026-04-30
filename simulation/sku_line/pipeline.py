@@ -4,13 +4,58 @@ from ..common.models import Rama
 from ..common.recipes import get_prep_steps
 
 
-def sku_pipeline(env, sku_id, recipe_name, weight, recipe, stations, rama_state, collect_ramas_osadka, log):
+def sku_pipeline(
+    env,
+    sku_id,
+    recipe_name,
+    weight,
+    recipe,
+    stations,
+    rama_state,
+    collect_ramas_osadka,
+    log,
+    *,
+    prep_state=None,
+    prep_retool_time_min: int = 0,
+):
     for station_name, duration in get_prep_steps(recipe):
         station = stations[station_name]
         wait_start = env.now
         with station.request() as req:
             yield req
-            log_event(log, env.now, sku_id, station_name, "start", env.now - wait_start, weight=weight)
+            acquired_at = env.now
+            queue_wait = acquired_at - wait_start
+
+            if prep_state is not None and prep_retool_time_min > 0:
+                last_recipe = prep_state.setdefault(station_name, {}).get("last_recipe")
+                if last_recipe is not None and last_recipe != recipe_name:
+                    log_event(
+                        log,
+                        env.now,
+                        sku_id,
+                        station_name,
+                        "retool_start",
+                        0,
+                        weight=weight,
+                        recipe=recipe_name,
+                        section="prep",
+                    )
+                    yield env.timeout(prep_retool_time_min)
+                    log_event(
+                        log,
+                        env.now,
+                        sku_id,
+                        station_name,
+                        "retool_done",
+                        0,
+                        weight=weight,
+                        recipe=recipe_name,
+                        section="prep",
+                    )
+
+                prep_state[station_name]["last_recipe"] = recipe_name
+
+            log_event(log, env.now, sku_id, station_name, "start", queue_wait, weight=weight)
             yield env.timeout(duration)
             log_event(log, env.now, sku_id, station_name, "done")
 

@@ -1,36 +1,32 @@
 """
-Рецепты: prep до рамы, затем post_rama (порядок этапов после набора рамы).
+Рецепт: длительности по этапам (минуты).
 
-Пока симуляция проводит полную линию как в study/sim_step6; post_rama задаёт
-контракт данных для будущей ветвления (без термо и т.д.).
+prep до рамы всегда в порядке: кутер → шприц → клипсатор (значения — поля рецепта).
 """
 
-# Полная линия после рамы: осадка → термокамера → охлаждение → батч упаковки
-POST_RAMA_FULL = ("osadka", "termokamera", "ohlazdenie", "upakovka_batch")
+PREP_STATIONS = ("kuter", "shpric", "klipsator")
 
 RECIPES = {
     "varenka": {
-        "prep_steps": [
-            ("kuter", 14),
-            ("shpric", 8),
-            ("klipsator", 8),
-        ],
-        "post_rama": POST_RAMA_FULL,
-        "osadka_time": 100,
-        "termokamera_time": 60,
+        "kuter": 14,
+        "shpric": 8,
+        "klipsator": 8,
+        "osadka": 100,
+        "termokamera": 60,
+        "ohlazdenie": 30,
+        "upakovka": 50,
     },
     "polukopch": {
-        "prep_steps": [
-            ("kuter", 10),
-            ("shpric", 10),
-            ("klipsator", 10),
-        ],
-        "post_rama": POST_RAMA_FULL,
-        "osadka_time": 240,
-        "termokamera_time": 110,
+        "kuter": 10,
+        "shpric": 10,
+        "klipsator": 10,
+        "osadka": 240,
+        "termokamera": 110,
+        "ohlazdenie": 30,
+        "upakovka": 50,
     },
 }
 
 
-def get_prep_steps(recipe):
-    return recipe["prep_steps"]
+def get_prep_steps(recipe: dict) -> list[tuple[str, int]]:
+    return [(station, int(recipe[station])) for station in PREP_STATIONS]

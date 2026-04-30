@@ -9,10 +9,12 @@ class Rama:
         self.id = Rama._counter
         self.recipe_name = recipe_name
         self.items = []
+        self.sku_chunks = []
         self.weight = 0
 
     def add(self, sku_id, weight):
         self.items.append(sku_id)
+        self.sku_chunks.append({"sku": sku_id, "weight": weight})
         self.weight += weight
 
     @property

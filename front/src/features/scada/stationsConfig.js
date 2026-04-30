@@ -9,7 +9,7 @@ export const STATIONS = [
   { id: 'termokamera',       label: 'Термокамера',  capacity: 6, width: 200, height: 320 },
   { id: 'ohlazdenie',        label: 'Охлаждение',   capacity: 4   },
   { id: 'upakovka',          label: 'Упаковка',     capacity: 100 },
-  { id: 'sklad',             label: 'Склад',        capacity: 10000, type: 'container' },
+  { id: 'sklad',             label: 'Склад',        capacity: 10000, type: 'container', width: 340, height: 400 },
 ]
 
 // Стандартные размеры
@@ -33,6 +33,6 @@ export const nodeX = (index) => _xMap[STATIONS[index].id]
 
 export const SVG_W = _cx - GAP + PAD
 
-/** Центр основного потока; очередь «На вход» выше этой линии (высокий блок под SKU). */
-export const MAIN_FLOW_Y = 740
-export const SVG_H = 940
+/** Центр основного потока; схема сдвинута выше к верху страницы. */
+export const MAIN_FLOW_Y = 360
+export const SVG_H = 620

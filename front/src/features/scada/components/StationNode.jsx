@@ -35,15 +35,16 @@ function Slot({ x, y, w, h, item }) {
   const filled = !!item
   const cx = x + w / 2
   const st = filled ? slotStyle(item) : null
+  const isRetool = filled && item?.phase === 'retool'
 
   return (
     <g>
       <rect
         x={x} y={y} width={w} height={h} rx={5}
         fill={filled ? st.fill : '#f8fafc'}
-        stroke={filled ? st.stroke : '#e2e8f0'}
+        stroke={filled ? (isRetool ? '#f59e0b' : st.stroke) : '#e2e8f0'}
         strokeWidth={filled ? 1.5 : 1}
-        strokeDasharray={filled ? 'none' : '4 3'}
+        strokeDasharray={filled ? (isRetool ? '4 2' : 'none') : '4 3'}
       />
       {filled && (
         <>
@@ -55,11 +56,15 @@ function Slot({ x, y, w, h, item }) {
               {RECIPE_TAG[item.recipe] ?? item.recipe}
             </text>
           )}
-          {item.weight > 0 && (
+          {isRetool ? (
+            <text x={cx} y={y + h * 0.82} textAnchor="middle" fontSize={8} fontWeight="700" fill="#92400e">
+              перенал.
+            </text>
+          ) : item.weight > 0 ? (
             <text x={cx} y={y + h * 0.82} textAnchor="middle" fontSize={8} fill={st.sub}>
               {item.weight}кг
             </text>
-          )}
+          ) : null}
         </>
       )}
     </g>
@@ -90,8 +95,12 @@ function slotGrid(capacity, items, contentW, contentH, showEmpty) {
 // Контейнер-склад (визуализация уровня заполнения)
 // -----------------------------------------------------------------------
 function ContainerLevel({ x, y, w, h, level, capacity }) {
-  const pct = Math.min(level / capacity, 1)
+  const cap = capacity > 0 ? capacity : 1
+  const pct = Math.min(level / cap, 1)
   const fillH = Math.max(4, h * pct)
+  const narrow = w < 80
+  const fs = narrow ? 7 : 9
+  const label = `${level} кг`
   return (
     <g>
       <rect x={x} y={y} width={w} height={h} rx={4} fill="#f8fafc" stroke="#e2e8f0" strokeWidth={1} />
@@ -99,9 +108,85 @@ function ContainerLevel({ x, y, w, h, level, capacity }) {
         x={x} y={y + h - fillH} width={w} height={fillH} rx={4}
         fill="#fcd34d" stroke="none"
       />
-      <text x={x + w / 2} y={y + h / 2 + 4} textAnchor="middle" fontSize={9} fontWeight="700" fill="#78350f">
-        {level} кг
+      {narrow ? (
+        <text
+          x={x + w / 2}
+          y={y + h / 2}
+          textAnchor="middle"
+          fontSize={fs}
+          fontWeight="700"
+          fill="#78350f"
+          transform={`rotate(-90 ${x + w / 2} ${y + h / 2})`}
+        >
+          {label}
+        </text>
+      ) : (
+        <text x={x + w / 2} y={y + h / 2 + 4} textAnchor="middle" fontSize={fs} fontWeight="700" fill="#78350f">
+          {label}
+        </text>
+      )}
+    </g>
+  )
+}
+
+/** Ячейки SKU на складе: накоплено / план (несколько приходов суммируются) */
+function SkladSkuCells({ x, y, w, h, items }) {
+  // Широкая колонка: больше колонок сетки и крупнее шрифт
+  const cols = w >= 200 ? 3 : w >= 130 ? 2 : 1
+  const labelH = 14
+  const gap = 4
+  const rows = Math.max(1, Math.ceil(items.length / cols))
+  const innerH = Math.max(0, h - labelH)
+  const cellH = Math.min(24, Math.max(14, (innerH - gap * (rows - 1)) / rows))
+  const cellW = (w - gap * (cols - 1)) / cols
+  return (
+    <g>
+      <text x={x} y={y + 11} fontSize={10} fontWeight="700" fill="#475569">
+        SKU
       </text>
+      {items.map((item, i) => {
+        const col = i % cols
+        const row = Math.floor(i / cols)
+        const cx = x + col * (cellW + gap)
+        const cy = y + labelH + row * (cellH + gap)
+        const st = slotStyle(item)
+        const has = (item.weight ?? 0) > 0
+        const full = (item.planned ?? 0) > 0 && item.weight >= item.planned
+        return (
+          <g key={item.sku}>
+            <rect
+              x={cx}
+              y={cy}
+              width={cellW}
+              height={cellH}
+              rx={4}
+              fill={has ? st?.fill ?? '#f1f5f9' : '#f8fafc'}
+              stroke={full ? '#22c55e' : has ? st?.stroke ?? '#cbd5e1' : '#e2e8f0'}
+              strokeWidth={1}
+            />
+            <text
+              x={cx + cellW / 2}
+              y={cy + cellH * 0.42}
+              textAnchor="middle"
+              fontSize={8}
+              fontWeight="700"
+              fill={has ? st?.label ?? '#334155' : '#94a3b8'}
+            >
+              {String(item.sku).replace(/^var-/, 'в').replace(/^pk-/, 'п')}
+            </text>
+            <text
+              x={cx + cellW / 2}
+              y={cy + cellH * 0.82}
+              textAnchor="middle"
+              fontSize={8}
+              fontWeight="600"
+              fill={full ? '#15803d' : '#64748b'}
+            >
+              {item.weight ?? 0}/{item.planned ?? '—'} кг
+            </text>
+          </g>
+        )
+      })}
     </g>
   )
 }
@@ -195,9 +280,10 @@ export default function StationNode({ x, y, station, status = 'idle', items = []
   const H  = nodeHeight(station)
   const cx = x + W / 2
 
-  const busy   = status === 'busy'
-  const bgFill = busy ? '#f0fdf4' : '#f8fafc'
-  const border = busy ? '#4ade80' : '#e2e8f0'
+  const isRetool = status === 'retool'
+  const busy = status !== 'idle'
+  const bgFill = isRetool ? '#fffbeb' : busy ? '#f0fdf4' : '#f8fafc'
+  const border = isRetool ? '#f59e0b' : busy ? '#4ade80' : '#e2e8f0'
 
   const contentX = x + CONTENT_PAD
   const contentY = y + HEADER_H
@@ -207,7 +293,13 @@ export default function StationNode({ x, y, station, status = 'idle', items = []
   // Склад-контейнер рисуем иначе
   const isContainer = station.type === 'container'
   const isTermo = station.id === 'termokamera'
-  const level = isContainer && items[0] ? items[0].weight : 0
+  const isSklad = station.id === 'sklad'
+  const totalItem = isContainer && items.find((it) => it.kind === 'total')
+  const level = isContainer
+    ? (totalItem?.weight ?? items[0]?.weight ?? 0)
+    : 0
+  const plannedCapacity = totalItem?.plannedTotal ?? station.capacity
+  const skladSkuItems = isSklad ? items.filter((it) => it.kind !== 'total') : []
 
   // Слоты: показываем пустые если ёмкость маленькая (≤8), иначе только занятые
   const showEmpty = !isContainer && (station.capacity ?? 0) <= 8
@@ -230,20 +322,70 @@ export default function StationNode({ x, y, station, status = 'idle', items = []
       {/* Заполненность */}
       <text x={cx} y={y + 34} textAnchor="middle" fontSize={9} fill="#94a3b8">
         {isContainer
-          ? `${level} / ${station.capacity} кг`
-          : `${items.length} / ${station.capacity}`}
+          ? `${level} / ${plannedCapacity} кг`
+          : `${items.length} / ${station.capacity}${isRetool ? ' · переналадка' : ''}`}
       </text>
 
       {/* Разделитель */}
       <line x1={x + 6} y1={y + 40} x2={x + W - 6} y2={y + 40} stroke="#e2e8f0" strokeWidth={1} />
 
-      {/* Контейнер (склад) */}
-      {isContainer && (
+      {/* Контейнер (склад): сверху — всего, снизу — ячейки по SKU */}
+      {isContainer && !isSklad && (
         <ContainerLevel
           x={contentX} y={contentY}
           w={contentW} h={contentH}
-          level={level} capacity={station.capacity}
+          level={level} capacity={plannedCapacity}
         />
+      )}
+      {isContainer && isSklad && (
+        <g>
+          {(() => {
+            const colGap = 10
+            // Слева — узкая колонка «всего», справа — основная ширина под SKU
+            const totalW = Math.max(48, Math.min(68, Math.round(contentW * 0.2)))
+            const skuX = contentX + totalW + colGap
+            const skuW = Math.max(120, contentW - totalW - colGap)
+            return (
+              <>
+                <text
+                  x={contentX + totalW / 2}
+                  y={contentY + 11}
+                  textAnchor="middle"
+                  fontSize={9}
+                  fontWeight="700"
+                  fill="#64748b"
+                >
+                  всего
+                </text>
+                <ContainerLevel
+                  x={contentX}
+                  y={contentY + 16}
+                  w={totalW}
+                  h={contentH - 16}
+                  level={level}
+                  capacity={plannedCapacity}
+                />
+                <line
+                  x1={skuX - colGap / 2}
+                  y1={contentY}
+                  x2={skuX - colGap / 2}
+                  y2={contentY + contentH}
+                  stroke="#e2e8f0"
+                  strokeWidth={1}
+                />
+                {skladSkuItems.length > 0 && (
+                  <SkladSkuCells
+                    x={skuX}
+                    y={contentY}
+                    w={skuW}
+                    h={contentH}
+                    items={skladSkuItems}
+                  />
+                )}
+              </>
+            )
+          })()}
+        </g>
       )}
 
       {/* Термокамера: 3 секции × 2 рамы */}
