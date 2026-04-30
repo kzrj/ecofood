@@ -80,8 +80,13 @@ def run(sku_list=None):
     )
     env.process(upakovka_dispatcher(env, collect_ramas_upakovka, upakovka, sklad, log, total_ramas))
 
+    # Строгий порядок запуска SKU по входному списку:
+    # sku[i+1] может запросить первую prep-станцию только после sku[i].
+    start_token = env.event()
+    start_token.succeed()
     for sku_id, recipe_name, weight in sku_list:
         recipe = RECIPES[recipe_name]
+        next_token = env.event()
         env.process(
             sku_pipeline(
                 env,
@@ -95,8 +100,11 @@ def run(sku_list=None):
                 log,
                 prep_state=prep_state,
                 prep_retool_time_min=PREP_RETOOL_TIME_MIN,
+                start_after=start_token,
+                release_next_start=next_token,
             )
         )
+        start_token = next_token
 
     env.run()
 

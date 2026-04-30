@@ -17,11 +17,24 @@ def sku_pipeline(
     *,
     prep_state=None,
     prep_retool_time_min: int = 0,
+    start_after=None,
+    release_next_start=None,
 ):
+    if start_after is not None:
+        yield start_after
+
+    next_released = False
+
     for station_name, duration in get_prep_steps(recipe):
         station = stations[station_name]
         wait_start = env.now
         with station.request() as req:
+            # Строгий FIFO на входе линии:
+            # следующий SKU может встать в очередь только после того,
+            # как предыдущий уже создал request на первую prep-станцию.
+            if not next_released and release_next_start is not None:
+                release_next_start.succeed()
+                next_released = True
             yield req
             acquired_at = env.now
             queue_wait = acquired_at - wait_start
