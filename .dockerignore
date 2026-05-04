@@ -1,0 +1,9 @@
+**/.git
+**/.cursor
+**/node_modules
+**/dist
+**/__pycache__
+**/*.pyc
+**/.venv
+**/simulation_log.json
+**/.env

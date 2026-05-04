@@ -1,9 +1,0 @@
-from typing import Protocol
-
-from app.domain.entities import Item
-
-
-class ItemRepository(Protocol):
-    async def create(self, item: Item) -> Item: ...
-    async def get_by_id(self, item_id: str) -> Item | None: ...
-    async def list_all(self, *, skip: int = 0, limit: int = 100) -> list[Item]: ...

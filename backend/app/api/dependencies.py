@@ -2,18 +2,8 @@ from typing import Annotated
 
 from fastapi import Depends
 
-from app.application.services import ItemService, RecipeService
-from app.infrastructure.repositories import MongoItemRepository, MongoRecipeRepository
-
-
-def get_item_repository() -> MongoItemRepository:
-    return MongoItemRepository()
-
-
-def get_item_service(
-    repo: Annotated[MongoItemRepository, Depends(get_item_repository)],
-) -> ItemService:
-    return ItemService(repo)
+from app.application.services import RecipeService
+from app.infrastructure.repositories import MongoRecipeRepository
 
 
 def get_recipe_repository() -> MongoRecipeRepository:

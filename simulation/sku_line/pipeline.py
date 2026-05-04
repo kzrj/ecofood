@@ -1,14 +1,12 @@
 from ..common.logging import log_event
 from ..common.constants import RAMA_CAPACITY
 from ..common.models import Rama
-from ..common.recipes import get_prep_steps
+from ..common.recipes import PREP_STATIONS, compute_rama_times
 
 
 def sku_pipeline(
     env,
-    sku_id,
-    recipe_name,
-    weight,
+    sku,
     recipe,
     stations,
     rama_state,
@@ -25,7 +23,8 @@ def sku_pipeline(
 
     next_released = False
 
-    for station_name, duration in get_prep_steps(recipe):
+    for station_name in PREP_STATIONS:
+        duration = sku.times[station_name]
         station = stations[station_name]
         wait_start = env.now
         with station.request() as req:
@@ -41,53 +40,54 @@ def sku_pipeline(
 
             if prep_state is not None and prep_retool_time_min > 0:
                 last_recipe = prep_state.setdefault(station_name, {}).get("last_recipe")
-                if last_recipe is not None and last_recipe != recipe_name:
+                if last_recipe is not None and last_recipe != sku.recipe_name:
                     log_event(
                         log,
                         env.now,
-                        sku_id,
+                        sku.id,
                         station_name,
                         "retool_start",
                         0,
-                        weight=weight,
-                        recipe=recipe_name,
+                        weight=sku.weight,
+                        recipe=sku.recipe_name,
                         section="prep",
                     )
                     yield env.timeout(prep_retool_time_min)
                     log_event(
                         log,
                         env.now,
-                        sku_id,
+                        sku.id,
                         station_name,
                         "retool_done",
                         0,
-                        weight=weight,
-                        recipe=recipe_name,
+                        weight=sku.weight,
+                        recipe=sku.recipe_name,
                         section="prep",
                     )
 
-                prep_state[station_name]["last_recipe"] = recipe_name
+                prep_state[station_name]["last_recipe"] = sku.recipe_name
 
-            log_event(log, env.now, sku_id, station_name, "start", queue_wait, weight=weight)
+            log_event(log, env.now, sku.id, station_name, "start", queue_wait, weight=sku.weight)
             yield env.timeout(duration)
-            log_event(log, env.now, sku_id, station_name, "done")
+            log_event(log, env.now, sku.id, station_name, "done")
 
-    state = rama_state[recipe_name]
+    state = rama_state[sku.recipe_name]
     state["processed"] += 1
     is_last_sku = state["processed"] == state["total"]
 
-    remaining = weight
+    remaining = sku.weight
+    rama_times = compute_rama_times(recipe)
     while remaining > 0:
         if state["current"] is None:
-            state["current"] = Rama(recipe_name)
+            state["current"] = Rama(sku.recipe_name, rama_times)
 
         rama = state["current"]
         space = RAMA_CAPACITY - rama.weight
         chunk = min(remaining, space)
         remaining -= chunk
 
-        rama.add(sku_id, chunk)
-        log_event(log, env.now, sku_id, f"rama#{rama.id}", "on_rama", weight=chunk, recipe=recipe_name)
+        rama.add(sku.id, chunk)
+        log_event(log, env.now, sku.id, f"rama#{rama.id}", "on_rama", weight=chunk, recipe=sku.recipe_name)
 
         should_close = rama.is_full or (remaining == 0 and is_last_sku)
         if should_close:

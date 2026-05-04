@@ -1,13 +1,24 @@
+from dataclasses import dataclass
+
 from .constants import RAMA_CAPACITY
+
+
+@dataclass
+class Sku:
+    id: str
+    recipe_name: str
+    weight: float
+    times: dict  # prep station -> duration (масштабировано по весу)
 
 
 class Rama:
     _counter = 0
 
-    def __init__(self, recipe_name):
+    def __init__(self, recipe_name, times):
         Rama._counter += 1
         self.id = Rama._counter
         self.recipe_name = recipe_name
+        self.times = times  # post-prep stage -> duration
         self.items = []
         self.sku_chunks = []
         self.weight = 0
@@ -28,8 +39,8 @@ class Rama:
 def calculate_total_ramas(sku_list):
     """Считает количество рам с учётом дробления SKU на границе 150 кг."""
     per_type = {}
-    for _, recipe_name, weight in sku_list:
-        per_type.setdefault(recipe_name, []).append(weight)
+    for sku in sku_list:
+        per_type.setdefault(sku.recipe_name, []).append(sku.weight)
 
     total = 0
     for weights_list in per_type.values():

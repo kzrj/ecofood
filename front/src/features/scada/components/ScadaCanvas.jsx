@@ -1,16 +1,14 @@
-import { STATIONS, nodeWidth } from '../stationsConfig'
+import { STATIONS } from '../stationsConfig'
 import StationNode from './StationNode'
 import QueueNode from './QueueNode'
-import DwellTimeLabel from './DwellTimeLabel'
 import ArrowsLayer from './ArrowsLayer'
 import {
   SCADA_SCALE,
-  DWELL_LABEL_H,
   getNodePos,
   getSceneSize,
 } from './scadaLayout'
 
-export default function ScadaCanvas({ statuses = {}, stationItems = {} }) {
+export default function ScadaCanvas({ statuses = {}, stationItems = {}, recipeBook = {} }) {
   const { renderW, renderH } = getSceneSize()
 
   return (
@@ -18,23 +16,6 @@ export default function ScadaCanvas({ statuses = {}, stationItems = {} }) {
       <svg width={renderW} height={renderH} style={{ minWidth: renderW }}>
         <g transform={`scale(${SCADA_SCALE})`}>
           <ArrowsLayer />
-
-        {STATIONS.map((station, i) => {
-          const p = getNodePos(station, i)
-          const nx = p.x
-          const ny = p.y
-          const nw = nodeWidth(station)
-          return (
-            <g key={`dwell-${station.id}`}>
-              <DwellTimeLabel
-                stationId={station.id}
-                cx={nx + nw / 2}
-                yTop={ny - DWELL_LABEL_H}
-                ramaCapacityKg={station.ramaCapacityKg}
-              />
-            </g>
-          )
-        })}
 
         {STATIONS.map((station, i) =>
           station.type === 'queue' ? (
@@ -53,6 +34,7 @@ export default function ScadaCanvas({ statuses = {}, stationItems = {} }) {
               station={station}
               status={statuses[station.id] ?? 'idle'}
               items={stationItems[station.id] ?? []}
+              recipeBook={recipeBook}
             />
           )
         )}

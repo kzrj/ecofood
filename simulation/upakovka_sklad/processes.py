@@ -1,4 +1,3 @@
-from ..common.recipes import RECIPES
 from ..common.logging import log_event
 
 
@@ -6,7 +5,7 @@ def upakovka_slot(env, rama, upakovka, sklad, log):
     with upakovka.request() as req:
         yield req
         log_event(log, env.now, str(rama), "upakovka", "start", weight=rama.weight, recipe=rama.recipe_name)
-        yield env.timeout(RECIPES[rama.recipe_name]["upakovka"])
+        yield env.timeout(rama.times["upakovka"])
         log_event(log, env.now, str(rama), "upakovka", "done")
 
     yield sklad.put(rama.weight)

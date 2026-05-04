@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 
-from app.api.routers import health, items, recipes
+from app.api.routers import health, import_, recipes, simulation
 from app.config import settings
 from app.infrastructure.database import Database
 from app.infrastructure.repositories.mongo_recipe_repository import MongoRecipeRepository
@@ -23,6 +23,5 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-app.include_router(health.router)
-app.include_router(items.router, prefix="/api/v1")
-app.include_router(recipes.router, prefix="/api/v1")
+for r in (health.router, recipes.router, simulation.router, import_.router):
+    app.include_router(r, prefix="/api/v1")

@@ -1,5 +1,4 @@
 from ..common.logging import log_event
-from ..common.recipes import RECIPES
 
 
 def termo_section_process(
@@ -14,7 +13,7 @@ def termo_section_process(
 ):
     with termokamera.request() as req:
         yield req
-        termo_time = max(RECIPES[r.recipe_name]["termokamera"] for r in ramas_in_section)
+        termo_time = max(r.times["termokamera"] for r in ramas_in_section)
         for rama in ramas_in_section:
             log_event(
                 log,

@@ -1,19 +1,41 @@
-import { useEffect } from 'react'
 import ScadaCanvas from './components/ScadaCanvas'
 import Player from './components/Player'
+import RecipeNormsTable from './components/RecipeNormsTable'
 import { useSimulationStore } from './store/useSimulationStore'
+import { useRecipeBook } from './hooks/useRecipeBook'
 
 export default function ScadaPage() {
-  const { statuses, stationItems, loadLog, totalTime } = useSimulationStore()
+  const {
+    statuses,
+    stationItems,
+    totalTime,
+    runSimulation,
+    simulationLoading,
+    simulationError,
+  } = useSimulationStore()
 
-  // Загружаем лог при монтировании страницы
-  useEffect(() => { loadLog() }, [])
+  const recipeBook = useRecipeBook()
 
   return (
     <div className="p-6 flex flex-col gap-6">
-      <h2 className="text-xl font-semibold">Производство</h2>
+      <div className="flex flex-wrap items-center gap-4">
+        <h2 className="text-xl font-semibold">Производство</h2>
+        <button
+          type="button"
+          onClick={() => runSimulation()}
+          disabled={simulationLoading}
+          className="rounded-md bg-slate-800 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700 disabled:opacity-50"
+        >
+          {simulationLoading ? 'Считаем…' : 'Запустить симуляцию'}
+        </button>
+      </div>
+      {simulationError && (
+        <p className="text-sm text-red-600" role="alert">
+          {simulationError}
+        </p>
+      )}
 
-      <ScadaCanvas statuses={statuses} stationItems={stationItems} />
+      <ScadaCanvas statuses={statuses} stationItems={stationItems} recipeBook={recipeBook} />
 
       {/* Легенда */}
       <div className="flex gap-6">
@@ -30,6 +52,9 @@ export default function ScadaPage() {
 
       {/* Плеер */}
       {totalTime > 0 && <Player />}
+
+      {/* Нормы по рецептам */}
+      <RecipeNormsTable recipeBook={recipeBook} />
     </div>
   )
 }

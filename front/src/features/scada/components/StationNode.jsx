@@ -275,7 +275,7 @@ function TermoKameraSections({ contentX, contentY, contentW, contentH, items }) 
 // -----------------------------------------------------------------------
 // Главный компонент
 // -----------------------------------------------------------------------
-export default function StationNode({ x, y, station, status = 'idle', items = [] }) {
+export default function StationNode({ x, y, station, status = 'idle', items = [], recipeBook = {} }) {
   const W  = nodeWidth(station)
   const H  = nodeHeight(station)
   const cx = x + W / 2
@@ -325,6 +325,13 @@ export default function StationNode({ x, y, station, status = 'idle', items = []
           ? `${level} / ${plannedCapacity} кг`
           : `${items.length} / ${station.capacity}${isRetool ? ' · переналадка' : ''}`}
       </text>
+
+      {/* Норма для текущего рецепта: только для prep-станций когда заняты */}
+      {!isContainer && !isTermo && busy && items[0]?.recipe && recipeBook[items[0].recipe]?.[station.id] != null && (
+        <text x={cx} y={y + 44} textAnchor="middle" fontSize={8} fill="#6366f1">
+          {recipeBook[items[0].recipe].name ?? items[0].recipe} · {recipeBook[items[0].recipe][station.id]} мин
+        </text>
+      )}
 
       {/* Разделитель */}
       <line x1={x + 6} y1={y + 40} x2={x + W - 6} y2={y + 40} stroke="#e2e8f0" strokeWidth={1} />

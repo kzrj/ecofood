@@ -1,12 +1,11 @@
 from ..common.logging import log_event
-from ..common.recipes import RECIPES
 
 
 def osadka_slot(env, rama, collect_ramas_termokamera, osadka, log):
     with osadka.request() as req:
         yield req
         log_event(log, env.now, str(rama), "osadka", "start", weight=rama.weight, recipe=rama.recipe_name)
-        yield env.timeout(RECIPES[rama.recipe_name]["osadka"])
+        yield env.timeout(rama.times["osadka"])
         log_event(log, env.now, str(rama), "osadka", "done", recipe=rama.recipe_name)
     log_event(
         log, env.now, str(rama), "queue_termokamera", "entered", weight=rama.weight, recipe=rama.recipe_name

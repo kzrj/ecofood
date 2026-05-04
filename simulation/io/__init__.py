@@ -1,3 +1,3 @@
-from .export import default_log_paths, print_log, save_log
+from .export import build_log_payload, default_log_paths, print_log, save_log, write_log_payload
 
-__all__ = ["default_log_paths", "print_log", "save_log"]
+__all__ = ["build_log_payload", "default_log_paths", "print_log", "save_log", "write_log_payload"]

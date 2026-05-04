@@ -1,9 +1,10 @@
 import simpy
 
-from .common import RECIPES, calculate_total_ramas
+from .common import calculate_total_ramas
+from .common.recipes import RECIPES
 from .common.constants import PREP_RETOOL_TIME_MIN
 from .common.constants import TERMO_RETOOL_TIME_MIN
-from .io.export import print_log, save_log
+from .io.export import build_log_payload, print_log, write_log_payload
 from .osadka import osadka_dispatcher
 from .ohlazdenie import ohlazdenie_dispatcher
 from .sku_line import sku_pipeline
@@ -12,7 +13,7 @@ from .sku_list import SKU_LIST
 from .upakovka_sklad import upakovka_dispatcher
 
 
-def run(sku_list=None):
+def run(sku_list=None, *, recipe_book=None, persist=True, verbose=True):
     env = simpy.Environment()
     log = []
 
@@ -33,33 +34,37 @@ def run(sku_list=None):
     collect_ramas_ohlazdenie = simpy.Store(env)
     collect_ramas_upakovka = simpy.Store(env)
 
+    if recipe_book is None:
+        recipe_book = RECIPES
+
     if sku_list is None:
         sku_list = list(SKU_LIST)
 
     counts = {}
     weights = {}
-    for _, recipe_name, weight in sku_list:
-        counts[recipe_name] = counts.get(recipe_name, 0) + 1
-        weights[recipe_name] = weights.get(recipe_name, 0) + weight
+    for sku in sku_list:
+        counts[sku.recipe_name] = counts.get(sku.recipe_name, 0) + 1
+        weights[sku.recipe_name] = weights.get(sku.recipe_name, 0) + sku.weight
 
     rama_state = {recipe_name: {"current": None, "processed": 0, "total": count} for recipe_name, count in counts.items()}
 
     total_ramas = calculate_total_ramas(sku_list)
 
-    total_weight = sum(w for _, _, w in sku_list)
+    total_weight = sum(sku.weight for sku in sku_list)
 
     # Ёмкость склада = суммарный вес партии (склад не является узким местом)
     sklad = simpy.Container(env, capacity=total_weight)
 
-    print(f"\nЗапуск: {len(sku_list)} SKU | {total_weight} кг | {total_ramas} рамы")
-    for rn, cnt in counts.items():
-        ramas_rn = calculate_total_ramas([(s, r, w) for s, r, w in sku_list if r == rn])
-        print(f"  {rn}: {cnt} SKU, {weights[rn]} кг -> {ramas_rn} рамы")
-    print(f"\n  {'id':<10} {'тип':<12} {'вес'}")
-    print(f"  {'-' * 30}")
-    for sku_id, recipe_name, weight in sku_list:
-        print(f"  {sku_id:<10} {recipe_name:<12} {weight} кг")
-    print()
+    if verbose:
+        print(f"\nЗапуск: {len(sku_list)} SKU | {total_weight} кг | {total_ramas} рамы")
+        for rn, cnt in counts.items():
+            ramas_rn = calculate_total_ramas([s for s in sku_list if s.recipe_name == rn])
+            print(f"  {rn}: {cnt} SKU, {weights[rn]} кг -> {ramas_rn} рамы")
+        print(f"\n  {'id':<10} {'тип':<12} {'вес'}")
+        print(f"  {'-' * 30}")
+        for sku in sku_list:
+            print(f"  {sku.id:<10} {sku.recipe_name:<12} {sku.weight} кг")
+        print()
 
     env.process(
         osadka_dispatcher(env, collect_ramas_osadka, collect_ramas_termokamera, osadka, log, total_ramas)
@@ -84,15 +89,13 @@ def run(sku_list=None):
     # sku[i+1] может запросить первую prep-станцию только после sku[i].
     start_token = env.event()
     start_token.succeed()
-    for sku_id, recipe_name, weight in sku_list:
-        recipe = RECIPES[recipe_name]
+    for sku in sku_list:
+        recipe = recipe_book[sku.recipe_name]
         next_token = env.event()
         env.process(
             sku_pipeline(
                 env,
-                sku_id,
-                recipe_name,
-                weight,
+                sku,
                 recipe,
                 stations,
                 rama_state,
@@ -108,12 +111,17 @@ def run(sku_list=None):
 
     env.run()
 
-    print_log(log)
-    print(f"\nОбщее время: {env.now} мин")
-    print(f"На складе:   {sklad.level} кг")
+    payload = build_log_payload(log, env.now, sku_list)
+    if persist:
+        write_log_payload(payload)
+        if verbose:
+            print(f"\nЛог сохранён ({len(log)} событий)")
+    if verbose:
+        print_log(log)
+        print(f"\nОбщее время: {env.now} мин")
+        print(f"На складе:   {sklad.level} кг")
 
-    save_log(log, env.now, sku_list)
-    return env, log, sku_list
+    return env, log, sku_list, payload
 
 
 if __name__ == "__main__":
