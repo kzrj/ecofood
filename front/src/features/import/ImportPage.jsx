@@ -118,12 +118,13 @@ export default function ImportPage() {
 
       {/* Result */}
       {status === 'success' && result && (
-        <div className="space-y-4">
+        <div className="space-y-5">
+          {/* Summary bar */}
           <div className="rounded-lg border border-green-200 bg-green-50 px-4 py-3 flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-green-800">{result.filename}</p>
               <p className="text-xs text-green-600 mt-0.5">
-                {result.row_count} строк · {result.headers.length} столбцов
+                {result.total} товаров · {Object.keys(result.groups).length} типов
               </p>
             </div>
             <button onClick={reset} className="text-xs text-green-600 hover:text-green-800 underline">
@@ -131,37 +132,43 @@ export default function ImportPage() {
             </button>
           </div>
 
-          {result.row_count > 0 && (
-            <div className="overflow-x-auto rounded-lg border border-gray-200">
-              <table className="min-w-full text-xs">
-                <thead className="bg-gray-50 border-b border-gray-200">
-                  <tr>
-                    {result.headers.map((h) => (
-                      <th key={h} className="px-3 py-2 text-left font-medium text-gray-600 whitespace-nowrap">
-                        {h}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-100">
-                  {result.rows.slice(0, 50).map((row, i) => (
-                    <tr key={i} className="hover:bg-gray-50">
-                      {result.headers.map((h) => (
-                        <td key={h} className="px-3 py-1.5 text-gray-700 whitespace-nowrap">
-                          {row.data[h] ?? '—'}
-                        </td>
+          {/* Groups */}
+          {Object.entries(result.groups ?? {}).map(([typeName, rows]) => {
+            const safeRows = Array.isArray(rows) ? rows : []
+            const headers = safeRows.length > 0 && safeRows[0] ? Object.keys(safeRows[0]) : []
+            return (
+              <div key={typeName} className="rounded-lg border border-gray-200 overflow-hidden">
+                <div className="bg-gray-100 px-4 py-2 flex items-center justify-between">
+                  <span className="text-sm font-semibold text-gray-700">{typeName}</span>
+                  <span className="text-xs text-gray-500">{result.counts[typeName]} товаров</span>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="min-w-full text-xs">
+                    <thead className="bg-gray-50 border-b border-gray-200">
+                      <tr>
+                        {headers.map((h) => (
+                          <th key={h} className="px-3 py-2 text-left font-medium text-gray-500 whitespace-nowrap">
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-100">
+                      {safeRows.map((row, i) => (
+                        <tr key={i} className="hover:bg-gray-50">
+                          {headers.map((h) => (
+                            <td key={h} className="px-3 py-1.5 text-gray-700 whitespace-nowrap">
+                              {row?.[h] ?? '—'}
+                            </td>
+                          ))}
+                        </tr>
                       ))}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-              {result.row_count > 50 && (
-                <p className="text-xs text-gray-400 px-3 py-2 border-t border-gray-100">
-                  Показаны первые 50 из {result.row_count} строк
-                </p>
-              )}
-            </div>
-          )}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )
+          })}
         </div>
       )}
     </div>

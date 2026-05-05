@@ -4,20 +4,17 @@ Application-сервис импорта из Excel.
 """
 from __future__ import annotations
 
-from app.application.dto.import_dto import ExcelParseResultDTO, ParsedRowDTO
-from app.infrastructure.excel.excel_parser import parse_excel_bytes
+from app.application.dto.import_dto import GroupedImportResultDTO
+from app.infrastructure.excel.excel_parser import group_rows_by_type
 
 
 class ImportService:
-    async def parse_excel(self, filename: str, data: bytes) -> ExcelParseResultDTO:
-        rows_raw = parse_excel_bytes(data)
-
-        headers = list(rows_raw[0].keys()) if rows_raw else []
-        rows = [ParsedRowDTO(data=r) for r in rows_raw]
-
-        return ExcelParseResultDTO(
+    async def parse_excel(self, filename: str, data: bytes) -> GroupedImportResultDTO:
+        groups = group_rows_by_type(data)
+        counts = {t: len(rows) for t, rows in groups.items()}
+        return GroupedImportResultDTO(
             filename=filename,
-            row_count=len(rows),
-            headers=headers,
-            rows=rows,
+            groups=groups,
+            counts=counts,
+            total=sum(counts.values()),
         )

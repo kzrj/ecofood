@@ -14,9 +14,12 @@ services:
     environment:
       PYTHONPYCACHEPREFIX: /cache/pycache
     volumes:
+      - ./backend/app:/app/app
+      - ./simulation:/app/simulation
       - api_pycache:/cache/pycache
-    expose:
-      - "8000"
+      - /app/.pytest_cache
+    ports:
+      - "8001:8000"
     depends_on:
       - mongo
 

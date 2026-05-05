@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, UploadFile
 
-from app.application.dto.import_dto import ExcelParseResultDTO
+from app.application.dto.import_dto import GroupedImportResultDTO
 from app.application.services.import_service import ImportService
 
 router = APIRouter(prefix="/import", tags=["import"])
@@ -12,8 +12,8 @@ _ALLOWED_CONTENT_TYPES = {
 _MAX_SIZE_BYTES = 10 * 1024 * 1024  # 10 МБ
 
 
-@router.post("/excel", response_model=ExcelParseResultDTO)
-async def upload_excel(file: UploadFile) -> ExcelParseResultDTO:
+@router.post("/excel", response_model=GroupedImportResultDTO)
+async def upload_excel(file: UploadFile) -> GroupedImportResultDTO:
     """
     Принимает .xlsx файл, парсит заголовки и строки.
     Возвращает превью: количество строк, список заголовков и все строки в виде объектов.
