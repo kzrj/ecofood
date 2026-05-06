@@ -6,7 +6,8 @@ from starlette.concurrency import run_in_threadpool
 
 from app.api.dependencies import get_recipe_service
 from app.application.services import RecipeService
-from simulation.common.recipes import RECIPES as STATIC_RECIPES
+from simulation.common.models import Sku
+from simulation.common.recipes import RECIPES as STATIC_RECIPES, compute_sku_times
 from simulation.run import run
 
 router = APIRouter(prefix="/simulation", tags=["simulation"])
@@ -42,14 +43,22 @@ async def run_simulation(
     Рецепты берутся из Mongo; fallback на встроенные, если БД пустая.
     Если sku_list не задан — используется случайная партия по умолчанию.
     """
-    sku_tuples: list[tuple[str, str, float]] | None = None
-    if body.sku_list is not None:
-        sku_tuples = [(x.id, x.recipe, x.weight) for x in body.sku_list]
-
     recipe_book = await _load_recipe_book(recipe_service)
 
+    sku_objects: list[Sku] | None = None
+    if body.sku_list is not None:
+        sku_objects = [
+            Sku(
+                id=x.id,
+                recipe_name=x.recipe,
+                weight=x.weight,
+                times=compute_sku_times(recipe_book[x.recipe], x.weight),
+            )
+            for x in body.sku_list
+        ]
+
     def _sync() -> dict:
-        *_, payload = run(sku_list=sku_tuples, recipe_book=recipe_book, persist=False, verbose=False)
+        *_, payload = run(sku_list=sku_objects, recipe_book=recipe_book, persist=False, verbose=False)
         return payload
 
     try:

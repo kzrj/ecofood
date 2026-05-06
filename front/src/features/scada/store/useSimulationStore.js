@@ -41,13 +41,14 @@ export const useSimulationStore = create((set, get) => ({
     get().seek(0)
   },
 
-  async runSimulation() {
+  async runSimulation(skuList = null) {
     set({ simulationLoading: true, simulationError: null })
     try {
+      const body = skuList && skuList.length > 0 ? { sku_list: skuList } : {}
       const res = await fetch(SIMULATION_RUN, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({}),
+        body: JSON.stringify(body),
       })
       if (!res.ok) {
         const text = await res.text()
