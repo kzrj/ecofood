@@ -1,0 +1,9 @@
+from typing import Protocol
+
+from app.domain.entities.demand import Demand
+
+
+class DemandRepository(Protocol):
+    async def save(self, entity: Demand) -> Demand: ...
+    async def list_all(self, *, limit: int = 50) -> list[Demand]: ...
+    async def get_by_id(self, demand_id: str) -> Demand | None: ...
