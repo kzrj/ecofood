@@ -13,7 +13,7 @@ export const useSimulationStore = create((set, get) => ({
   // -- данные симуляции --
   events: [],
   totalTime: 0,
-  skuList: [],   // [{id, recipe, weight}] — исходный список SKU
+  skuList: [],   // [{id, recipe, weight, name?, sku_type?, batch_no?}] — исходный список SKU
 
   // -- плеер --
   currentTime: 0,

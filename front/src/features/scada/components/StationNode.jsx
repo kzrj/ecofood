@@ -28,6 +28,12 @@ function slotStyle(item) {
 
 const RECIPE_TAG = { varenka: 'вар', polukopch: 'п/к' }
 
+function shortText(s, maxLen = 14) {
+  if (s == null || s === '') return ''
+  const t = String(s)
+  return t.length <= maxLen ? t : `${t.slice(0, maxLen - 1)}…`
+}
+
 // -----------------------------------------------------------------------
 // Один слот — прямоугольник с подписью; цвет по рецепту рамы
 // -----------------------------------------------------------------------
@@ -36,6 +42,8 @@ function Slot({ x, y, w, h, item }) {
   const cx = x + w / 2
   const st = filled ? slotStyle(item) : null
   const isRetool = filled && item?.phase === 'retool'
+  const title = filled ? shortText(item.name || item.sku.replace(/\(.*\)/, ''), 16) : ''
+  const typeLine = filled ? shortText(item.sku_type || RECIPE_TAG[item.recipe] || item.recipe || '', 16) : ''
 
   return (
     <g>
@@ -48,23 +56,26 @@ function Slot({ x, y, w, h, item }) {
       />
       {filled && (
         <>
-          <text x={cx} y={y + h * 0.36} textAnchor="middle" fontSize={9} fontWeight="700" fill={st.label}>
-            {item.sku.replace(/\(.*\)/, '')}
+          <text x={cx} y={y + h * 0.22} textAnchor="middle" fontSize={7} fontWeight="700" fill={st.label}>
+            {title}
           </text>
-          {item.recipe && (
-            <text x={cx} y={y + h * 0.58} textAnchor="middle" fontSize={7} fontWeight="600" fill={st.sub}>
-              {RECIPE_TAG[item.recipe] ?? item.recipe}
-            </text>
-          )}
+          <text x={cx} y={y + h * 0.42} textAnchor="middle" fontSize={6.5} fontWeight="600" fill={st.sub}>
+            {typeLine}
+          </text>
           {isRetool ? (
-            <text x={cx} y={y + h * 0.82} textAnchor="middle" fontSize={8} fontWeight="700" fill="#92400e">
+            <text x={cx} y={y + h * 0.68} textAnchor="middle" fontSize={7} fontWeight="700" fill="#92400e">
               перенал.
             </text>
-          ) : item.weight > 0 ? (
-            <text x={cx} y={y + h * 0.82} textAnchor="middle" fontSize={8} fill={st.sub}>
-              {item.weight}кг
-            </text>
-          ) : null}
+          ) : (
+            <>
+              <text x={cx} y={y + h * 0.62} textAnchor="middle" fontSize={7} fill={st.sub}>
+                {item.weight > 0 ? `${item.weight}кг` : ''}
+              </text>
+              <text x={cx} y={y + h * 0.84} textAnchor="middle" fontSize={6.5} fontWeight="500" fill={st.sub}>
+                {item.batch_no != null && item.batch_no !== '' ? String(item.batch_no) : '—'}
+              </text>
+            </>
+          )}
         </>
       )}
     </g>
@@ -130,21 +141,26 @@ function ContainerLevel({ x, y, w, h, level, capacity }) {
 }
 
 /** Ячейки SKU на складе: накоплено / план (несколько приходов суммируются) */
-function SkladSkuCells({ x, y, w, h, items }) {
-  // Широкая колонка: больше колонок сетки и крупнее шрифт
-  const cols = w >= 200 ? 3 : w >= 130 ? 2 : 1
-  const labelH = 14
-  const gap = 4
-  const rows = Math.max(1, Math.ceil(items.length / cols))
-  const innerH = Math.max(0, h - labelH)
-  const cellH = Math.min(24, Math.max(14, (innerH - gap * (rows - 1)) / rows))
+function SkladSkuCells({ x, y, w, h, items, expanded = false, onToggleExpand }) {
+  const labelH = 12
+  const footerH = 11
+  const gap = 3
+  const innerH = Math.max(0, h - labelH - footerH)
+  const cols = Math.min(12, Math.max(3, Math.floor((w + gap) / (gap + 98))))
   const cellW = (w - gap * (cols - 1)) / cols
+  const cellH = 30
+  const maxRows = Math.max(1, Math.floor((innerH + gap) / (cellH + gap)))
+  const maxVisible = maxRows * cols
+  const visible = expanded ? items : items.slice(0, maxVisible)
+  const overflow = expanded ? 0 : items.length - visible.length
+  const showGridToggle = typeof onToggleExpand === 'function' && (overflow > 0 || expanded)
+
   return (
     <g>
       <text x={x} y={y + 11} fontSize={10} fontWeight="700" fill="#475569">
-        SKU
+        SKU · {items.length}
       </text>
-      {items.map((item, i) => {
+      {visible.map((item, i) => {
         const col = i % cols
         const row = Math.floor(i / cols)
         const cx = x + col * (cellW + gap)
@@ -152,6 +168,10 @@ function SkladSkuCells({ x, y, w, h, items }) {
         const st = slotStyle(item)
         const has = (item.weight ?? 0) > 0
         const full = (item.planned ?? 0) > 0 && item.weight >= item.planned
+        const title = shortText(item.name || item.sku, 20)
+        const typeLine = item.sku_type ? shortText(item.sku_type, 20) : '—'
+        const batchLine = item.batch_no != null && item.batch_no !== '' ? String(item.batch_no) : '—'
+        const lineY = (k) => cy + 5 + k * ((cellH - 8) / 4)
         return (
           <g key={item.sku}>
             <rect
@@ -166,27 +186,68 @@ function SkladSkuCells({ x, y, w, h, items }) {
             />
             <text
               x={cx + cellW / 2}
-              y={cy + cellH * 0.42}
+              y={lineY(0)}
               textAnchor="middle"
-              fontSize={8}
+              fontSize={6.5}
               fontWeight="700"
               fill={has ? st?.label ?? '#334155' : '#94a3b8'}
             >
-              {String(item.sku).replace(/^var-/, 'в').replace(/^pk-/, 'п')}
+              {title}
             </text>
             <text
               x={cx + cellW / 2}
-              y={cy + cellH * 0.82}
+              y={lineY(1)}
               textAnchor="middle"
-              fontSize={8}
+              fontSize={6}
+              fontWeight="600"
+              fill={has ? st?.label ?? '#475569' : '#94a3b8'}
+            >
+              {typeLine}
+            </text>
+            <text
+              x={cx + cellW / 2}
+              y={lineY(2)}
+              textAnchor="middle"
+              fontSize={6.5}
               fontWeight="600"
               fill={full ? '#15803d' : '#64748b'}
             >
               {item.weight ?? 0}/{item.planned ?? '—'} кг
             </text>
+            <text
+              x={cx + cellW / 2}
+              y={lineY(3)}
+              textAnchor="middle"
+              fontSize={6}
+              fontWeight="500"
+              fill={full ? '#15803d' : '#64748b'}
+            >
+              {batchLine}
+            </text>
           </g>
         )
       })}
+      {showGridToggle && (
+        <g
+          onClick={(e) => {
+            e.stopPropagation()
+            onToggleExpand()
+          }}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault()
+              onToggleExpand()
+            }
+          }}
+          style={{ cursor: 'pointer' }}
+          role="button"
+          tabIndex={0}
+        >
+          <text x={x + w / 2} y={y + h - 4} textAnchor="middle" fontSize={8} fontWeight="600" fill="#2563eb">
+            {expanded ? 'свернуть' : `+${overflow} ещё — развернуть`}
+          </text>
+        </g>
+      )}
     </g>
   )
 }
@@ -275,7 +336,16 @@ function TermoKameraSections({ contentX, contentY, contentW, contentH, items }) 
 // -----------------------------------------------------------------------
 // Главный компонент
 // -----------------------------------------------------------------------
-export default function StationNode({ x, y, station, status = 'idle', items = [], recipeBook = {} }) {
+export default function StationNode({
+  x,
+  y,
+  station,
+  status = 'idle',
+  items = [],
+  recipeBook = {},
+  skladGridExpanded = false,
+  onSkladGridToggle,
+}) {
   const W  = nodeWidth(station)
   const H  = nodeHeight(station)
   const cx = x + W / 2
@@ -387,6 +457,8 @@ export default function StationNode({ x, y, station, status = 'idle', items = []
                     w={skuW}
                     h={contentH}
                     items={skladSkuItems}
+                    expanded={skladGridExpanded}
+                    onToggleExpand={onSkladGridToggle}
                   />
                 )}
               </>

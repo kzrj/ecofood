@@ -5,6 +5,18 @@ from pathlib import Path
 _V2_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
+def _sku_row(sku):
+    """Поля SKU для JSON (лог / HTTP)."""
+    return {
+        "id": sku.id,
+        "recipe": sku.recipe_name,
+        "weight": sku.weight,
+        "name": sku.name or sku.id,
+        "sku_type": sku.sku_type or "",
+        "batch_no": sku.batch_no,
+    }
+
+
 def default_log_paths():
     return (
         _V2_ROOT / "simulation_log.json",
@@ -14,7 +26,7 @@ def default_log_paths():
 
 def _build_sklad_summary(log, sku_list):
     """Итог по складу: общий вес и ячейки по SKU (план, накоплено, порции прихода)."""
-    sku_meta = {sku.id: {"recipe": sku.recipe_name, "planned_kg": sku.weight} for sku in sku_list}
+    sku_meta = {sku.id: {**_sku_row(sku), "planned_kg": sku.weight} for sku in sku_list}
     arrivals = {sku.id: [] for sku in sku_list}
     total_kg = 0
 
@@ -35,8 +47,7 @@ def _build_sklad_summary(log, sku_list):
         stored_kg = sum(a["weight"] for a in arr)
         sku_cells.append(
             {
-                "id": sku.id,
-                "recipe": sku.recipe_name,
+                **_sku_row(sku),
                 "planned_kg": sku.weight,
                 "stored_kg": stored_kg,
                 "arrivals": arr,
@@ -76,9 +87,7 @@ def _build_sku_metrics(log, sku_list):
         duration = (finish - start) if start is not None and finish is not None else None
         result.append(
             {
-                "id": sku.id,
-                "recipe": sku.recipe_name,
-                "weight": sku.weight,
+                **_sku_row(sku),
                 "started_at": start,
                 "finished_at": finish,
                 "duration_min": duration,
@@ -94,7 +103,7 @@ def build_log_payload(log, total_time, sku_list):
     """Тот же JSON, что пишется в simulation_log.json (для файла или HTTP)."""
     return {
         "total_time": total_time,
-        "sku_list": [{"id": sku.id, "recipe": sku.recipe_name, "weight": sku.weight} for sku in sku_list],
+        "sku_list": [_sku_row(sku) for sku in sku_list],
         "sku_metrics": _build_sku_metrics(log, sku_list),
         "sklad": _build_sklad_summary(log, sku_list),
         "events": log,

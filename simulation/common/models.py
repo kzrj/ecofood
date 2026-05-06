@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from dataclasses import dataclass
 
 from .constants import RAMA_CAPACITY
@@ -9,6 +11,9 @@ class Sku:
     recipe_name: str
     weight: float
     times: dict  # prep station -> duration (масштабировано по весу)
+    name: str = ""
+    sku_type: str = ""
+    batch_no: str | None = None
 
 
 class Rama:

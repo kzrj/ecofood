@@ -27,6 +27,9 @@ class SkuIn(BaseModel):
     id: str
     recipe: str
     weight: float = Field(gt=0)
+    name: str | None = None
+    sku_type: str | None = None
+    batch_no: str | int | None = None
 
 
 class SimulationRunRequest(BaseModel):
@@ -47,12 +50,22 @@ async def run_simulation(
 
     sku_objects: list[Sku] | None = None
     if body.sku_list is not None:
+
+        def _norm_batch(v):
+            if v is None:
+                return None
+            s = str(v).strip()
+            return s or None
+
         sku_objects = [
             Sku(
                 id=x.id,
                 recipe_name=x.recipe,
                 weight=x.weight,
                 times=compute_sku_times(recipe_book[x.recipe], x.weight),
+                name=(x.name or "").strip(),
+                sku_type=(x.sku_type or "").strip(),
+                batch_no=_norm_batch(x.batch_no),
             )
             for x in body.sku_list
         ]

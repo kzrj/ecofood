@@ -1,5 +1,5 @@
 export const STATIONS = [
-  { id: 'queue_kuter',       label: 'На вход',     type: 'queue',     width: 160, height: 560 },
+  { id: 'queue_kuter',       label: 'На вход',     type: 'queue' },
   { id: 'kuter',             label: 'Кутер',        capacity: 1   },
   { id: 'shpric',            label: 'Шприц',        capacity: 1   },
   { id: 'klipsator',         label: 'Клипсатор',    capacity: 1   },
@@ -9,7 +9,7 @@ export const STATIONS = [
   { id: 'termokamera',       label: 'Термокамера',  capacity: 6, width: 200, height: 320 },
   { id: 'ohlazdenie',        label: 'Охлаждение',   capacity: 4   },
   { id: 'upakovka',          label: 'Упаковка',     capacity: 100 },
-  { id: 'sklad',             label: 'Склад',        capacity: 10000, type: 'container', width: 340, height: 400 },
+  { id: 'sklad',             label: 'Склад',        capacity: 10000, type: 'container' },
 ]
 
 // Стандартные размеры
@@ -21,18 +21,3 @@ export const PAD    = 24
 // Ширина и высота конкретного узла
 export const nodeWidth  = (s) => s.width  ?? (s.type === 'queue' ? 90 : NODE_W)
 export const nodeHeight = (s) => s.height ?? NODE_H
-
-// Кумулятивные X-позиции
-let _cx = PAD
-const _xMap = {}
-for (const s of STATIONS) {
-  _xMap[s.id] = _cx
-  _cx += nodeWidth(s) + GAP
-}
-export const nodeX = (index) => _xMap[STATIONS[index].id]
-
-export const SVG_W = _cx - GAP + PAD
-
-/** Центр основного потока; схема сдвинута выше к верху страницы. */
-export const MAIN_FLOW_Y = 360
-export const SVG_H = 620

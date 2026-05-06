@@ -34,7 +34,7 @@ function slugify(name) {
 
 /**
  * @param {Record<string, Array<{наименование: string, 'замесов 150': number, 'замесов 100': number}>>} groups
- * @returns {Array<{id: string, recipe: string, weight: number}>}
+ * @returns {Array<{id: string, recipe: string, weight: number, name: string, sku_type: string, batch_no: string}>}
  */
 export function demandToSkuList(groups) {
   const result = []
@@ -42,17 +42,37 @@ export function demandToSkuList(groups) {
   for (const [groupName, rows] of Object.entries(groups ?? {})) {
     const recipe = detectRecipe(groupName)
     if (!recipe) continue
+    const sku_type = (groupName ?? '').trim()
 
     for (const row of rows) {
-      const name = slugify(row['наименование'] ?? 'sku')
+      const slug = slugify(row['наименование'] ?? 'sku')
+      const label = String(row['наименование'] ?? '')
+        .trim()
+        .replace(/\s+/g, ' ')
+      const title = label || slug.replace(/_/g, ' ')
       const b150 = Math.max(0, Math.round(row['замесов 150'] ?? 0))
       const b100 = Math.max(0, Math.round(row['замесов 100'] ?? 0))
 
       for (let i = 1; i <= b150; i++) {
-        result.push({ id: `${name}-${i}-${recipe}`, recipe, weight: 150 })
+        result.push({
+          id: `${slug}-${i}-${recipe}`,
+          recipe,
+          weight: 150,
+          name: title,
+          sku_type,
+          batch_no: String(i),
+        })
       }
       for (let i = 1; i <= b100; i++) {
-        result.push({ id: `${name}-${b150 + i}-${recipe}`, recipe, weight: 100 })
+        const n = b150 + i
+        result.push({
+          id: `${slug}-${n}-${recipe}`,
+          recipe,
+          weight: 100,
+          name: title,
+          sku_type,
+          batch_no: String(n),
+        })
       }
     }
   }
