@@ -10,6 +10,7 @@ const UPSTREAM_QUEUE = {
   kuter: 'queue_kuter',
   osadka: 'queue_osadka',
   termokamera: 'queue_termokamera',
+  ohlazdenie: 'queue_ohlazdenie',
 }
 
 /**
@@ -128,11 +129,13 @@ const handlers = {
   },
 
   /**
-   * Элемент вошёл в очередь. Сейчас нам важна только queue_termokamera,
-   * потому что остальные очереди формируются иначе.
+   * Элемент вошёл в очередь.
+   * Сейчас журнал симуляции явно логирует вход в post-prep очереди
+   * (queue_termokamera, queue_ohlazdenie и т.д.), поэтому принимаем
+   * любые queue_* события.
    */
   entered(state, event) {
-    if (event.station !== 'queue_termokamera') return
+    if (!String(event.station).startsWith('queue_')) return
     const map = ensureStationMap(state, event.station)
     map.set(event.sku, mergeItem(map.get(event.sku), event, state))
   },

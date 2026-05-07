@@ -2,7 +2,7 @@ import { createBrowserRouter, NavLink, Outlet } from 'react-router-dom'
 import ImportPage from '../features/import/ImportPage'
 import RecipesPage from '../features/recipes/RecipesPage'
 import ScadaPage from '../features/scada/ScadaPage'
-import SimulationPage from '../features/simulation/SimulationPage'
+import InputSkuPage from '../features/scada/InputSkuPage'
 
 const navClass = ({ isActive }) =>
   isActive ? 'text-sm font-medium text-green-800' : 'text-sm text-gray-600 hover:text-gray-900'
@@ -14,16 +14,16 @@ function AppLayout() {
         <span className="text-lg font-bold text-green-700">Экофуд</span>
         <nav className="flex gap-6">
           <NavLink to="/" end className={navClass}>
-            Производство
+            Симуляция
           </NavLink>
           <NavLink to="/recipes" className={navClass}>
             Рецепты
           </NavLink>
-          <NavLink to="/simulation" className={navClass}>
-            Симуляция
-          </NavLink>
           <NavLink to="/import" className={navClass}>
             Импорт
+          </NavLink>
+          <NavLink to="/input-sku" className={navClass}>
+            Список SKU на вход
           </NavLink>
         </nav>
       </header>
@@ -40,8 +40,8 @@ export const router = createBrowserRouter([
     children: [
       { path: '/', element: <ScadaPage /> },
       { path: '/recipes', element: <RecipesPage /> },
-      { path: '/simulation', element: <SimulationPage /> },
       { path: '/import', element: <ImportPage /> },
+      { path: '/input-sku', element: <InputSkuPage /> },
     ],
   },
 ])

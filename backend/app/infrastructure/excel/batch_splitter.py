@@ -72,3 +72,12 @@ def enrich_row(row: dict) -> dict:
     'замесов 150', 'замесов 100', 'излишек'.
     """
     return {**row, **split_batches(row.get("потребность"))}
+
+
+def enrich_row_with_need(name: str | None, need: float | int | None) -> dict:
+    """Формирует строку для дневной потребности."""
+    return {
+        "потребность": need,
+        "наименование": name,
+        **split_batches(need),
+    }

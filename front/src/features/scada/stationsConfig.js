@@ -7,6 +7,7 @@ export const STATIONS = [
   { id: 'osadka',            label: 'Осадка',       capacity: 100, height: 280 },
   { id: 'queue_termokamera', label: 'К термо',      type: 'queue' },
   { id: 'termokamera',       label: 'Термокамера',  capacity: 6, width: 200, height: 320 },
+  { id: 'queue_ohlazdenie',  label: 'К охлаждению', type: 'queue' },
   { id: 'ohlazdenie',        label: 'Охлаждение',   capacity: 4   },
   { id: 'upakovka',          label: 'Упаковка',     capacity: 100 },
   { id: 'sklad',             label: 'Склад',        capacity: 10000, type: 'container' },

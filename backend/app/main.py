@@ -8,7 +8,7 @@ logging.basicConfig(
     format="%(levelname)s | %(name)s | %(message)s",
 )
 
-from app.api.routers import health, import_, recipes, simulation
+from app.api.routers import health, import_, recipes, simulation, sku_lists
 from app.config import settings
 from app.infrastructure.database import Database
 from app.infrastructure.repositories.mongo_recipe_repository import MongoRecipeRepository
@@ -29,5 +29,5 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-for r in (health.router, recipes.router, simulation.router, import_.router):
+for r in (health.router, recipes.router, simulation.router, import_.router, sku_lists.router):
     app.include_router(r, prefix="/api/v1")

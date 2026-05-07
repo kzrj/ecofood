@@ -12,6 +12,7 @@ def _doc_to_entity(doc: dict) -> Demand:
         id=str(doc["_id"]),
         filename=doc["filename"],
         data=doc["data"],
+        days=doc.get("days", {}),
         created_at=doc["created_at"],
     )
 
@@ -22,6 +23,7 @@ class MongoDemandRepository:
         doc = {
             "filename": entity.filename,
             "data": entity.data,
+            "days": entity.days,
             "created_at": entity.created_at,
         }
         result = await db[_COLLECTION].insert_one(doc)

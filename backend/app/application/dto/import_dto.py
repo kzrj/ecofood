@@ -24,6 +24,7 @@ class GroupedImportResultDTO(BaseModel):
 
     filename: str
     groups: dict[str, list[dict[str, Any]]]
+    days: dict[str, dict[str, list[dict[str, Any]]]]
     counts: dict[str, int]
     total: int
 
@@ -51,5 +52,6 @@ class DemandDetailDTO(BaseModel):
     filename: str
     created_at: datetime
     groups: dict[str, list[dict[str, Any]]]
+    days: dict[str, dict[str, list[dict[str, Any]]]]
     counts: dict[str, int]
     total: int

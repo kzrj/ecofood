@@ -11,5 +11,6 @@ class Demand:
 
     filename: str
     data: dict[str, list[dict[str, Any]]]  # { product_type: [row, ...] }
+    days: dict[str, dict[str, list[dict[str, Any]]]] = field(default_factory=dict)
     created_at: datetime = field(default_factory=datetime.utcnow)
     id: str | None = None

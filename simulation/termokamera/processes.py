@@ -36,6 +36,16 @@ def termo_section_process(
             log_event(log, env.now, sec, "termokamera", "retool_done", section=section_id)
 
     for rama in ramas_in_section:
+        log_event(
+            log,
+            env.now,
+            str(rama),
+            "queue_ohlazdenie",
+            "entered",
+            weight=rama.weight,
+            recipe=rama.recipe_name,
+            section=section_id,
+        )
         yield collect_ramas_ohlazdenie.put(rama)
 
 

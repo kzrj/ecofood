@@ -11,7 +11,7 @@ function formatDate(iso) {
   return d.toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit', year: '2-digit' })
 }
 
-export default function DemandPanel() {
+export default function DemandPanel({ compact = false }) {
   const { runSimulation, simulationLoading } = useSimulationStore()
 
   const [demands,    setDemands]    = useState([])
@@ -52,8 +52,8 @@ export default function DemandPanel() {
   }
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-4 flex flex-col gap-3 w-full max-w-lg">
-      <p className="text-sm font-semibold text-slate-700">Потребность</p>
+    <div className={compact ? 'flex flex-col gap-3' : 'rounded-xl border border-slate-200 bg-white p-4 flex flex-col gap-3 w-full max-w-lg'}>
+      {!compact && <p className="text-sm font-semibold text-slate-700">Потребность</p>}
 
       {listLoading ? (
         <p className="text-xs text-slate-400">Загружаем список…</p>

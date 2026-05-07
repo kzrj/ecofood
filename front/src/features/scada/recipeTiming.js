@@ -27,6 +27,7 @@ const NO_FIXED_TIME = new Set([
   'queue_kuter',
   'queue_osadka',
   'queue_termokamera',
+  'queue_ohlazdenie',
   'sklad',
 ])
 

@@ -48,9 +48,17 @@ function BatchSummary({ rows }) {
   )
 }
 
-function GroupsView({ result, saveStatus, onSave }) {
+function GroupsView({ result, saveStatus, onSave, selectedDay, onSelectDay }) {
   if (!result) return null
   const isSaved = saveStatus === 'saved'
+  const dayKeys = Object.keys(result.days ?? {})
+  const activeGroups = selectedDay === '__total'
+    ? (result.groups ?? {})
+    : (result.days?.[selectedDay] ?? {})
+  const activeCounts = Object.fromEntries(
+    Object.entries(activeGroups).map(([k, rows]) => [k, Array.isArray(rows) ? rows.length : 0]),
+  )
+  const activeTotal = Object.values(activeCounts).reduce((s, n) => s + n, 0)
   return (
     <div className="space-y-5">
       {/* summary bar */}
@@ -58,7 +66,7 @@ function GroupsView({ result, saveStatus, onSave }) {
         <div>
           <p className="text-sm font-medium text-green-800">{result.filename}</p>
           <p className="text-xs text-green-600 mt-0.5">
-            {result.total} товаров · {Object.keys(result.groups ?? {}).length} типов
+            {activeTotal} товаров · {Object.keys(activeGroups).length} типов
             {result.created_at && <span className="ml-2 text-green-500">{formatDate(result.created_at)}</span>}
           </p>
         </div>
@@ -81,15 +89,46 @@ function GroupsView({ result, saveStatus, onSave }) {
         )}
       </div>
 
+      {/* days selector */}
+      {dayKeys.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          <button
+            onClick={() => onSelectDay('__total')}
+            className={[
+              'text-xs px-3 py-1.5 rounded-md border transition-colors',
+              selectedDay === '__total'
+                ? 'bg-green-700 text-white border-green-700'
+                : 'bg-white text-gray-600 border-gray-300 hover:border-green-400',
+            ].join(' ')}
+          >
+            Общая
+          </button>
+          {dayKeys.map((day) => (
+            <button
+              key={day}
+              onClick={() => onSelectDay(day)}
+              className={[
+                'text-xs px-3 py-1.5 rounded-md border transition-colors',
+                selectedDay === day
+                  ? 'bg-green-700 text-white border-green-700'
+                  : 'bg-white text-gray-600 border-gray-300 hover:border-green-400',
+              ].join(' ')}
+            >
+              {day}
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* groups */}
-      {Object.entries(result.groups ?? {}).map(([typeName, rows]) => {
+      {Object.entries(activeGroups).map(([typeName, rows]) => {
         const safeRows = Array.isArray(rows) ? rows : []
         const headers  = safeRows.length > 0 && safeRows[0] ? Object.keys(safeRows[0]) : []
         return (
           <div key={typeName} className="rounded-lg border border-gray-200 overflow-hidden">
             <div className="bg-gray-100 px-4 py-2 flex items-center justify-between">
               <span className="text-sm font-semibold text-gray-700">{typeName}</span>
-              <span className="text-xs text-gray-500">{(result.counts ?? {})[typeName]} товаров</span>
+              <span className="text-xs text-gray-500">{activeCounts[typeName]} товаров</span>
             </div>
             <div className="overflow-x-auto">
               <table className="min-w-full text-xs">
@@ -127,6 +166,7 @@ export default function ImportPage() {
   const [result, setResult]         = useState(null)
   const [saveStatus, setSaveStatus] = useState('idle') // idle|saving|saved|error
   const [isFromSaved, setIsFromSaved] = useState(false) // true → already in DB, hide save btn
+  const [selectedDay, setSelectedDay] = useState('__total')
 
   // left list
   const [list, setList]           = useState([])
@@ -157,6 +197,7 @@ export default function ImportPage() {
     setActiveId(null)
     setIsFromSaved(false)
     setSaveStatus('idle')
+    setSelectedDay('__total')
 
     const form = new FormData()
     form.append('file', file)
@@ -199,6 +240,7 @@ export default function ImportPage() {
     setIsFromSaved(true)
     setSaveStatus('idle')
     setUploadStatus('idle')
+    setSelectedDay('__total')
     try {
       const res  = await fetch(API.get(item.id))
       const json = await res.json()
@@ -216,6 +258,7 @@ export default function ImportPage() {
     setActiveId(null)
     setIsFromSaved(false)
     setSaveStatus('idle')
+    setSelectedDay('__total')
     if (fileRef.current) fileRef.current.value = ''
   }
 
@@ -320,6 +363,8 @@ export default function ImportPage() {
           result={result}
           saveStatus={isFromSaved ? 'saved' : saveStatus}
           onSave={isFromSaved ? null : handleSave}
+          selectedDay={selectedDay}
+          onSelectDay={setSelectedDay}
         />
       </main>
     </div>
