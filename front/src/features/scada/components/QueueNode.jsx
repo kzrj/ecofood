@@ -21,15 +21,15 @@ function FrameRect({ x, y, w, h, item }) {
   return (
     <g>
       <rect x={x} y={y} width={w} height={h} rx={4} fill={col.fill} stroke={col.stroke} strokeWidth={1.5} />
-      <text x={cx} y={item.recipe ? y + h * 0.36 : y + h * 0.44} textAnchor="middle" fontSize={9} fontWeight="700" fill={col.text}>
+      <text x={cx} y={item.recipe ? y + h * 0.38 : y + h * 0.46} textAnchor="middle" fontSize={10} fontWeight="700" fill={col.text}>
         {item.sku}
       </text>
       {item.recipe && (
-        <text x={cx} y={y + h * 0.58} textAnchor="middle" fontSize={7} fontWeight="600" fill={col.text}>
+        <text x={cx} y={y + h * 0.64} textAnchor="middle" fontSize={8} fontWeight="600" fill={col.text}>
           {RECIPE_SHORT[item.recipe] ?? item.recipe}
         </text>
       )}
-      <text x={cx} y={item.recipe ? y + h * 0.82 : y + h * 0.78} textAnchor="middle" fontSize={8} fill={col.text}>
+      <text x={cx} y={item.recipe ? y + h * 0.88 : y + h * 0.82} textAnchor="middle" fontSize={9} fontWeight="600" fill={col.text}>
         {item.weight}кг
       </text>
     </g>
@@ -42,28 +42,24 @@ function shortLabel(s, maxLen = 22) {
   return t.length <= maxLen ? t : `${t.slice(0, maxLen - 1)}…`
 }
 
-/** Ячейка SKU: название · тип · вес · замес (без длинного id) */
+/** Ячейка SKU: название · тип · вес (по центру, без номера замеса) */
 function SkuTile({ x, y, w, h, item }) {
   const col = RECIPE_COLOR[item.recipe] ?? RECIPE_COLOR.default
   const title = shortLabel(item.name || item.sku, 24)
   const typeLine = item.sku_type ? shortLabel(item.sku_type, 24) : '—'
-  const batchLine = item.batch_no != null && item.batch_no !== '' ? String(item.batch_no) : '—'
   const weightLine = `${item.weight ?? 0}кг`
-  const line = (i) => y + 5 + i * ((h - 8) / 4)
+  const line = (i) => y + 11 + i * ((h - 22) / 3)
   return (
     <g>
       <rect x={x} y={y} width={w} height={h} rx={4} fill={col.fill} stroke={col.stroke} strokeWidth={1} />
-      <text x={x + w / 2} y={line(0)} textAnchor="middle" fontSize={6.5} fontWeight="700" fill={col.text}>
+      <text x={x + w / 2} y={line(0)} textAnchor="middle" fontSize={7.5} fontWeight="700" fill={col.text}>
         {title}
       </text>
-      <text x={x + w / 2} y={line(1)} textAnchor="middle" fontSize={6} fontWeight="600" fill={col.text}>
+      <text x={x + w / 2} y={line(1)} textAnchor="middle" fontSize={7} fontWeight="600" fill={col.text}>
         {typeLine}
       </text>
-      <text x={x + w / 2} y={line(2)} textAnchor="middle" fontSize={6.5} fontWeight="600" fill={col.text}>
+      <text x={x + w / 2} y={line(2)} textAnchor="middle" fontSize={7.5} fontWeight="700" fill={col.text}>
         {weightLine}
-      </text>
-      <text x={x + w / 2} y={line(3)} textAnchor="middle" fontSize={6} fontWeight="500" fill={col.text}>
-        {batchLine}
       </text>
     </g>
   )
@@ -91,7 +87,7 @@ export default function QueueNode({ x, y, station, items = [], expanded = false,
     const labelH = 10
     const footerH = 11
     const gap = ITEM_GAP
-    const cellH = 30
+    const cellH = 48
     const innerH = Math.max(0, contentH - labelH - footerH)
     const cols = Math.min(12, Math.max(3, Math.floor((contentW + gap) / (gap + 100))))
     const cellW = (contentW - gap * (cols - 1)) / cols

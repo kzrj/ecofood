@@ -42,8 +42,8 @@ function Slot({ x, y, w, h, item }) {
   const cx = x + w / 2
   const st = filled ? slotStyle(item) : null
   const isRetool = filled && item?.phase === 'retool'
-  const title = filled ? shortText(item.name || item.sku.replace(/\(.*\)/, ''), 16) : ''
-  const typeLine = filled ? shortText(item.sku_type || RECIPE_TAG[item.recipe] || item.recipe || '', 16) : ''
+  const title = filled ? shortText(item.name || item.sku.replace(/\(.*\)/, ''), 18) : ''
+  const typeLine = filled ? shortText(item.sku_type || RECIPE_TAG[item.recipe] || item.recipe || '', 18) : ''
 
   return (
     <g>
@@ -56,25 +56,20 @@ function Slot({ x, y, w, h, item }) {
       />
       {filled && (
         <>
-          <text x={cx} y={y + h * 0.22} textAnchor="middle" fontSize={7} fontWeight="700" fill={st.label}>
+          <text x={cx} y={y + h * 0.3} textAnchor="middle" fontSize={8} fontWeight="700" fill={st.label}>
             {title}
           </text>
-          <text x={cx} y={y + h * 0.42} textAnchor="middle" fontSize={6.5} fontWeight="600" fill={st.sub}>
+          <text x={cx} y={y + h * 0.56} textAnchor="middle" fontSize={7.5} fontWeight="600" fill={st.sub}>
             {typeLine}
           </text>
           {isRetool ? (
-            <text x={cx} y={y + h * 0.68} textAnchor="middle" fontSize={7} fontWeight="700" fill="#92400e">
+            <text x={cx} y={y + h * 0.84} textAnchor="middle" fontSize={8} fontWeight="700" fill="#92400e">
               перенал.
             </text>
           ) : (
-            <>
-              <text x={cx} y={y + h * 0.62} textAnchor="middle" fontSize={7} fill={st.sub}>
-                {item.weight > 0 ? `${item.weight}кг` : ''}
-              </text>
-              <text x={cx} y={y + h * 0.84} textAnchor="middle" fontSize={6.5} fontWeight="500" fill={st.sub}>
-                {item.batch_no != null && item.batch_no !== '' ? String(item.batch_no) : '—'}
-              </text>
-            </>
+            <text x={cx} y={y + h * 0.84} textAnchor="middle" fontSize={8} fontWeight="700" fill={st.sub}>
+              {item.weight > 0 ? `${item.weight}кг` : ''}
+            </text>
           )}
         </>
       )}
@@ -148,7 +143,7 @@ function SkladSkuCells({ x, y, w, h, items, expanded = false, onToggleExpand }) 
   const innerH = Math.max(0, h - labelH - footerH)
   const cols = Math.min(12, Math.max(3, Math.floor((w + gap) / (gap + 98))))
   const cellW = (w - gap * (cols - 1)) / cols
-  const cellH = 30
+  const cellH = 50
   const maxRows = Math.max(1, Math.floor((innerH + gap) / (cellH + gap)))
   const maxVisible = maxRows * cols
   const visible = expanded ? items : items.slice(0, maxVisible)
@@ -171,7 +166,7 @@ function SkladSkuCells({ x, y, w, h, items, expanded = false, onToggleExpand }) 
         const title = shortText(item.name || item.sku, 20)
         const typeLine = item.sku_type ? shortText(item.sku_type, 20) : '—'
         const batchLine = item.batch_no != null && item.batch_no !== '' ? String(item.batch_no) : '—'
-        const lineY = (k) => cy + 5 + k * ((cellH - 8) / 4)
+        const lineY = (k) => cy + 12 + k * ((cellH - 24) / 4)
         return (
           <g key={item.sku}>
             <rect

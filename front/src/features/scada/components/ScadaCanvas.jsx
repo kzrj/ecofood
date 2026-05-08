@@ -71,7 +71,7 @@ export default function ScadaCanvas({ statuses = {}, stationItems = {}, recipeBo
                 <text
                   key={`retool-${station.id}`}
                   x={cx}
-                  y={p.y - 14}
+                  y={p.y - 20}
                   textAnchor="middle"
                   fontSize={11}
                   fontWeight="700"

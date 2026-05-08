@@ -27,9 +27,6 @@ export default function ScadaPage() {
         </p>
       )}
 
-      {/* Меню управления временем (наверх) */}
-      {totalTime > 0 && <Player />}
-
       {/* Нормы по рецептам (наверх) */}
       <RecipeNormsTable recipeBook={recipeBook} />
 
@@ -45,6 +42,9 @@ export default function ScadaPage() {
           </div>
         ))}
       </div>
+
+      {/* Меню управления временем (ниже норм, ближе к канвасу) */}
+      {totalTime > 0 && <Player />}
 
       <ScadaCanvas statuses={statuses} stationItems={stationItems} recipeBook={recipeBook} />
 

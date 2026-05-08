@@ -15,7 +15,7 @@ const NODE_H_REF = 110
 /** Верхняя строка: очередь «На вход» — низкая, широкая */
 const INPUT_TOP = PAD
 export const INPUT_ROW_HEIGHT = 138
-const BETWEEN_INPUT_AND_MAIN = 104
+const BETWEEN_INPUT_AND_MAIN = 132
 
 /** Нижняя полоса склада — низкая, широкая */
 const SKLAD_GAP = 40
