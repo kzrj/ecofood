@@ -5,6 +5,7 @@ const API = {
   save:   '/api/v1/import/save',
   list:   '/api/v1/import/list',
   get:    (id) => `/api/v1/import/${id}`,
+  del:    (id) => `/api/v1/import/${id}`,
 }
 
 // ─── helpers ────────────────────────────────────────────────────────────────
@@ -251,6 +252,29 @@ export default function ImportPage() {
     }
   }
 
+  async function handleDelete(item, e) {
+    e.stopPropagation()
+    const ok = window.confirm(`Удалить "${item.filename}"?`)
+    if (!ok) return
+
+    try {
+      const res = await fetch(API.del(item.id), { method: 'DELETE' })
+      if (!res.ok && res.status !== 404) throw new Error()
+
+      // Если удалили открытую запись — очищаем правую панель
+      if (activeId === item.id) {
+        setResult(null)
+        setActiveId(null)
+        setIsFromSaved(false)
+        setSaveStatus('idle')
+        setSelectedDay('__total')
+      }
+      await loadList()
+    } catch {
+      // минимально-инвазивно: можно добавить toast позже
+    }
+  }
+
   function resetUpload() {
     setUploadStatus('idle')
     setUploadError(null)
@@ -283,16 +307,26 @@ export default function ImportPage() {
           )}
           {list.map(item => (
             <li key={item.id}>
-              <button
-                onClick={() => handleListClick(item)}
+              <div
                 className={[
-                  'w-full text-left px-4 py-3 hover:bg-gray-50 transition-colors',
+                  'px-4 py-3 hover:bg-gray-50 transition-colors',
                   activeId === item.id ? 'bg-green-50 border-l-2 border-green-600' : '',
                 ].join(' ')}
               >
-                <p className="text-xs font-medium text-gray-800 truncate">{item.filename}</p>
-                <p className="text-xs text-gray-400 mt-0.5">{formatDate(item.created_at)}</p>
-              </button>
+                <div className="flex items-start justify-between gap-2">
+                  <button onClick={() => handleListClick(item)} className="min-w-0 text-left flex-1">
+                    <p className="text-xs font-medium text-gray-800 truncate">{item.filename}</p>
+                    <p className="text-xs text-gray-400 mt-0.5">{formatDate(item.created_at)}</p>
+                  </button>
+                  <button
+                    onClick={(e) => handleDelete(item, e)}
+                    className="text-[11px] text-red-400 hover:text-red-600 shrink-0"
+                    title="Удалить"
+                  >
+                    Удалить
+                  </button>
+                </div>
+              </div>
             </li>
           ))}
         </ul>

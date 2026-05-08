@@ -44,3 +44,12 @@ class MongoDemandRepository:
         db = Database.get_db()
         doc = await db[_COLLECTION].find_one({"_id": oid})
         return _doc_to_entity(doc) if doc else None
+
+    async def delete_by_id(self, demand_id: str) -> bool:
+        try:
+            oid = ObjectId(demand_id)
+        except InvalidId:
+            return False
+        db = Database.get_db()
+        res = await db[_COLLECTION].delete_one({"_id": oid})
+        return res.deleted_count > 0

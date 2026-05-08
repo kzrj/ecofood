@@ -27,7 +27,11 @@ export default function ScadaPage() {
         </p>
       )}
 
-      <ScadaCanvas statuses={statuses} stationItems={stationItems} recipeBook={recipeBook} />
+      {/* Меню управления временем (наверх) */}
+      {totalTime > 0 && <Player />}
+
+      {/* Нормы по рецептам (наверх) */}
+      <RecipeNormsTable recipeBook={recipeBook} />
 
       {/* Легенда */}
       <div className="flex gap-6">
@@ -42,11 +46,8 @@ export default function ScadaPage() {
         ))}
       </div>
 
-      {/* Плеер */}
-      {totalTime > 0 && <Player />}
+      <ScadaCanvas statuses={statuses} stationItems={stationItems} recipeBook={recipeBook} />
 
-      {/* Нормы по рецептам */}
-      <RecipeNormsTable recipeBook={recipeBook} />
     </div>
   )
 }

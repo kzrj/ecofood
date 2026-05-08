@@ -16,6 +16,7 @@ log = logging.getLogger(__name__)
 
 _TARGET_SHEET_PREFIX = "завод план"
 _MAX_COLUMNS = 6
+_MAX_PARSE_COLUMN_1BASED = 24  # X
 
 # Полный список колонок (нужен для детектирования типов и товаров по индексам).
 # Колонки 0 (замес) и 3 (артикул) используются только внутри парсера и в выходной dict не попадают.
@@ -105,7 +106,7 @@ def _detect_day_columns(ws: openpyxl.worksheet.worksheet.Worksheet) -> dict[int,
     if len(rows) < 2:
         return {}
     row1, row2 = rows[0], rows[1]
-    max_len = max(len(row1), len(row2))
+    max_len = min(max(len(row1), len(row2)), _MAX_PARSE_COLUMN_1BASED)
 
     result: dict[int, str] = {}
     for idx in range(_MAX_COLUMNS, max_len):
@@ -226,7 +227,12 @@ def group_rows_by_type_with_days(
                 if not isinstance(day_val, (int, float)) or day_val <= 0:
                     continue
                 days[day_key][current_type].append(
-                    {"потребность": day_val, "наименование": product_name}
+                    {
+                        "потребность": day_val,
+                        "наименование": product_name,
+                        "замес на 100": base_row.get("замес на 100"),
+                        "замес на 150": base_row.get("замес на 150"),
+                    }
                 )
             continue
 

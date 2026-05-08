@@ -7,6 +7,26 @@ const BASE_TYPE_OPTIONS = [
   { value: 'polukopch', label: 'Копченка' },
 ]
 
+/** Сортировка ключей дней вида «ПН 25.03» / «25.03.2026» для стабильного порядка в UI */
+function sortDemandDayKeys(keys) {
+  return [...keys].sort((a, b) => {
+    const ma = a.match(/(\d{2})\.(\d{2})(?:\.(\d{4}))?/)
+    const mb = b.match(/(\d{2})\.(\d{2})(?:\.(\d{4}))?/)
+    if (ma && mb) {
+      const ya = ma[3] ? parseInt(ma[3], 10) : 0
+      const yb = mb[3] ? parseInt(mb[3], 10) : 0
+      if (ya !== yb) return ya - yb
+      const da = parseInt(ma[1], 10)
+      const ma_m = parseInt(ma[2], 10)
+      const db = parseInt(mb[1], 10)
+      const mb_m = parseInt(mb[2], 10)
+      if (ma_m !== mb_m) return ma_m - mb_m
+      return da - db
+    }
+    return a.localeCompare(b, 'ru')
+  })
+}
+
 export default function InputSkuPanel({ recipeBook }) {
   const { runSimulation, simulationLoading } = useSimulationStore()
   const [listName, setListName] = useState('')
@@ -23,11 +43,17 @@ export default function InputSkuPanel({ recipeBook }) {
   const [demands, setDemands] = useState([])
   const [demandsLoading, setDemandsLoading] = useState(false)
   const [selectedDemandId, setSelectedDemandId] = useState(null)
+  /** Кэш полной потребности по id (groups + days) */
+  const [demandDetailCache, setDemandDetailCache] = useState({})
+  const [demandDetailLoadingId, setDemandDetailLoadingId] = useState(null)
+  const [selectedDayKey, setSelectedDayKey] = useState(null)
   const [buildLoading, setBuildLoading] = useState(false)
   const [actionError, setActionError] = useState(null)
   /** Перетаскивание строк очереди: индекс источника (null когда не тянем) */
   const [dragFromIndex, setDragFromIndex] = useState(null)
   const dragFromRef = useRef(null)
+  /** Уже успешно загруженные потребности (не дёргаем API повторно при том же id) */
+  const demandLoadedIdsRef = useRef(new Set())
 
   const recipeOptions = useMemo(() => {
     const allowed = BASE_TYPE_OPTIONS.filter((opt) => recipeBook?.[opt.value])
@@ -38,10 +64,48 @@ export default function InputSkuPanel({ recipeBook }) {
     [savedLists, activeListId],
   )
 
+  const sortedDayKeysForSelected = useMemo(() => {
+    const detail = selectedDemandId ? demandDetailCache[selectedDemandId] : null
+    const days = detail?.days
+    if (!days || typeof days !== 'object') return []
+    return sortDemandDayKeys(Object.keys(days))
+  }, [selectedDemandId, demandDetailCache])
+
   useEffect(() => {
     loadSavedLists()
     loadDemands()
   }, [])
+
+  useEffect(() => {
+    if (!selectedDemandId) return
+    if (demandLoadedIdsRef.current.has(selectedDemandId)) return
+
+    const id = selectedDemandId
+    let cancelled = false
+    setDemandDetailLoadingId(id)
+    fetch(`/api/v1/import/${id}`)
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then((detail) => {
+        if (!cancelled) {
+          demandLoadedIdsRef.current.add(id)
+          setDemandDetailCache((prev) => ({ ...prev, [id]: detail }))
+        }
+      })
+      .catch(() => {
+        if (!cancelled) setActionError('Не удалось загрузить потребность')
+      })
+      .finally(() => {
+        if (!cancelled) setDemandDetailLoadingId(null)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [selectedDemandId])
+
+  useEffect(() => {
+    setSelectedDayKey(null)
+  }, [selectedDemandId])
 
   async function loadSavedLists() {
     setListLoading(true)
@@ -65,7 +129,9 @@ export default function InputSkuPanel({ recipeBook }) {
       const data = await res.json()
       const rows = Array.isArray(data) ? data : []
       setDemands(rows)
-      if (rows.length > 0) setSelectedDemandId(rows[0].id)
+      if (rows.length > 0) {
+        setSelectedDemandId((prev) => prev ?? rows[0].id)
+      }
     } catch (e) {
       setActionError(e.message ?? 'Ошибка загрузки потребностей')
     } finally {
@@ -162,23 +228,43 @@ export default function InputSkuPanel({ recipeBook }) {
   }
 
   async function handleBuildFromDemand() {
-    if (!selectedDemandId) return
+    if (!selectedDemandId || !selectedDayKey) return
     setActionError(null)
     setBuildLoading(true)
     try {
       const selectedDemand = demands.find((d) => d.id === selectedDemandId)
-      const res = await fetch(`/api/v1/import/${selectedDemandId}`)
-      if (!res.ok) throw new Error(`HTTP ${res.status}`)
-      const detail = await res.json()
-      const builtQueue = demandToSkuList(detail?.groups ?? {})
+      let detail = demandDetailCache[selectedDemandId]
+      if (!detail) {
+        const res = await fetch(`/api/v1/import/${selectedDemandId}`)
+        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        detail = await res.json()
+        demandLoadedIdsRef.current.add(selectedDemandId)
+        setDemandDetailCache((prev) => ({ ...prev, [selectedDemandId]: detail }))
+      }
+      const dayGroups = detail.days?.[selectedDayKey]
+      if (!dayGroups || typeof dayGroups !== 'object') {
+        setActionError('Нет данных за выбранный день')
+        return
+      }
+      const builtQueue = demandToSkuList(dayGroups)
+      if (builtQueue.length === 0) {
+        setActionError('За этот день нет варёных / варено-копчёных позиций')
+        return
+      }
       setActiveListId(null)
       setQueue(builtQueue)
-      setListName(detail?.filename || selectedDemand?.filename || '')
+      const baseName = detail?.filename || selectedDemand?.filename || ''
+      setListName(`${baseName} — ${selectedDayKey}`)
     } catch (e) {
       setActionError(e.message ?? 'Ошибка формирования списка из потребности')
     } finally {
       setBuildLoading(false)
     }
+  }
+
+  function handleSelectDemand(id) {
+    setSelectedDemandId(id)
+    setSelectedDayKey(null)
   }
 
   function handleNewList() {
@@ -260,8 +346,8 @@ export default function InputSkuPanel({ recipeBook }) {
   }
 
   return (
-    <div className="flex h-[calc(100vh-120px)] border border-slate-200 rounded-xl overflow-hidden bg-white">
-      <aside className="w-64 shrink-0 border-r border-slate-200 bg-slate-50 flex flex-col">
+    <div className="flex h-[calc(100vh-120px)] min-h-0 border border-slate-200 rounded-xl overflow-hidden bg-white">
+      <aside className="w-48 shrink-0 min-h-0 border-r border-slate-200 bg-slate-50 flex flex-col">
         <div className="px-4 py-3 border-b border-slate-200 flex items-center justify-between">
           <p className="text-sm font-semibold text-slate-700">Сохраненные списки</p>
           {listLoading && <span className="text-xs text-slate-400">...</span>}
@@ -303,10 +389,93 @@ export default function InputSkuPanel({ recipeBook }) {
         </div>
       </aside>
 
-      <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-4">
-          <div className="rounded-lg border border-slate-200 p-3 flex flex-col gap-3">
+      <aside className="w-[200px] shrink-0 min-h-0 border-r border-slate-200 bg-slate-50 p-2.5 flex flex-col gap-2">
+        <div>
+          <p className="text-sm font-medium text-slate-700">Сформировать из потребности</p>
+          <p className="text-xs text-slate-500 mt-0.5">Выберите файл и один день.</p>
+        </div>
+        {demandsLoading ? (
+          <p className="text-xs text-slate-400">Загружаем потребности...</p>
+        ) : demands.length === 0 ? (
+          <p className="text-xs text-slate-400">Нет сохраненных потребностей</p>
+        ) : (
+          <div className="flex-1 min-h-0 flex flex-col gap-2 overflow-y-auto pr-1">
+            {demands.map((item) => (
+              <div
+                key={item.id}
+                className={`rounded-lg border transition-colors ${
+                  selectedDemandId === item.id
+                    ? 'border-blue-200 bg-white shadow-sm'
+                    : 'border-slate-200/80 bg-white/60'
+                }`}
+              >
+                <label className="flex items-center gap-2 px-2 py-2 cursor-pointer text-sm">
+                  <input
+                    type="radio"
+                    name="demand-for-build"
+                    value={item.id}
+                    checked={selectedDemandId === item.id}
+                    onChange={() => handleSelectDemand(item.id)}
+                    className="accent-blue-600 shrink-0"
+                  />
+                  <span className="flex-1 truncate text-slate-800">{item.filename}</span>
+                </label>
+                {selectedDemandId === item.id && (
+                  <div className="border-t border-slate-100 px-2 pb-2 pt-1 space-y-1">
+                    {demandDetailLoadingId === item.id ? (
+                      <p className="text-xs text-slate-400 px-1">Загрузка дней…</p>
+                    ) : sortedDayKeysForSelected.length === 0 ? (
+                      <p className="text-xs text-amber-700 px-1">
+                        Нет разбивки по дням в файле
+                      </p>
+                    ) : (
+                      sortedDayKeysForSelected.map((dayKey) => (
+                        <label
+                          key={dayKey}
+                          className={`flex items-center gap-2 rounded-md px-2 py-1.5 cursor-pointer text-xs transition-colors ${
+                            selectedDayKey === dayKey
+                              ? 'bg-blue-50 text-slate-800'
+                              : 'text-slate-600 hover:bg-slate-100'
+                          }`}
+                        >
+                          <input
+                            type="radio"
+                            name="demand-day-key"
+                            value={dayKey}
+                            checked={selectedDayKey === dayKey}
+                            onChange={() => setSelectedDayKey(dayKey)}
+                            className="accent-blue-600 shrink-0"
+                          />
+                          <span className="truncate">{dayKey}</span>
+                        </label>
+                      ))
+                    )}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+        <button
+          type="button"
+          onClick={handleBuildFromDemand}
+          disabled={
+            !selectedDemandId ||
+            !selectedDayKey ||
+            buildLoading ||
+            demandDetailLoadingId === selectedDemandId
+          }
+          className="self-start rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500 disabled:opacity-50"
+        >
+          {buildLoading ? 'Формируем...' : 'Сформировать новый список'}
+        </button>
+      </aside>
+
+      <div className="flex-1 min-w-0 min-h-0 flex flex-col gap-4 p-4 overflow-hidden bg-white">
+        <div className="shrink-0 grid gap-4 lg:grid-cols-2 lg:items-start">
+          <div className="rounded-lg border border-slate-200 p-3 flex flex-col gap-3 min-w-0">
             <p className="text-sm font-medium text-slate-700">Параметры списка</p>
-            <label className="flex flex-col gap-1 text-sm text-slate-600 max-w-xl">
+            <label className="flex flex-col gap-1 text-sm text-slate-600">
               Название списка
               <input
                 type="text"
@@ -316,7 +485,7 @@ export default function InputSkuPanel({ recipeBook }) {
                 placeholder="Например, Смена 1"
               />
             </label>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
                 onClick={handleSaveList}
@@ -347,64 +516,68 @@ export default function InputSkuPanel({ recipeBook }) {
               </button>
             </div>
           </div>
-          {actionError && <p className="text-xs text-red-500">{actionError}</p>}
 
-        <div className="rounded-lg border border-slate-200 p-3 flex flex-col gap-3">
-          <p className="text-sm font-medium text-slate-700">Создание SKU</p>
-          <div className="grid gap-3 md:grid-cols-3">
-            <label className="flex flex-col gap-1 text-sm text-slate-600">
-              Название
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="rounded-md border border-slate-300 px-3 py-2 text-slate-800 outline-none focus:border-blue-400"
-                placeholder="Например, Докторская"
-              />
-            </label>
-            <label className="flex flex-col gap-1 text-sm text-slate-600">
-              Тип
-              <select
-                value={recipe}
-                onChange={(e) => setRecipe(e.target.value)}
-                className="rounded-md border border-slate-300 px-3 py-2 text-slate-800 outline-none focus:border-blue-400"
-              >
-                {recipeOptions.map((item) => (
-                  <option key={item.value} value={item.value}>
-                    {item.label}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label className="flex flex-col gap-1 text-sm text-slate-600">
-              Вес
-              <input
-                type="number"
-                value={weight}
-                onChange={(e) => setWeight(e.target.value)}
-                className="rounded-md border border-slate-300 px-3 py-2 text-slate-800 outline-none focus:border-blue-400"
-                placeholder="100"
-              />
-            </label>
+          <div className="rounded-lg border border-slate-200 p-3 flex flex-col gap-3 min-w-0">
+            <p className="text-sm font-medium text-slate-700">Создание SKU</p>
+            <div className="grid gap-3 sm:grid-cols-3">
+              <label className="flex flex-col gap-1 text-sm text-slate-600">
+                Название
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="rounded-md border border-slate-300 px-3 py-2 text-slate-800 outline-none focus:border-blue-400"
+                  placeholder="Например, Докторская"
+                />
+              </label>
+              <label className="flex flex-col gap-1 text-sm text-slate-600">
+                Тип
+                <select
+                  value={recipe}
+                  onChange={(e) => setRecipe(e.target.value)}
+                  className="rounded-md border border-slate-300 px-3 py-2 text-slate-800 outline-none focus:border-blue-400"
+                >
+                  {recipeOptions.map((item) => (
+                    <option key={item.value} value={item.value}>
+                      {item.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              <label className="flex flex-col gap-1 text-sm text-slate-600">
+                Вес
+                <input
+                  type="number"
+                  value={weight}
+                  onChange={(e) => setWeight(e.target.value)}
+                  className="rounded-md border border-slate-300 px-3 py-2 text-slate-800 outline-none focus:border-blue-400"
+                  placeholder="100"
+                />
+              </label>
+            </div>
+            <button
+              type="button"
+              onClick={handleAddSku}
+              className="self-start rounded-md bg-slate-800 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
+            >
+              Добавить
+            </button>
           </div>
-          <button
-            type="button"
-            onClick={handleAddSku}
-            className="self-start rounded-md bg-slate-800 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
-          >
-            Добавить
-          </button>
         </div>
 
-        <div className="rounded-lg border border-slate-200 p-3 flex flex-col gap-3">
-          <div className="flex flex-col gap-0.5">
+        {actionError && <p className="shrink-0 text-xs text-red-500">{actionError}</p>}
+
+        <div className="flex-1 min-h-0 flex flex-col rounded-lg border border-slate-200 p-3 gap-3 min-w-0">
+          <div className="shrink-0 flex flex-col gap-0.5">
             <p className="text-sm font-medium text-slate-700">Очередность SKU на вход</p>
-            <p className="text-xs text-slate-400">Перетащите строку за ручку, чтобы изменить порядок. После изменений нажмите «Сохранить».</p>
+            <p className="text-xs text-slate-400">
+              Перетащите строку за ручку, чтобы изменить порядок. Две колонки: нумерация идёт строка за строкой слева направо. После изменений нажмите «Сохранить».
+            </p>
           </div>
           {queue.length === 0 ? (
-            <p className="text-xs text-slate-400">Список пуст</p>
+            <p className="text-xs text-slate-400 shrink-0">Список пуст</p>
           ) : (
-            <div className="flex flex-col gap-2 max-h-56 overflow-y-auto pr-1">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 flex-1 min-h-0 overflow-y-auto pr-1 content-start auto-rows-min">
               {queue.map((item, index) => (
                 <div
                   key={item.id}
@@ -421,37 +594,43 @@ export default function InputSkuPanel({ recipeBook }) {
                     e.preventDefault()
                     handleQueueDrop(index)
                   }}
-                  className={`flex items-center gap-2 rounded-md border px-3 py-2 text-sm transition-opacity cursor-grab active:cursor-grabbing ${
+                  className={`flex items-center gap-1.5 rounded-md border px-2 py-1.5 text-sm transition-opacity cursor-grab active:cursor-grabbing min-w-0 ${
                     dragFromIndex === index
                       ? 'border-blue-300 bg-blue-50/80 opacity-60'
                       : 'border-slate-200 hover:border-slate-300'
                   }`}
                 >
                   <span
-                    className="shrink-0 select-none text-slate-400 text-lg leading-none px-0.5"
+                    className="shrink-0 select-none text-slate-400 text-base leading-none"
                     title="Потянуть для перемещения"
                     aria-hidden
                   >
                     ⠿
                   </span>
-                  <span className="w-5 shrink-0 text-slate-400 tabular-nums">{index + 1}.</span>
-                  <span className="flex-1 min-w-0 truncate text-slate-700">{item.name || 'Без названия'}</span>
-                  <span className="shrink-0 text-slate-500">{recipeOptions.find((x) => x.value === item.recipe)?.label ?? item.recipe}</span>
-                  <span className="shrink-0 text-slate-500">{item.weight} кг</span>
+                  <span className="w-5 shrink-0 text-slate-400 tabular-nums text-[11px]">{index + 1}.</span>
+                  <span className="flex-1 min-w-0 truncate text-slate-700 text-xs sm:text-sm">{item.name || 'Без названия'}</span>
+                  <span className="shrink-0 truncate max-w-[4.5rem] text-right text-slate-500 text-[11px] tabular-nums">
+                    {recipeOptions.find((x) => x.value === item.recipe)?.label ?? item.recipe}
+                  </span>
+                  <span className="shrink-0 text-slate-500 text-[11px] tabular-nums">{item.weight}кг</span>
                   <button
                     type="button"
                     draggable={false}
                     onDragStart={(e) => e.stopPropagation()}
                     onClick={() => handleDelete(item.id)}
-                    className="shrink-0 rounded-md px-2 py-1 text-xs text-red-600 hover:bg-red-50"
+                    className="shrink-0 inline-flex h-7 w-7 items-center justify-center rounded text-red-600 hover:bg-red-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-red-400"
+                    aria-label="Удалить из очереди"
+                    title="Удалить"
                   >
-                    Удалить
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4" aria-hidden>
+                      <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+                    </svg>
                   </button>
                 </div>
               ))}
               <button
                 type="button"
-                className="w-full rounded border border-dashed border-slate-200 py-2 text-xs text-slate-400 hover:border-slate-300 hover:bg-slate-50"
+                className="col-span-full w-full rounded border border-dashed border-slate-200 py-2 text-xs text-slate-400 hover:border-slate-300 hover:bg-slate-50"
                 onDragOver={handleQueueDragOver}
                 onDrop={handleQueueDropAtEnd}
               >
@@ -463,49 +642,12 @@ export default function InputSkuPanel({ recipeBook }) {
             type="button"
             onClick={() => runSimulation(queue)}
             disabled={queue.length === 0 || simulationLoading}
-            className="self-start rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500 disabled:opacity-50"
+            className="shrink-0 self-start rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500 disabled:opacity-50"
           >
             {simulationLoading ? 'Считаем…' : 'Запустить по списку'}
           </button>
         </div>
       </div>
-
-      <aside className="w-[280px] shrink-0 border-l border-slate-200 bg-slate-50 p-3 flex flex-col gap-3">
-        <p className="text-sm font-medium text-slate-700">Сформировать из потребности</p>
-        {demandsLoading ? (
-          <p className="text-xs text-slate-400">Загружаем потребности...</p>
-        ) : demands.length === 0 ? (
-          <p className="text-xs text-slate-400">Нет сохраненных потребностей</p>
-        ) : (
-          <div className="flex-1 min-h-0 flex flex-col gap-1 overflow-y-auto pr-1">
-            {demands.map((item) => (
-              <label
-                key={item.id}
-                className={`flex items-center gap-2 rounded-lg px-3 py-2 cursor-pointer text-sm transition-colors
-                  ${selectedDemandId === item.id ? 'bg-blue-50 border border-blue-200' : 'hover:bg-white border border-transparent'}`}
-              >
-                <input
-                  type="radio"
-                  name="demand-for-build"
-                  value={item.id}
-                  checked={selectedDemandId === item.id}
-                  onChange={() => setSelectedDemandId(item.id)}
-                  className="accent-blue-600"
-                />
-                <span className="flex-1 truncate text-slate-700">{item.filename}</span>
-              </label>
-            ))}
-          </div>
-        )}
-        <button
-          type="button"
-          onClick={handleBuildFromDemand}
-          disabled={!selectedDemandId || buildLoading}
-          className="self-start rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-500 disabled:opacity-50"
-        >
-          {buildLoading ? 'Формируем...' : 'Сформировать новый список'}
-        </button>
-      </aside>
     </div>
   )
 }

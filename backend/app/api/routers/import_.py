@@ -73,3 +73,14 @@ async def get_demand(
     if result is None:
         raise HTTPException(status_code=404, detail="Demand not found")
     return result
+
+
+@router.delete("/{demand_id}", status_code=204)
+async def delete_demand(
+    demand_id: str,
+    service: Annotated[ImportService, Depends(get_import_service)],
+) -> None:
+    """Delete saved demand by id."""
+    deleted = await service.delete_demand(demand_id)
+    if not deleted:
+        raise HTTPException(status_code=404, detail="Demand not found")

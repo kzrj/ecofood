@@ -13,7 +13,7 @@ from app.application.dto.import_dto import (
 from app.domain.entities.demand import Demand
 from app.domain.repositories.demand_repository import DemandRepository
 from app.infrastructure.excel.batch_splitter import enrich_row
-from app.infrastructure.excel.batch_splitter import enrich_row_with_need
+from app.infrastructure.excel.batch_splitter import enrich_day_row
 from app.infrastructure.excel.excel_parser import group_rows_by_type_with_days
 
 
@@ -26,7 +26,7 @@ class ImportService:
         enriched = {t: [enrich_row(r) for r in rows] for t, rows in groups.items()}
         days = {
             day_key: {
-                t: [enrich_row_with_need(r.get("наименование"), r.get("потребность")) for r in rows]
+                t: [enrich_day_row(r) for r in rows]
                 for t, rows in by_type.items()
             }
             for day_key, by_type in days_raw.items()
@@ -71,3 +71,6 @@ class ImportService:
             counts=counts,
             total=sum(counts.values()),
         )
+
+    async def delete_demand(self, demand_id: str) -> bool:
+        return await self._repo.delete_by_id(demand_id)

@@ -1,5 +1,6 @@
 /**
- * Преобразует данные потребности (DemandDetailDTO.groups) в список SKU для симуляции.
+ * Преобразует данные потребности (DemandDetailDTO.groups или один срез DemandDetailDTO.days[день])
+ * в список SKU для симуляции.
  *
  * Маппинг типов:
  *   "вареные"             → varenka

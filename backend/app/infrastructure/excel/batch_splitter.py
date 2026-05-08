@@ -75,9 +75,74 @@ def enrich_row(row: dict) -> dict:
 
 
 def enrich_row_with_need(name: str | None, need: float | int | None) -> dict:
-    """Формирует строку для дневной потребности."""
+    """Формирует строку для дневной потребности (старый режим, кг)."""
     return {
         "потребность": need,
         "наименование": name,
         **split_batches(need),
+    }
+
+
+def split_batches_units(
+    need_units: float | int | None,
+    per_100: float | int | None,
+    per_150: float | int | None,
+) -> dict[str, int | float]:
+    """
+    Расчет для дневных колонок (значения в штуках, не в кг).
+    per_100/per_150 — сколько штук выпускает 1 замес 100/150 кг для конкретного SKU.
+    """
+    if need_units is None or not isinstance(need_units, (int, float)) or need_units <= 0:
+        return {_KEY_B150: 0, _KEY_B100: 0, _KEY_SURPLUS: 0}
+
+    need = float(need_units)
+    c100 = float(per_100) if isinstance(per_100, (int, float)) and per_100 > 0 else 0.0
+    c150 = float(per_150) if isinstance(per_150, (int, float)) and per_150 > 0 else 0.0
+
+    if c100 <= 0 and c150 <= 0:
+        return {_KEY_B150: 0, _KEY_B100: 0, _KEY_SURPLUS: round(need, 3)}
+
+    best_a = 0
+    best_b = 0
+    best_produced = 0.0
+
+    max_a = int(need // c150) if c150 > 0 else 0
+    for a in range(max_a + 1):
+        produced_by_a = a * c150
+        rem = need - produced_by_a
+        if rem < 0:
+            continue
+        b = int(rem // c100) if c100 > 0 else 0
+        produced = produced_by_a + b * c100
+        if produced > best_produced or (produced == best_produced and a > best_a):
+            best_produced = produced
+            best_a = a
+            best_b = b
+
+    # Отдельно вариант только 100-кг замесов (когда c150==0 или просто лучше)
+    if c100 > 0:
+        b_only = int(need // c100)
+        produced_only = b_only * c100
+        if produced_only > best_produced:
+            best_produced = produced_only
+            best_a = 0
+            best_b = b_only
+
+    return {
+        _KEY_B150: best_a,
+        _KEY_B100: best_b,
+        _KEY_SURPLUS: round(need - best_produced, 3),
+    }
+
+
+def enrich_day_row(row: dict) -> dict:
+    """Дневная строка: считаем замесы из штук (по per_100/per_150), не из кг."""
+    need = row.get("потребность")
+    name = row.get("наименование")
+    per100 = row.get("замес на 100")
+    per150 = row.get("замес на 150")
+    return {
+        "потребность": need,
+        "наименование": name,
+        **split_batches_units(need, per100, per150),
     }

@@ -22,6 +22,14 @@ export const RECIPE_TIMES = {
   },
 }
 
+/** Переналадка станций (мин), синхронно с v2/simulation/common/constants.py */
+export const RETOOL_TIMES = {
+  kuter: 5,
+  shpric: 5,
+  klipsator: 5,
+  termokamera: 5,
+}
+
 /** Станции без фиксированного времени в модели (очереди, склад) */
 const NO_FIXED_TIME = new Set([
   'queue_kuter',

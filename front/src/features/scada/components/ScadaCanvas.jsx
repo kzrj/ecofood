@@ -12,6 +12,9 @@ import {
   getSceneSize,
   getStationRenderProps,
 } from './scadaLayout'
+import { RETOOL_TIMES } from '../recipeTiming'
+
+const RETOOL_LABEL_IDS = new Set(['kuter', 'shpric', 'klipsator', 'termokamera'])
 
 export default function ScadaCanvas({ statuses = {}, stationItems = {}, recipeBook = {} }) {
   const [queueExpanded, setQueueExpanded] = useState(false)
@@ -51,6 +54,33 @@ export default function ScadaCanvas({ statuses = {}, stationItems = {}, recipeBo
         <svg width={renderW} height={renderH} style={{ minWidth: renderW }}>
           <g transform={`scale(${SCADA_SCALE})}`}>
             <ArrowsLayer />
+
+            {/* Подписи переналадки над ключевыми станциями */}
+            {STATIONS.map((station, i) => {
+              if (!RETOOL_LABEL_IDS.has(station.id)) return null
+              const retoolMin = RETOOL_TIMES[station.id]
+              if (station.id !== 'termokamera' && retoolMin == null) return null
+              const stationForRender = getStationRenderProps(station, layoutM)
+              const p = getNodePos(station, i, layoutM)
+              const cx = p.x + stationForRender.width / 2
+              const label =
+                station.id === 'termokamera'
+                  ? 'Переналадка секции'
+                  : `Переналадка ${retoolMin} мин`
+              return (
+                <text
+                  key={`retool-${station.id}`}
+                  x={cx}
+                  y={p.y - 14}
+                  textAnchor="middle"
+                  fontSize={11}
+                  fontWeight="700"
+                  fill="#b45309"
+                >
+                  {label}
+                </text>
+              )
+            })}
 
             {STATIONS.map((station, i) => {
               const stationForRender = getStationRenderProps(station, layoutM)
